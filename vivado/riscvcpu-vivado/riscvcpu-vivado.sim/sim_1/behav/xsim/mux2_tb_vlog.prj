@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../Documents/Git/riscvsoc/cpu" \
+"../../../../../../../Documents/Git/riscvsoc/cpu/mux2.v" \
+"../../../../../../../Documents/Git/riscvsoc/cpu/tb/mux2_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

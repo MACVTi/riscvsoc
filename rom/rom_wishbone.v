@@ -1,7 +1,7 @@
 module rom_wishbone #(parameter ADDRESS_WIDTH=8, DATA_WIDTH=8, DEPTH=256, MEMFILE="") (
 	input wire CLK_I,
 	input wire STB_I,
-	input WE_I,
+	input wire WE_I,
 	input wire [ADDRESS_WIDTH-1:0] ADR_I,
 	input wire [DATA_WIDTH-1:0] DAT_I,
 	output reg [DATA_WIDTH-1:0] DAT_O,
@@ -19,7 +19,7 @@ module rom_wishbone #(parameter ADDRESS_WIDTH=8, DATA_WIDTH=8, DEPTH=256, MEMFIL
 
 	always @ (posedge CLK_I) begin
 		if (STB_I) begin
-			data_out <= memory[address];
+			DAT_O <= memory[ADR_I];
 		end
 		ACK_O <= STB_I;
 	end

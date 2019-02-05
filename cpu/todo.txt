@@ -1,0 +1,31 @@
+CPU - NOT COMPLETE
+CPU TESTBENCH - NOT COMPLETE
+
+NOTE: Need to add a reset function to all modules
+
+Modules
+pc 			            - COMPLETE
+decode                  - IN PROGRESS
+instruction memory     	- COMPLETE ( TO BE REPLACED )
+immediate generator 	- NOT COMPLETE
+alu			            - NOT COMPLETE
+aludef			        - NOT COMPLETE
+riscvdef		        - NOT COMPLETE
+control                 - NOT COMPLETE
+data memory		        - COMPLETE
+add			            - COMPLETE
+mux2			        - COMPLETE
+registers               - COMPLETE
+
+Testbench
+pc 	            		- PASSED
+decode                  - IN PROGRESS
+instruction memory 	    - FAILED
+immediate generator 	- FAILED
+alu			            - FAILED
+aludef		        	- FAILED
+riscvdef	           	- FAILED
+data memory		        - FAILED
+add			            - PASSED
+mux2		          	- PASSED
+registers               - FAILED
