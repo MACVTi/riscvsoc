@@ -19,7 +19,7 @@ module rom_wishbone #(parameter ADDRESS_WIDTH=8, DATA_WIDTH=8, DEPTH=256, MEMFIL
 
 	always @ (posedge CLK_I) begin
 		if (STB_I) begin
-			data_out <= memory[address];
+			DAT_O <= memory[ADR_I];
 		end
 		ACK_O <= STB_I;
 	end

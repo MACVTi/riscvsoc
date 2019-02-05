@@ -20,10 +20,10 @@ module ram_wishbone #(parameter ADDRESS_WIDTH=8, DATA_WIDTH=8, DEPTH=256, MEMFIL
 	always @ (posedge CLK_I) begin
 		if (STB_I) begin
 			if (WE_I) begin
-				memory[address] <= data_in;
+				memory[ADR_I] <= DAT_I;
 			end
 			else begin
-				data_out <= memory[address];
+				DAT_O <= memory[ADR_I];
 			end
 		end
 		ACK_O <= STB_I;
