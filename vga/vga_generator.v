@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module vga(
+module vga_generator(
     input wire clk,
     input wire pixel_strobe,
     input wire reset,

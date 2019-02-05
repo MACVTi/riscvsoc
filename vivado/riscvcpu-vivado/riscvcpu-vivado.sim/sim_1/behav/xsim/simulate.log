@@ -1,0 +1,4 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+2265747861865244871577014284036841162155186587406287821754589997493050191792742285
+$finish called at time : 210 ns : File "/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" Line 25

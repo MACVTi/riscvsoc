@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module vga_wishbone(
 	// Wishbone Bus Connections
 	input wire CLK_I,
@@ -19,6 +17,7 @@ module vga_wishbone(
 	output reg [3:0] green,
 	output reg [3:0] blue
     );
+    
 	// Generate a 25Mhz pixel strobe
 	reg [15:0] count;
 	reg pixel_strobe;
