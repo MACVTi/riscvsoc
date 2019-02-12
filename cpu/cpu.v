@@ -17,18 +17,18 @@ module cpu #(parameter VECTOR_RESET=32'h00000000, VECTOR_INTERRUPT = 32'h0000000
     pc pc(.clk(clk), .reset(reset), .data_in(adder_to_pc), .data_out(pc_address));
 
     // Declare instruction memory
-    instruction_memory #(
-    .MEMFILE("instruction.mem")
-    )
-    instruction(
-            .clk(clk), 
-            .address(pc_address), 
-            .instruction(encoded_instruction)
-    );
+    //instruction_memory #(
+    //.MEMFILE("instruction.mem")
+    //)
+    //instruction(
+    //        .clk(clk), 
+    //        .address(pc_address), 
+    //        .instruction(encoded_instruction)
+    //);
     
     // Declare decoder
     
     // Declare adder 
-    add add(.data_in1(pc_address), .data_in2({29'h00000000, decoder_to_adder}), .data_out(adder_to_pc));
+    add add(.data_in1(pc_address), .data_in2(4), .data_out(adder_to_pc));
     
 endmodule

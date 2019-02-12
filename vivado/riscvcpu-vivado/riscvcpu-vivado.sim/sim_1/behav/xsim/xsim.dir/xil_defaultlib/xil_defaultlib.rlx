@@ -2,14 +2,17 @@
 2018.2
 Jun 14 2018
 20:07:38
-/home/jack/Document/Vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-/home/jack/Documents/Git/riscvsoc/cpu/add.v,1549125800,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/cpu.v,,add,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
-/home/jack/Documents/Git/riscvsoc/cpu/cpu.v,1549321223,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/instruction_memory.v,/home/jack/Documents/Git/riscvsoc/cpu/definitions.vh,cpu,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
-/home/jack/Documents/Git/riscvsoc/cpu/definitions.vh,1549121226,verilog,,,,,,,,,,,,
+/home/jack/Documents/Git/riscvsoc/cpu/add.v,1549373987,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/cpu.v,,add,,,../../../../../../cpu,,,,,
+/home/jack/Documents/Git/riscvsoc/cpu/alu.v,1549976019,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/tb/alu_tb.v,/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.srcs/sources_1/new/alu.vh,alu,,,../../../../../../cpu;../../../../riscvcpu-vivado.srcs/sources_1/new,,,,,
+/home/jack/Documents/Git/riscvsoc/cpu/cpu.v,1549797875,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/pc.v,/home/jack/Documents/Git/riscvsoc/cpu/definitions.vh,cpu,,,../../../../../../cpu,,,,,
+/home/jack/Documents/Git/riscvsoc/cpu/definitions.vh,1549373987,verilog,,,,,,,,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/instruction_memory.v,1549321121,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/pc.v,,instruction_memory,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/mux2.v,1549125676,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/tb/mux2_tb.v,,mux2,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/pc.v,1549125924,verilog,,/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v,,pc,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/tb/add_tb.v,1549124790,verilog,,,,add_tb,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
+/home/jack/Documents/Git/riscvsoc/cpu/tb/alu_tb.v,1549976285,verilog,,,/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.srcs/sources_1/new/alu.vh,alu_tb,,,../../../../../../cpu;../../../../riscvcpu-vivado.srcs/sources_1/new,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v,1549319424,verilog,,,,cpu_tb,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/tb/mux2_tb.v,1549125773,verilog,,,,mux2_tb,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
 /home/jack/Documents/Git/riscvsoc/cpu/tb/pc_tb.v,1549126093,verilog,,,,pc_tb,,,../../../../../../../Documents/Git/riscvsoc/cpu,,,,,
+/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v,1549373987,verilog,,,,glbl,,,,,,,,
+/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.srcs/sources_1/new/alu.vh,1549970738,verilog,,,,,,,,,,,,

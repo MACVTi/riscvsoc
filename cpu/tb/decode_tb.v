@@ -4,7 +4,7 @@ module decode_tb;
     reg clk;
 
 	//Instantiate Modules
-    instruction_decode instruction_decode(.clk(clk), .data_in1(data_in1), .data_in2(data_in2), .data_out(data_out));
+    decode decode(.clk(clk), .data_in1(data_in1), .data_in2(data_in2), .data_out(data_out));
 
 	// Start running clock
 	always begin

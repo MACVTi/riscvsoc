@@ -1,10 +1,9 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../../Documents/Git/riscvsoc/cpu" \
-"../../../../../../../Documents/Git/riscvsoc/cpu/add.v" \
-"../../../../../../../Documents/Git/riscvsoc/cpu/cpu.v" \
-"../../../../../../../Documents/Git/riscvsoc/cpu/instruction_memory.v" \
-"../../../../../../../Documents/Git/riscvsoc/cpu/pc.v" \
-"../../../../../../../Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" \
+verilog xil_defaultlib  --include "../../../../../../cpu" \
+"../../../../../../cpu/add.v" \
+"../../../../../../cpu/cpu.v" \
+"../../../../../../cpu/pc.v" \
+"../../../../../../cpu/tb/cpu_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
