@@ -6,11 +6,11 @@ module pc_tb;
 	//Declare Registers and Wires
 	reg clk;
 	reg reset;
-    reg [31:0] data_in;
-    wire [31:0] data_out;
+    reg [31:0] address_in;
+    wire [31:0] address_out;
 
 	//Instantiate Modules
-    pc pc(.clk(clk), .reset(reset), .data_in(data_in), .data_out(data_out));
+    pc pc(.I_clk(clk), .I_rst(reset), .I_address(address_in), .O_address(address_out));
     
 	// Start running clock
 	always begin
@@ -19,14 +19,14 @@ module pc_tb;
 
 	initial begin
 		// Initialise testbench
-        clk = 0; reset = 0; data_in = 32'hFFFFFFFF;
+        clk = 0; reset = 0; address_in = 32'hFFFFFFFF;
         
         // Reset PC
         #10 reset = 1;
         #5 reset = 0;
         
 		// Change value in PC
-		#5 data_in = 32'h00000004;
+		#5 address_in = 32'h00000004;
 		
 		// Finish simulation
 		#10 $finish;

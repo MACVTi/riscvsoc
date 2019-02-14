@@ -1,19 +1,19 @@
 // Written by Jack McEllin - 15170144
 // A program counter
 
-module pc(
-		input wire clk,
-		input wire reset,
-		input wire [31:0] data_in,
-		output reg [31:0] data_out
+module pc #(parameter RESET=32'h00000000) (
+		input wire I_clk,
+		input wire I_rst,
+		input wire [31:0] I_address,
+		output reg [31:0] O_address
 	 );
 
-always @(negedge clk) begin
-    if(reset == 1) begin
-	   data_out <= 32'h00000000;	    
+always @(negedge I_clk) begin
+    if(I_rst == 1) begin
+	   O_address <= RESET;	    
     end
     else begin
-	   data_out <= data_in;	
+	   O_address <= I_address;	
     end
 end
 

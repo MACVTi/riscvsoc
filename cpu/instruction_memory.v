@@ -1,24 +1,20 @@
 module instruction_memory #(parameter MEMFILE="") (
-	input wire clk,
-	input wire [31:0] address,
-	output reg [31:0] instruction
+	input wire I_clk,
+	input wire [31:0] I_address,
+	output reg [31:0] O_data
 	);
 
-	reg [7:0] memory [0:1024];
+    // Declare some memory that we can use for instruction memory
+	reg [31:0] memory [0:255];
 
 	initial begin
 		if (MEMFILE > 0) begin
-			$display("Loading initial data memory file: " + MEMFILE);
-			$readmemh(MEMFILE, memory);
+			$display("Loading initial instruction memory file: " + MEMFILE);
+			$fread(MEMFILE, memory);
 		end
 	end
 
-	always @ (posedge clk) begin
-	   if(memory[address][1:0] != 2'b11) begin
-	      instruction <= {memory[address],memory[address+1],16'h0000};
-	   end
-	   else begin
-		  instruction <= {memory[address],memory[address+1],memory[address+2],memory[address+3]};
-	   end
+	always @ (posedge I_clk) begin
+	   O_data <= {memory[I_address],memory[I_address+1],memory[I_address+2],memory[I_address+3]};
     end
 endmodule

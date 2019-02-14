@@ -1,8 +1,17 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../cpu" \
+verilog xil_defaultlib  --include "../../../../../../cpu/header" \
 "../../../../../../cpu/add.v" \
+"../../../../../../cpu/alu.v" \
+"../../../../../../cpu/branch_comparator.v" \
+"../../../../../../cpu/control.v" \
 "../../../../../../cpu/cpu.v" \
+"../../../../../../cpu/data_memory.v" \
+"../../../../../../cpu/immediate_generator.v" \
+"../../../../../../cpu/instruction_memory.v" \
+"../../../../../../cpu/mux2.v" \
+"../../../../../../cpu/mux3.v" \
 "../../../../../../cpu/pc.v" \
+"../../../../../../cpu/registers.v" \
 "../../../../../../cpu/tb/cpu_tb.v" \
 
 # compile glbl module

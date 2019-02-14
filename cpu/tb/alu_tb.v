@@ -9,7 +9,7 @@ module alu_tb;
     wire signed [31:0] destination;
     
 	//Instantiate Modules
-    alu alu(.ALUSel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(destination));
+    alu alu(.I_alusel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(destination));
 	
 	task test_alu;
 	   input signed [31:0] a;

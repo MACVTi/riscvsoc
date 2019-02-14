@@ -2,12 +2,12 @@
 // A two-input multiplexor
 
 module mux2(
-		input wire sel,
-		input wire [31:0] data_in1,
-		input wire [31:0] data_in2,
-		output wire [31:0] data_out
+		input wire I_sel,
+		input wire [31:0] I_data1,
+		input wire [31:0] I_data2,
+		output wire [31:0] O_data
 	  );
 
-    assign data_out = sel ? data_in1 : data_in2;
+    assign O_data = (I_sel == 1'b0) ? I_data1 :  I_data2;
 
 endmodule

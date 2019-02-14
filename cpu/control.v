@@ -21,13 +21,20 @@
 
 
 module control(
-    input clk,
-    input [6:0] opcode,
-    output branch,
-    output memread,
-    output aluop,
-    output memwrite,
-    output alusrc,
-    output regwrite
+    input wire [31:0] I_instruction,
+    input wire I_breq,
+    input wire I_brlt,
+    
+    output reg [3:0] O_alusel,
+    output reg [2:0] O_immsel,
+    output reg [1:0] O_wbsel,
+    output reg O_pcsel,
+    output reg O_brun,
+    output reg O_asel,
+    output reg O_bsel,
+    output reg O_memrw,
+    output reg O_regwen
     );
+    
+    
 endmodule

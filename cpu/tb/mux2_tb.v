@@ -11,7 +11,7 @@ module mux2_tb;
 	wire [31:0] out;
 
 	//Instantiate Modules
-	mux2 mux2(.sel(sel), .data_in1(source_1), .data_in2(source_2), .data_out(out));
+	mux2 mux2(.I_sel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(out));
 
 	// Start running clock
 	always begin

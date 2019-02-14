@@ -9,12 +9,7 @@ module immediate_generator_tb;
     wire [31:0] data_out;
 
 	//Instantiate Modules
-    immediate_generator immediate_generator(.clk(clk), .data_in(data_in), .data_out(data_out));
-    
-	// Start running clock
-	always begin
-		#5 clk = ~clk;
-	end
+    immediate_generator immediate_generator(.I_immsel(), .I_data(), .O_data());    
 
 	initial begin
 		// Initialise testbench

@@ -3,11 +3,11 @@ module cpu_tb;
 	//Declare Registers and Wires
 	reg clk;
 	reg reset;
-	wire [31:0] pc;
-	wire [31:0] encoded_instruction;
 
 	//Instantiate Modules
-    cpu cpu(.clk(clk), .reset(reset), .pc_address(pc), .encoded_instruction(encoded_instruction));
+    cpu cpu(
+    .clk(clk), .reset(reset)
+    );
 
 	// Start running clock
 	always begin

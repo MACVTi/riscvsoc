@@ -5,16 +5,16 @@ NOTE: Need to add a reset function to all modules
 
 Modules
 pc 			            - COMPLETE
-decode                  - IN PROGRESS
+decode                  - NOT COMPLETE
 instruction memory     	- COMPLETE ( TO BE REPLACED )
+branch_comparator       - COMPLETE
 immediate generator 	- NOT COMPLETE
-alu			            - NOT COMPLETE
-aludef			        - NOT COMPLETE
-riscvdef		        - NOT COMPLETE
+alu			            - COMPLETE
 control                 - NOT COMPLETE
 data memory		        - COMPLETE
 add			            - COMPLETE
 mux2			        - COMPLETE
+mux3			        - COMPLETE
 registers               - COMPLETE
 
 Testbench
@@ -22,7 +22,7 @@ pc 	            		- PASSED
 decode                  - IN PROGRESS
 instruction memory 	    - FAILED
 immediate generator 	- FAILED
-alu			            - FAILED
+alu			            - PASSED
 aludef		        	- FAILED
 riscvdef	           	- FAILED
 data memory		        - FAILED

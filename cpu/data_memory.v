@@ -1,13 +1,13 @@
 module data_memory #(parameter MEMFILE="") (
-	input wire clk,
-	input wire memwrite,
-	input wire memread,
-	input wire [31:0] address,
-	input wire [31:0] writedata,
-	output reg [31:0] readdata
+	input wire I_clk,
+	input wire I_memrw,
+	input wire [31:0] I_address,
+	input wire [31:0] I_data,
+	output reg [31:0] O_data
 	);
 
-	reg [31:0] memory [0:256];
+    // Declare some memory that we can use for data memory
+	reg [31:0] memory [0:255];
 
 	initial begin
 		if (MEMFILE > 0) begin
@@ -16,12 +16,12 @@ module data_memory #(parameter MEMFILE="") (
 		end
 	end
 
-	always @ (posedge clk) begin
-			if (memwrite) begin
-				memory[address] <= writedata;
+	always @ (posedge I_clk) begin
+			if (I_memrw) begin
+				memory[I_address] <= I_data;
 			end
 			else begin
-				readdata <= memory[address];
+				O_data <= memory[I_address];
 			end
     end
 endmodule

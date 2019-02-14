@@ -1,14 +1,14 @@
 `include "alu.vh"
 
 module alu(
-    input wire [3:0] ALUSel,
+    input wire [3:0] I_alusel,
 	input wire signed [31:0] I_data1,
 	input wire signed [31:0] I_data2,
 	output reg signed [31:0] O_data
 );
 
     always @(*) begin
-        case(ALUSel)
+        case(I_alusel)
             `ALU_ADD:    O_data <= I_data1 + I_data2;
             `ALU_SUB:    O_data <= I_data1 - I_data2;
             `ALU_SLL:    O_data <= I_data1 << I_data2;
