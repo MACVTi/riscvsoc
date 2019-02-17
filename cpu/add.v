@@ -1,11 +1,12 @@
-`timescale 1ns / 1ps
+// Written by Jack McEllin - 15170144
+// A two-input 32 bit adder
 
 module add(
-    input [31:0] data_in1,
-    input [31:0] data_in2,
-    output [31:0] data_out
+    input [31:0] I_data1,
+    input [31:0] I_data2,
+    output [31:0] O_data
     );
 
-	assign data_out = data_in1 + data_in2;	
+	assign O_data = I_data1 + I_data2;	
 
 endmodule

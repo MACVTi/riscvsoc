@@ -1,120 +1,71 @@
 // Written by Jack McEllin - 15170144
 // A testbench for testing the registers of the CPU
-
 module registers_tb;
 	
 	//Declare Registers and Wires
 	reg clk;
 	reg reset;
-	reg we;
-	reg re;
+	reg regwen;
 	reg [3:0] rs1;
 	reg [3:0] rs2;
 	reg [3:0] rd;
-	reg [31:0] write_data;
-	wire [31:0] read_data_1;
-	wire [31:0] read_data_2;
+	reg [31:0] source;
+	wire [31:0] destination_1;
+	wire [31:0] destination_2;
 
 	//Instantiate Modules
 	registers register(
-		.clk(clk),
-		.reset(reset),
-		.we(we),
-		.re(re),
-		.rs1(rs1),
-		.rs2(rs2),
-		.rd(rd),
-		.write_data(write_data),
-		.read_data_1(read_data_1),
-		.read_data_2(read_data_2)
+		.I_clk(clk),
+		.I_rst(reset),
+		.I_regwen(regwen),
+		.I_rs1(rs1),
+		.I_rs2(rs2),
+		.I_rd(rd),
+		.I_data(source),
+		.O_data1(destination_1),
+		.O_data2(destination_2)
 	);
 
 	// Start running clock
 	always begin
-		#10 clk = ~clk;
+		#5 clk = ~clk;
 	end
 
 	initial begin
 		// Initialise testbench
-		clk = 0; reset = 0; we = 0; re = 0; rs1 = 0; rs2 = 0; rd = 0; write_data = 0;
+		clk = 0; reset = 0; regwen = 0; rs1 = 0; rs2 = 0; rd = 0; source = 0;
+        
+        // Clear all registers
+        #10 reset = 1;
+        #10 reset = 0;
+        
+        $display("Check that registers were cleared");
+        for (integer i = 0; i < 16; i=i+1) begin
+            #10 regwen = 0; rs1 = i; rs2 = i; 
+            #10 $display("Register1 = %h, Data1= %h, Register2 = %h, Data2= %h", rs1, destination_1, rs2, destination_2);
+        end
 
 		// Write test values to registers
-		#10 we = 1; rd = 4'b0001; write_data = 32'h00000001;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0010; write_data = 32'h00000002;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0011; write_data = 32'h00000003;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0100; write_data = 32'h00000004;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0101; write_data = 32'h00000005;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0110; write_data = 32'h00000006;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b0111; write_data = 32'h00000007;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1000; write_data = 32'h00000008;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1001; write_data = 32'h00000009;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1010; write_data = 32'h0000000A;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1011; write_data = 32'h0000000B;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1100; write_data = 32'h0000000C;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1101; write_data = 32'h0000000D;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1110; write_data = 32'h0000000E;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 we = 1; rd = 4'b1111; write_data = 32'h0000000F;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
+		$display("\nWrite values to registers");
+		for (integer i = 1; i < 16; i=i+1) begin
+           #10 regwen = 1; rd = i; source = i;
+           #10 regwen = 0;
+           #10 $display("Register = %h, Data = %h", rd, source);
+        end
 
 		// Read test values from registers
-		#10 re = 1; rs1 = 4'b0000; rs2 = 4'b0001;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0010; rs2 = 4'b0011;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0100; rs2 = 4'b0101;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0110; rs2 = 4'b0111;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1000; rs2 = 4'b1001;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1010; rs2 = 4'b1011;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1100; rs2 = 4'b1101;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1110; rs2 = 4'b1111;
-		#10 re = 0;
+		$display("\nCheck values from registers");
+		for (integer i = 0; i < 16; i=i+1) begin
+		  #10 regwen = 0; rs1 = i; rs2 = i; 
+		  #10 $display("Register1 = %h, Data1= %h, Register2 = %h, Data2= %h", rs1, destination_1, rs2, destination_2);
+	    end
 
 		// Check that we can't write to register zero
-		#10 we = 1; rd = 4'b0000; write_data = 32'h99999999;
-		#10 we = 0; rd = 4'b0000; write_data = 32'h00000000;
-		#10 re = 1; rs1 = 4'b0000; rs2 = 4'b0010;
-		#10 re = 0;
-
-		// Check reset
-		#10 reset  = 1;
-		#10 reset  = 0;
-
-		// Read test values from registers
-		#10 re = 1; rs1 = 4'b0000; rs2 = 4'b0001;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0010; rs2 = 4'b0011;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0100; rs2 = 4'b0101;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b0110; rs2 = 4'b0111;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1000; rs2 = 4'b1001;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1010; rs2 = 4'b1011;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1100; rs2 = 4'b1101;
-		#10 re = 0;
-		#10 re = 1; rs1 = 4'b1110; rs2 = 4'b1111;
-		#10 re = 0;
+		#10 $display("\nCheck that we can't write to x0");
+		#10 regwen = 1; rd = 4'b0000; source = 32'h99999999;
+		#10 $display("Register = %h, Data = %h", rd, source);
+		#10 regwen = 0; rd = 4'b0000; source = 32'h00000000;
+		#10 $display("Register = %h, Data = %h", rd, source);
 
 		// Finish simulation
 		#10 $finish;

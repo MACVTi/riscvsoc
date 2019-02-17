@@ -8,7 +8,7 @@ module pc #(parameter RESET=32'h00000000) (
 		output reg [31:0] O_address
 	 );
 
-always @(negedge I_clk) begin
+always @(posedge I_clk) begin
     if(I_rst == 1) begin
 	   O_address <= RESET;	    
     end

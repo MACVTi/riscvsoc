@@ -1,3 +1,6 @@
+// Written by Jack McEllin - 15170144
+// A simple 2 input ALU
+
 `include "alu.vh"
 
 module alu(
@@ -19,7 +22,8 @@ module alu(
             `ALU_SRA:    O_data <= I_data1 >>> I_data2;
             `ALU_OR:     O_data <= I_data1 | I_data2;
             `ALU_AND:    O_data <= I_data1 & I_data2;
-            default:     O_data <= I_data1 + I_data2; // Defaults to ADD
+            `ALU_LUI:    O_data <= I_data2;
+            default:     O_data <= 20'hFFFFF; // Defaults to ADD
         endcase
     end
 

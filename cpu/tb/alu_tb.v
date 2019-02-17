@@ -1,3 +1,6 @@
+// Written by Jack McEllin - 15170144
+// A A testbench for testing a simple 2 input ALU
+
 `include "alu.vh"
 
 module alu_tb;
@@ -11,6 +14,7 @@ module alu_tb;
 	//Instantiate Modules
     alu alu(.I_alusel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(destination));
 	
+	//Create a task to test all select options of ALU
 	task test_alu;
 	   input signed [31:0] a;
 	   input signed [31:0] b;
@@ -21,7 +25,6 @@ module alu_tb;
 	   
 	   sel = `ALU_ADD;
        #10 $display("ADD: \t%d \t+ \t%d \t= \t%d", source_1, source_2, destination);
-            
        #10 sel = `ALU_SUB;
        #10 $display("SUB: \t%d \t- \t%d \t= \t%d", source_1, source_2, destination);
        #10 sel = `ALU_SLL;
@@ -40,6 +43,8 @@ module alu_tb;
        #10 $display("OR: \t%d \t| \t%d \t= \t%d", source_1, source_2, destination);
        #10 sel = `ALU_AND;
        #10 $display("AND: \t%d \t& \t%d \t= \t%d", source_1, source_2, destination);
+       #10 sel = `ALU_LUI;
+       #10 $display("LUI: \t\t\t\t\t\t%d \t= \t%d", source_2, destination);
        #10 ;
        end
     endtask
@@ -88,7 +93,13 @@ module alu_tb;
 
         $display("\nSource_1 = Source_2");
         test_alu($signed(-1), $signed(-1));
-       
+        
+        // Manual Tests
+        $display("\nManual test, a = 7, b = 2");
+        test_alu($signed(7), $signed(2));
+              
+        $display("\nManual test, a = 2, b = 7");
+        test_alu($signed(2), $signed(7));
 		// Finish simulation
 		#10 $finish;
 	end

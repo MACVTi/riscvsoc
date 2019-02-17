@@ -3,35 +3,26 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port data_in [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:39]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port data_out [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:40]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port I_sel [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:74]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port O_data [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:78]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port I_rs1 [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:108]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port I_rs2 [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:109]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port I_rd [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:110]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port I_alusel [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:127]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port I_data2 [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:129]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port O_alusel [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:138]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port O_immsel [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:139]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port O_wbsel [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:140]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port O_data [/home/jack/Documents/Git/riscvsoc/cpu/cpu.v:69]
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.pc
-Compiling module xil_defaultlib.add
-Compiling module xil_defaultlib.mux2
-Compiling module xil_defaultlib.mux3
-Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.instruction_memory(MEMFILE="fact...
 Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
 Compiling module xil_defaultlib.registers
 Compiling module xil_defaultlib.branch_comparator
 Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.control
 Compiling module xil_defaultlib.immediate_generator
-Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.load_generator
+Compiling module xil_defaultlib.store_generator
+Compiling module xil_defaultlib.add
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.cpu(INSTRUCTION_MEM="factorial.m...
 Compiling module xil_defaultlib.cpu_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cpu_tb_behav

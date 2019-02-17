@@ -8,10 +8,10 @@ module mux2_tb;
 	reg sel;	
 	reg [31:0] source_1;
 	reg [31:0] source_2;
-	wire [31:0] out;
+	wire [31:0] destination;
 
 	//Instantiate Modules
-	mux2 mux2(.I_sel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(out));
+	mux2 mux2(.I_sel(sel), .I_data1(source_1), .I_data2(source_2), .O_data(destination));
 
 	// Start running clock
 	always begin
@@ -20,7 +20,7 @@ module mux2_tb;
 
 	initial begin
 		// Initialise testbench
-		clk = 1; sel = 0; source_1 = 32'h0000FFFF; source_2 = 32'hFFFF0000;
+		clk = 1; sel = 0; source_1 = 32'h00000001; source_2 = 32'h00000002;
 	
 		// Change selected source
 		#10 sel = 1;

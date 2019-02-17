@@ -1,69 +1,47 @@
 `include "./definitions.vh"
 
-module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DATA_MEM="data.mem") (
+module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DATA_MEM="data.mem") (
     input wire I_clk,
     input wire I_rst,
     
     // Control wires
     output wire PCSel,
-    output wire Immsel,
+    output wire [2:0] Immsel,
     output wire RegWEn,
     output wire BrUn,
     output wire BrEq,
     output wire BrLT,
     output wire ASel,
-    output wire Bsel,
-    output wire ALUSel,
+    output wire BSel,
+    output wire [3:0] ALUSel,
     output wire MemRW,
-    output wire WBSel,
+    output wire [1:0] WBSel,
+    output wire [2:0] LoadSel,
+    output wire [1:0] StoreSel,
     
     // Declare other wires
-    output wire [31:0] mux_out,
     output wire [31:0] pc_out,
     output wire [31:0] pcincr_out,
     output wire [31:0] decoder_out,
-    output wire [31:0] data_out,
+    output wire [31:0] mem_out,
     output wire [31:0] inst_out,
     output wire [31:0] alu_out,
     output wire [31:0] mux_pc_out,
     output wire [31:0] mux_rs1_out,
+    output wire [31:0] mux_rs2_out,
     output wire [31:0] register_out_a,
     output wire [31:0] register_out_b,
     output wire [31:0] immediate_out,
-    output wire [31:0] mem_out,
     output wire [31:0] adder_out,
-    output wire [31:0] mux_wb_out
+    output wire [31:0] loadgen_out,
+    output wire [31:0] storegen_out,
+    output wire [31:0] mux_wb_out,
+    
+    // Temporary wires
+    output wire [3:0] rs1_in,
+    output wire [3:0] rs2_in,
+    output wire [3:0] rd_in 
     );
-    
-//    // Control wires
-//    wire PCSel;
-//    wire Immsel;
-//    wire RegWEn;
-//    wire BrUn;
-//    wire BrEq;
-//    wire BrLT;
-//    wire ASel;
-//    wire Bsel;
-//    wire ALUSel;
-//    wire MemRW;
-//    wire WBSel;
-    
-//    // Declare other wires
-//    wire [31:0] mux_out;
-//    wire [31:0] pc_out;
-//    wire [31:0] pcincr_out;
-//    wire [31:0] decoder_out;
-//    wire [31:0] data_out;
-//    wire [31:0] inst_out;
-//    wire [31:0] alu_out;
-//    wire [31:0] mux_pc_out;
-//    wire [31:0] mux_rs1_out;
-//    wire [31:0] register_out_a;
-//    wire [31:0] register_out_b;
-//    wire [31:0] immediate_out;
-//    wire [31:0] mem_out;
-//    wire [31:0] adder_out;
-//    wire [31:0] mux_wb_out;
     
     //--------------------------------------//
     // Memory modules
@@ -71,7 +49,7 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     
     // Declare instruction memory
     instruction_memory #(
-        .MEMFILE("")
+        .MEMFILE(INSTRUCTION_MEM)
     )
     inst (
         .I_clk(I_clk), 
@@ -81,14 +59,14 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     
     // Declare data memory
     data_memory #(
-        .MEMFILE("")
+        .MEMFILE(DATA_MEM)
     )
     data (
         .I_clk(I_clk),
         .I_memrw(MemRW),
         .I_address(alu_out),
-        .I_data(register_out_b),
-        .O_data(data_out)
+        .I_data(storegen_out),
+        .O_data(mem_out)
     );
     
     //--------------------------------------//
@@ -97,18 +75,21 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     
     // Declare Control
     control ctrl(
-        .I_instruction(inst_out),
+        .I_control({decoder_out[30],decoder_out[14:12],decoder_out[6:2]}),
         .I_breq(BrEq),
         .I_brlt(BrLT),
-        .O_alusel(ALUSel),
-        .O_immsel(Immsel),
-        .O_wbsel(WBSel),
+        
         .O_pcsel(PCSel),
+        .O_immsel(Immsel),
+        .O_regwen(RegWEn),
         .O_brun(BrUn),
         .O_asel(ASel),
         .O_bsel(BSel),
+        .O_alusel(ALUSel),
         .O_memrw(MemRW),
-        .O_regwen(RegWEn)
+        .O_loadsel(LoadSel),
+        .O_storesel(StoreSel),
+        .O_wbsel(WBSel)
     );
     
     //--------------------------------------//
@@ -117,32 +98,37 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     
     // Declare Program Counter
     pc #(
-        .VECTOR_RESET(32'h00000000)
+        .RESET(32'h00000000)
     )
     pc (
-        .clk(I_clk),
-        .reset(I_rst),
-        .data_in(mux2_to_pc), 
-        .data_out(pc_address)
+        .I_clk(I_clk),
+        .I_rst(I_rst),
+        .I_address(mux_pc_out), 
+        .O_address(pc_out)
     );
     
     // Declare decoder
     decode decode(
         .I_clk(I_clk),
-        .I_rst(I_rst),
         .I_data(inst_out),
+        .I_breq(BrEq),
+        .I_brlt(BrLT),
         .O_pcincr(pcincr_out),
         .O_data(decoder_out)
     );
     
-    // Declare registers
+    // Declare registers - RV32E so only 16 registers
+    assign rs1_in = decoder_out[18:15];
+    assign rs2_in = decoder_out[23:20];
+    assign rd_in = decoder_out[10:7];
+    
     registers regs(
         .I_clk(I_clk),
         .I_rst(I_rst),
         .I_regwen(RegWEn),
-        .I_rs1(inst_out[19:15]),
-        .I_rs2(inst_out[24:20]),
-        .I_rd(inst_out[11:7]),
+        .I_rs1(rs1_in), //Note that these are four bits wide, not five bits
+        .I_rs2(rs2_in), //Note that these are four bits wide, not five bits
+        .I_rd(rd_in), //Note that these are four bits wide, not five bits
         .I_data(mux_wb_out),
         .O_data1(register_out_a),
         .O_data2(register_out_b)
@@ -168,27 +154,39 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     // Declare Immediate Generator
     immediate_generator immediate(
         .I_immsel(Immsel), 
-        .I_data(inst_out), 
+        .I_data(decoder_out), 
         .O_data(immediate_out)
     ); 
         
-    
-            
     //--------------------------------------//
     // Supporting modules
     //--------------------------------------//
+    
+    // Declare Adder
+    load_generator loadgen(
+        .I_loadsel(LoadSel), 
+        .I_data(mem_out), 
+        .O_data(loadgen_out)
+    );
+        
+    // Declare Adder
+    store_generator storegen(
+        .I_storesel(StoreSel), 
+        .I_data(register_out_b), 
+        .O_data(storegen_out)
+    );
      
     // Declare Adder
     add add(
-        .data_in1(pc_out), 
-        .data_in2(32'h00000004), 
-        .data_out(adder_out)
+        .I_data1(pc_out), 
+        .I_data2(pcincr_out), 
+        .O_data(adder_out)
     );
 
     // Declare 2 input muxes
     mux2 mux_pc(
         .I_sel(PCSel), 
-        .I_data1(pc_out), 
+        .I_data1(adder_out), 
         .I_data2(alu_out), 
         .O_data(mux_pc_out)
     );
@@ -202,15 +200,15 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="instruction.mem", DA
     
     mux2 mux_rs2(
         .I_sel(BSel), 
-        .I_data1(immediate_out), 
-        .I_data2(register_out_b),
+        .I_data1(register_out_b), 
+        .I_data2(immediate_out),
         .O_data(mux_rs2_out)
     );
     
     // Declare 3 input mux
     mux3 mux3(
         .I_sel(WBSel), 
-        .I_data1(mem_out), 
+        .I_data1(loadgen_out), 
         .I_data2(alu_out), 
         .I_data3(adder_out), 
         .O_data(mux_wb_out)

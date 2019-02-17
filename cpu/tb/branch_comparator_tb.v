@@ -1,5 +1,5 @@
 // Written by Jack McEllin - 15170144
-// A testbench for testing a two-input multiplexor
+// A testbench for testing the branch comparator
 
 module branch_comparator_tb;
 	
@@ -17,29 +17,55 @@ module branch_comparator_tb;
 		// Initialise testbench
 		source_1 = $signed(0); source_2 = $signed(0); bun = 0;
 	
-		// Check that equals works for both positive and negative numbers
+		// Check that equals works for both positive and negative numbers when bun = 0
+		$display("bun = 0");
 		#10 source_1 = $signed(1); source_2 = $signed(2);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+        #10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
 		#10 source_1 = $signed(2); source_2 = $signed(1);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+        #10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
 		#10 source_1 = $signed(1); source_2 = $signed(1);
-		#10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
 		#10 source_1 = $signed(1); source_2 = $signed(0);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
 		#10 source_1 = $signed(0); source_2 = $signed(0);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(0); source_2 = $signed(-1);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(-1); source_2 = $signed(0);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(-1); source_2 = $signed(-1);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(-1); source_2 = $signed(-2);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(-2); source_2 = $signed(-1);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
         #10 source_1 = $signed(-2); source_2 = $signed(-2);
-        #10 $display("%d, \t%d: \t%d | \t%d", source_1, source_2, beq, blt);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+
+        // Check that equals works for both positive and negative numbers when bun = 1
+        $display("\nbun = 1");
+		#10 source_1 = $signed(1); source_2 = $signed(2); bun = 1;
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+		#10 source_1 = $signed(2); source_2 = $signed(1);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+		#10 source_1 = $signed(1); source_2 = $signed(1);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+		#10 source_1 = $signed(1); source_2 = $signed(0);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+		#10 source_1 = $signed(0); source_2 = $signed(0);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(0); source_2 = $signed(-1);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(-1); source_2 = $signed(0);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(-1); source_2 = $signed(-1);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(-1); source_2 = $signed(-2);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(-2); source_2 = $signed(-1);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
+        #10 source_1 = $signed(-2); source_2 = $signed(-2);
+		#10 $display("source_1=%d, source2=%d, bun=%d | beq=%d, blt=%d", source_1, source_2, bun, beq, blt);
 
 		// Finish simulation
 		#10 $finish;

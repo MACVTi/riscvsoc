@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../cpu" --include "../../../../riscvcpu-vivado.srcs/sources_1/new" \
+verilog xil_defaultlib  --include "../../../../../../cpu/header" \
 "../../../../../../cpu/alu.v" \
 "../../../../../../cpu/tb/alu_tb.v" \
 

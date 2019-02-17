@@ -1,5 +1,5 @@
 // Written by Jack McEllin - 15170144
-// A testbench for testing a two-input multiplexor
+// A testbench for testing a three-input multiplexor
 
 module mux3_tb;
 	
@@ -9,10 +9,10 @@ module mux3_tb;
 	reg [31:0] source_1;
 	reg [31:0] source_2;
 	reg [31:0] source_3;
-	wire [31:0] out;
+	wire [31:0] destination;
 
 	//Instantiate Modules
-	mux3 mux3(.sel(sel), .data_in1(source_1), .data_in2(source_2), .data_in3(source_3), .data_out(out));
+	mux3 mux3(.I_sel(sel), .I_data1(source_1), .I_data2(source_2), .I_data3(source_3), .O_data(destination));
 
 	// Start running clock
 	always begin

@@ -1,3 +1,415 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
-$finish called at time : 210 ns : File "/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" Line 25
+163264339622589037563640483124828598341133437489705846470738526937842360394342061460802431685402509
+Initialising the data memory with zeros
+There was an error loading the data memory file!
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:xxxxxxxx	ADDRESS:000fffff
+ERROR: INSTRUCTION NOT FOUND: xxxxxxxxx1x
+The value 00000000 was stored in register x x
+
+New Positive Clock Edge
+The current instruction is ADDI: 10000010010
+The value fffffff0 was stored in register x 2
+
+New Positive Clock Edge
+The current instruction is ADDI: 10000010001
+The value ffffffe0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffec
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffe8
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The current instruction is ADDI: 00000010001
+The value fffffff0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffe0
+The current instruction is SW: 10100100001
+
+New Positive Clock Edge
+The current instruction is ADDI: 00000010010
+The value 0000000a was stored in register x10
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is AUIPC: 00000010110
+The value 00000018 was stored in register x 1
+
+New Positive Clock Edge
+The current instruction is JALR: 00001100100
+The value 00000020 was stored in register x 1
+$finish called at time : 1020 ns : File "/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" Line 108

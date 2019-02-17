@@ -6,12 +6,15 @@ verilog xil_defaultlib  --include "../../../../../../cpu/header" \
 "../../../../../../cpu/control.v" \
 "../../../../../../cpu/cpu.v" \
 "../../../../../../cpu/data_memory.v" \
+"../../../../../../cpu/decode.v" \
 "../../../../../../cpu/immediate_generator.v" \
 "../../../../../../cpu/instruction_memory.v" \
+"../../../../../../cpu/load_generator.v" \
 "../../../../../../cpu/mux2.v" \
 "../../../../../../cpu/mux3.v" \
 "../../../../../../cpu/pc.v" \
 "../../../../../../cpu/registers.v" \
+"../../../../../../cpu/store_generator.v" \
 "../../../../../../cpu/tb/cpu_tb.v" \
 
 # compile glbl module

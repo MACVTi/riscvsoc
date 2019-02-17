@@ -23,11 +23,10 @@ module pc_tb;
         
         // Reset PC
         #10 reset = 1;
-        #5 reset = 0;
         
-		// Change value in PC
-		#5 address_in = 32'h00000004;
-		
+        // Change value in PC
+        #10 reset = 0; address_in = 32'h00000004;
+	
 		// Finish simulation
 		#10 $finish;
 	end

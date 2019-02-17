@@ -1,6 +1,6 @@
 // Written by Jack McEllin - 15170144
 // This file contains all the registers of the CPU
-`define ZERO 32'h00000000
+`define ZERO 
 
 module registers(
 	input wire I_clk,
@@ -10,41 +10,31 @@ module registers(
 	input wire [3:0] I_rs2,
 	input wire [3:0] I_rd,
 	input wire [31:0] I_data,
-	output reg [31:0] O_data1,
-	output reg [31:0] O_data2
+	output wire [31:0] O_data1,
+	output wire [31:0] O_data2
     );
 
-	integer i;
-
 	reg [31:0] register [15:1];
+	
+	assign O_data1 = (I_rs1 == 0) ? 32'h00000000 :register[I_rs1];
+    assign O_data2 = (I_rs2 == 0) ? 32'h00000000 :register[I_rs2];
+
+    initial begin
+        for (integer i=1; i < 16; i=i+1) begin
+            register[i] <= 32'h00000000;
+        end
+    end
 
 	always @(posedge I_clk) begin
-		if (I_rst) begin
-			for (i=1; i <= 15; i=i+1) begin
-				register[i] <= `ZERO;
+		if (I_rst == 1) begin
+			for (integer i=1; i < 16; i=i+1) begin
+				register[i] <= 32'h00000000;
 			end
-			O_data1 <= `ZERO;
-			O_data2 <= `ZERO;
 		end
-
 		if (I_regwen == 1) begin
-			register[I_rd] <= I_data;
-		end
-		else begin
-			if (I_rs1 == 4'b0000) begin
-				O_data1 <= `ZERO;
-			end
-			else begin
-				O_data1 <= register[I_rs1];
-			end
-
-			if (I_rs2 == 4'b0000) begin
-				O_data2 <= `ZERO;
-			end
-			else begin
-				O_data2 <= register[I_rs2];
-			end
-		end
+            register[I_rd] <= I_data;
+            $display("The value %h was stored in register x%d", I_data, I_rd);
+        end
 	end
 
 endmodule
