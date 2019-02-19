@@ -1,415 +1,4857 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
-163264339622589037563640483124828598341133437489705846470738526937842360394342061460802431685402509
+163264339622589037563640483124828598341133437489705846470738526937843396562145105752940429278617485
 Initialising the data memory with zeros
 There was an error loading the data memory file!
 
 New Positive Clock Edge
 STORE | MEMORY:xxxxxxxx	DATA:xxxxxxxx	ADDRESS:000fffff
+The program counter is now xxxxxxxx
+The program counter was reset
 ERROR: INSTRUCTION NOT FOUND: xxxxxxxxx1x
 The value 00000000 was stored in register x x
 
 New Positive Clock Edge
-The current instruction is ADDI: 10000010010
-The value fffffff0 was stored in register x 2
-
-New Positive Clock Edge
-The current instruction is ADDI: 10000010001
-The value ffffffe0 was stored in register x 2
-
-New Positive Clock Edge
-STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffec
-The current instruction is SW: 00100100001
-
-New Positive Clock Edge
-STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffe8
-The current instruction is SW: 00100100001
-
-New Positive Clock Edge
-The current instruction is ADDI: 00000010001
-The value fffffff0 was stored in register x 8
-
-New Positive Clock Edge
-STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:ffffffe0
-The current instruction is SW: 10100100001
-
-New Positive Clock Edge
+The program counter is now 00000000
+The program counter was reset
 The current instruction is ADDI: 00000010010
-The value 0000000a was stored in register x10
+The value 00000200 was stored in register x 2
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
+
+New Positive Clock Edge
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
+
+New Positive Clock Edge
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
+
+New Positive Clock Edge
+The program counter is now 0000008c
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 00000090
+The current instruction is LW: 00100000000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000094
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000098
 The current instruction is JALR: 00001100100
+The value 0000009c was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000020
+The current instruction is ADDI: 00000010000
+The value 00000009 was stored in register x14
+
+New Positive Clock Edge
+The program counter is now 00000024
+The current instruction is LW: 10100000000
+The value 00000000 was stored in register x15
+
+New Positive Clock Edge
+STORE | MEMORY:00000009	DATA:00000009	ADDRESS:00000000
+The program counter is now 00000028
+The current instruction is SW: 00100100001
+
+New Positive Clock Edge
+The program counter is now 0000002c
+The current instruction is ADDI: 00000010010
+The value 00000000 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000030
+The current instruction is LW: 00100000000
+The value 00000000 was stored in register x 1
+
+New Positive Clock Edge
+The program counter is now 00000034
+The current instruction is LW: 00100000001
+The value 00000000 was stored in register x 8
+
+New Positive Clock Edge
+The program counter is now 00000038
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 0000003c
+The current instruction is JALR: 00001100110
+The value 00000040 was stored in register x 0
+
+New Positive Clock Edge
+The program counter is now 00000000
+The current instruction is ADDI: 00000010010
+The value 00000200 was stored in register x 2
+
+New Positive Clock Edge
+The program counter is now 00000004
+The current instruction is ADDI: 10000010000
+The value 000001f0 was stored in register x 2
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001fc
+The program counter is now 00000008
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f8
+The program counter is now 0000000c
+The current instruction is SW: 00100100000
+
+New Positive Clock Edge
+The program counter is now 00000010
+The current instruction is ADDI: 00000010000
+The value 00000200 was stored in register x 8
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000001f0
+The program counter is now 00000014
+The current instruction is SW: 10100100000
+
+New Positive Clock Edge
+The program counter is now 00000018
+The current instruction is ADDI: 00000010010
+The value 00000003 was stored in register x10
+
+New Positive Clock Edge
+The program counter is now 0000001c
+The current instruction is JAL: 00001101110
 The value 00000020 was stored in register x 1
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000040
+The current instruction is ADDI: 10000010000
+The value 000001e0 was stored in register x 2
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+STORE | MEMORY:00000200	DATA:00000200	ADDRESS:000001ec
+The program counter is now 00000044
+The current instruction is SW: 00100100001
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000048
+The current instruction is ADDI: 00000010000
+The value 000001f0 was stored in register x 8
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+STORE | MEMORY:00000003	DATA:00000003	ADDRESS:000001e0
+The program counter is now 0000004c
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+STORE | MEMORY:00000009	DATA:00000000	ADDRESS:000001e8
+The program counter is now 00000050
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000054
+The current instruction is ADDI: 00000010001
+The value 00000001 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+STORE | MEMORY:00000004	DATA:00000001	ADDRESS:000001e4
+The program counter is now 00000058
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 0000005c
+The current instruction is JAL: 00001101110
+The value 00000060 was stored in register x 0
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000000 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000068
+The current instruction is ADD: 00000110001
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+STORE | MEMORY:00000000	DATA:00000003	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000001 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000002 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+STORE | MEMORY:00000001	DATA:00000002	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000003 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000068
+The current instruction is ADD: 00000110010
+The value 00000006 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+STORE | MEMORY:00000003	DATA:00000006	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000002 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+STORE | MEMORY:00000002	DATA:00000003	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000084
+The current instruction is BGE_TRUE: 11011100010
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000060
+The current instruction is LW: 10100000010
+The value 00000006 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000064
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000068
+The current instruction is ADD: 00000110000
+The value 00000009 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+STORE | MEMORY:00000006	DATA:00000009	ADDRESS:000001e8
+The program counter is now 0000006c
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000070
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000074
+The current instruction is ADDI: 00000010001
+The value 00000004 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+STORE | MEMORY:00000003	DATA:00000004	ADDRESS:000001e4
+The program counter is now 00000078
+The current instruction is SW: 10100100000
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 0000007c
+The current instruction is LW: 10100000000
+The value 00000004 was stored in register x14
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000080
+The current instruction is LW: 10100000000
+The value 00000003 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
+The program counter is now 00000084
+The current instruction is BGE_FALSE: 11011100001
 
 New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
+The program counter is now 00000088
+The current instruction is LW: 10100000010
+The value 00000009 was stored in register x15
 
 New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is AUIPC: 00000010110
-The value 00000018 was stored in register x 1
-
-New Positive Clock Edge
-The current instruction is JALR: 00001100100
-The value 00000020 was stored in register x 1
-$finish called at time : 1020 ns : File "/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" Line 108
+The program counter is now 0000008c

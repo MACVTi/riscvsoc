@@ -43,8 +43,8 @@ module cpu_tb;
             
 	//Instantiate Modules
     cpu #(
-        .RESET(32'h00000000), 
-        .INSTRUCTION_MEM("factorial.mem"),
+        .RESET(32'h00000000),
+        .INSTRUCTION_MEM("sum_stack.mem"),
         .DATA_MEM("")
     )
     cpu (
@@ -105,7 +105,7 @@ module cpu_tb;
         
 		// Write test values to registers
 		// Finish simulation
-		#1000 $finish;
+		#10000 $finish;
 	end
 	
 endmodule
