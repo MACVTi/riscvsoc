@@ -44,7 +44,7 @@ module cpu_tb;
 	//Instantiate Modules
     cpu #(
         .RESET(32'h00000000), 
-        .INSTRUCTION_MEM("factorial.mem"),
+        .INSTRUCTION_MEM("c_program_test.mem"),
         .DATA_MEM("")
     )
     cpu (

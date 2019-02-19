@@ -9,12 +9,13 @@ module pc #(parameter RESET=32'h00000000) (
 	 );
 
 always @(posedge I_clk) begin
-    if(I_rst == 1) begin
-	   O_address <= RESET;	    
-    end
-    else begin
+    if(I_rst != 1) begin
 	   O_address <= I_address;	
-    end
+	end
+end
+
+always @(negedge I_rst) begin
+	O_address <= RESET;	
 end
 
 endmodule
