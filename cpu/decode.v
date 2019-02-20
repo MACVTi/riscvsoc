@@ -1,91 +1,210 @@
-// Include opcodes for compressed instructions
-`include "control.vh"
+`include "definitions.vh"
 
 module decode(
-    input wire I_clk,
+    //input wire I_clk,
     input wire [31:0] I_data,
-    input wire  I_breq,
-    input wire  I_brlt,
-    output wire [31:0] O_pcincr,
-    output wire [31:0] O_data
+    output reg [31:0] O_pcincr,
+    output reg [31:0] O_data
     );
 
-    assign O_pcincr = 32'h00000004;
-    assign O_data = I_data;
+//    assign O_pcincr = 32'h00000004;
+//    assign O_data = I_data;
     
     always @(*) begin
-        if(O_data == 32'h00000000) begin
+        // Check for illegal instruction
+        if(I_data == 32'h00000000) begin
             $stop();
+        end
+        
+        // Check if 16 or 32 bit instruction
+        if(I_data[1:0] == 2'b11) begin
+            $display("This is a 32 bit instruction");
+            
+            // Display which instruction it is
+            case(I_data[6:0])
+                `OP_LUI:    $display("The current instruction is LUI");
+                `OP_AUIPC:  $display("The current instruction is AUIPC");
+                
+                `OP_JAL:    $display("The current instruction is JAL");
+                `OP_JALR:   $display("The current instruction is JALR");
+        
+                `OP_BEQ:    $display("The current instruction is BEQ");
+                `OP_BNE:    $display("The current instruction is BNE");
+                `OP_BLT:    $display("The current instruction is BLT");
+                `OP_BGE:    $display("The current instruction is BGE");
+                `OP_BLTU:   $display("The current instruction is BLTU");
+                `OP_BGEU:   $display("The current instruction is BGEU");
+        
+                `OP_LB:     $display("The current instruction is LB");
+                `OP_LH:     $display("The current instruction is LH");
+                `OP_LW:     $display("The current instruction is LW");
+                `OP_LBU:    $display("The current instruction is LBU");
+                `OP_LHU:    $display("The current instruction is LHU");
+        
+                `OP_SB:     $display("The current instruction is SB");
+                `OP_SH:     $display("The current instruction is SH");
+                `OP_SW:     $display("The current instruction is SW");
+        
+                `OP_ADDI:   $display("The current instruction is ADDI");
+                `OP_SLTI:   $display("The current instruction is SLTI");
+                `OP_SLTIU:  $display("The current instruction is SLTIU");
+                `OP_XORI:   $display("The current instruction is XORI");
+                `OP_ORI:    $display("The current instruction is ORI");
+                `OP_ANDI:   $display("The current instruction is ANDI");
+                `OP_SLLI:   $display("The current instruction is SLLI");
+                `OP_SRLI:   $display("The current instruction is SRLI");
+                `OP_SRAI:   $display("The current instruction is SRAI");
+        
+                `OP_ADD:    $display("The current instruction is ADD");
+                `OP_SUB:    $display("The current instruction is SUB");
+                `OP_SLL:    $display("The current instruction is SLL");
+                `OP_SLT:    $display("The current instruction is SLT");
+                `OP_SLTU:   $display("The current instruction is SLT");
+                `OP_XOR:    $display("The current instruction is XOR");
+                `OP_SRL:    $display("The current instruction is SRL");
+                `OP_SRA:    $display("The current instruction is SRA");
+                `OP_OR:     $display("The current instruction is OR");
+                `OP_AND:    $display("The current instruction is AND");
+        
+                `OP_ECALL:  $display("The current instruction is ECALL");
+                `OP_EBREAK: $display("The current instruction is EBREAK");
+            endcase
+
+            // Pass through 32 bit instruction
+            O_pcincr <= 32'h00000004;
+            O_data <= I_data;
+        end
+        else begin
+            // Increment by 2 for next instruction
+            O_pcincr <= 32'h00000002;
+            
+            // Check which quadrant the 16 bit instruction is in
+            if(I_data[1:0] == 2'b00) begin
+                //  Quadrant 0
+                $display("Quadrant 0 - 16 bit instruction");
+                
+                if(I_data[15:13] == 3'b000) begin
+                    // C.ADDI4SPN
+                    $display("The current instruction is C.ADDI4SPN");
+                    O_data <= {{2'b00,I_data[10:7],I_data[12:11],I_data[5],I_data[6],2'b00},`X2,`FUNC_ADDI,{2'b00,I_data[4:2]},`OP_ADDI};
+                end
+                else if(I_data[15:13] == 3'b010) begin
+                    // C.LW
+                    $display("The current instruction is C.LW");
+                    O_data <= {{5'b00000,I_data[5],I_data[12:10],I_data[6],2'b00},{2'b00,I_data[9:7]},`FUNC_LW,{2'b00,I_data[4:2]},`OP_LW};
+                end
+                else if(I_data[15:13] == 3'b110) begin
+                    // C.SW
+                    $display("The current instruction is C.SW");
+                    O_data <= {{5'b00000,I_data[5],I_data[12]},{2'b00,I_data[4:2]},{2'b00,I_data[9:7]},`FUNC_SW,{I_data[11:10],I_data[6],2'b00},`OP_SW};
+                end                
+                else begin
+                    $stop(); 
+                end
+            end
+            else if(I_data[1:0] == 2'b01) begin
+                // Quadrant 1
+                $display("Quadrant 1 - 16 bit instruction");
+                
+                if(I_data[15:13] == 3'b000) begin
+                    // C.NOP / C.ADDI
+                    $display("The current instruction is C.ADDI");
+                    O_data <= {{6'b000000,I_data[12],I_data[6:2]},I_data[11:7],`FUNC_ADDI,I_data[11:7],`OP_ADDI};
+                end
+                else if(I_data[15:13] == 3'b001) begin
+                    // C.JAL
+                    $display("The current instruction is C.JAL");
+                    O_data <= {{6'b000000,I_data[12],I_data[6:2]},I_data[11:7],`FUNC_ADDI,I_data[11:7],`OP_JAL};
+                end
+                else begin
+                    $stop(); 
+                end
+            end
+            else begin
+                // Quadrant 2
+                $display("Quadrant 2 - 16 bit instruction");
+                
+                if(I_data[15:13] == 3'b110) begin
+                    // C.SWSP
+                    $display("The current instruction is C.SWSP");
+                    O_data <= {{4'b0000,I_data[8:7],I_data[12]},I_data[6:2],`X2,`FUNC_SW,{I_data[11:9],2'b00},`OP_SW};
+                end
+                else begin
+                    $stop(); 
+                end
+            end     
         end
     end
     
-    wire [8:0] I_control;
-    assign I_control = {O_data[30],O_data[14:12],O_data[6:2]};
-
-    always @(posedge I_clk) begin
-         casez({I_control, I_breq, I_brlt})
-         // Opcodes - Upper Immediates
-         `CONTROL_IN_LUI:        $display("The current instruction is LUI: %b", {I_control, I_breq, I_brlt});       //LUI
-         `CONTROL_IN_AUIPC:      $display("The current instruction is AUIPC: %b", {I_control, I_breq, I_brlt});     //AUIPC
-                                                 
-         // Opcodes - Jumps                         
-         `CONTROL_IN_JAL:        $display("The current instruction is JAL: %b", {I_control, I_breq, I_brlt});       //JAL
-         `CONTROL_IN_JALR:       $display("The current instruction is JALR: %b", {I_control, I_breq, I_brlt});      //JALR
-                                                 
-         // Opcodes - Branches                      
-         `CONTROL_IN_BEQ_TRUE:   $display("The current instruction is BEQ_TRUE: %b", {I_control, I_breq, I_brlt});     //BEQ
-         `CONTROL_IN_BNE_TRUE:   $display("The current instruction is BNE_TRUE: %b", {I_control, I_breq, I_brlt});     //BNE
-         `CONTROL_IN_BLT_TRUE:   $display("The current instruction is BLT_TRUE: %b", {I_control, I_breq, I_brlt});     //BLT
-         `CONTROL_IN_BGE_TRUE:   $display("The current instruction is BGE_TRUE: %b", {I_control, I_breq, I_brlt});     //BGE
-         `CONTROL_IN_BLTU_TRUE:  $display("The current instruction is BLTU_TRUE: %b", {I_control, I_breq, I_brlt});    //BLTU
-         `CONTROL_IN_BGEU_TRUE:  $display("The current instruction is BGEU_TRUE: %b", {I_control, I_breq, I_brlt});    //BGEU
+//    wire [9:0] control = {I_data[30],I_data[20],I_data[14:12],I_data[6:2],2'b00};
+//    always @(*) begin
+//        casez(control) // 2'00 used here so it only prints the current instruction once
+//            // Opcodes - Upper Immediates
+//            `CONTROL_IN_LUI:        $display("The current instruction is LUI");             //LUI
+//            `CONTROL_IN_AUIPC:      $display("The current instruction is AUIPC");           //AUIPC
+                                                  
+//            // Opcodes - Jumps                         
+//            `CONTROL_IN_JAL:        $display("The current instruction is JAL");             //JAL
+//            `CONTROL_IN_JALR:       $display("The current instruction is JALR");            //JALR
+                                                  
+//            // Opcodes - Branches                      
+//            `CONTROL_IN_BEQ_TRUE:   $display("The current instruction is BEQ_TRUE");        //BEQ
+//            `CONTROL_IN_BNE_TRUE:   $display("The current instruction is BNE_TRUE");        //BNE
+//            `CONTROL_IN_BLT_TRUE:   $display("The current instruction is BLT_TRUE");        //BLT
+//            `CONTROL_IN_BGE_TRUE:   $display("The current instruction is BGE_TRUE");        //BGE
+//            `CONTROL_IN_BLTU_TRUE:  $display("The current instruction is BLTU_TRUE");       //BLTU
+//            `CONTROL_IN_BGEU_TRUE:  $display("The current instruction is BGEU_TRUE");       //BGEU
     
-         // Opcodes - Branches                                                       
-         `CONTROL_IN_BEQ_FALSE:  $display("The current instruction is BEQ_FALSE: %b", {I_control, I_breq, I_brlt});    //BEQ 
-         `CONTROL_IN_BNE_FALSE:  $display("The current instruction is BNE_FALSE: %b", {I_control, I_breq, I_brlt});    //BNE 
-         `CONTROL_IN_BLT_FALSE:  $display("The current instruction is BLT_FALSE: %b", {I_control, I_breq, I_brlt});    //BLT 
-         `CONTROL_IN_BGE_FALSE:  $display("The current instruction is BGE_FALSE: %b", {I_control, I_breq, I_brlt});    //BGE 
-         `CONTROL_IN_BLTU_FALSE: $display("The current instruction is BLTU_FALSE: %b", {I_control, I_breq, I_brlt});   //BLTU
-         `CONTROL_IN_BGEU_FALSE: $display("The current instruction is BGEU_FALSE: %b", {I_control, I_breq, I_brlt});   //BGEU
-                                               
-         // Opcodes - Loads                         
-         `CONTROL_IN_LB:         $display("The current instruction is LB: %b", {I_control, I_breq, I_brlt});    //LB  
-         `CONTROL_IN_LH:         $display("The current instruction is LH: %b", {I_control, I_breq, I_brlt});    //LH  
-         `CONTROL_IN_LW:         $display("The current instruction is LW: %b", {I_control, I_breq, I_brlt});    //LW  
-         `CONTROL_IN_LBU:        $display("The current instruction is LBU: %b", {I_control, I_breq, I_brlt});   //LBU
-         `CONTROL_IN_LHU:        $display("The current instruction is LHU: %b", {I_control, I_breq, I_brlt});   //LHU
-                                                 
-         // Opcodes - Stores                        
-         `CONTROL_IN_SB:         $display("The current instruction is SB: %b", {I_control, I_breq, I_brlt});    //SB  
-         `CONTROL_IN_SH:         $display("The current instruction is SH: %b", {I_control, I_breq, I_brlt});    //SH  
-         `CONTROL_IN_SW:         $display("The current instruction is SW: %b", {I_control, I_breq, I_brlt});    //SW  
-                                                 
-         // Opcodes - Register <-> Immediate        
-         `CONTROL_IN_ADDI:       $display("The current instruction is ADDI: %b", {I_control, I_breq, I_brlt});  //ADDI
-         `CONTROL_IN_SLTI:       $display("The current instruction is SLTI: %b", {I_control, I_breq, I_brlt});  //SLTI
-         `CONTROL_IN_SLTIU:      $display("The current instruction is SLTIU: %b", {I_control, I_breq, I_brlt}); //SLTIU
-         `CONTROL_IN_XORI:       $display("The current instruction is XORI: %b", {I_control, I_breq, I_brlt});  //XORI
-         `CONTROL_IN_ORI:        $display("The current instruction is ORI: %b", {I_control, I_breq, I_brlt});   //ORI
-         `CONTROL_IN_ANDI:       $display("The current instruction is ANDI: %b", {I_control, I_breq, I_brlt});  //ANDI
-         `CONTROL_IN_SLLI:       $display("The current instruction is SLLI: %b", {I_control, I_breq, I_brlt});  //SLLI
-         `CONTROL_IN_SRLI:       $display("The current instruction is SRLI: %b", {I_control, I_breq, I_brlt});  //SRLI
-         `CONTROL_IN_SRAI:       $display("The current instruction is SRAI: %b", {I_control, I_breq, I_brlt});   //SRAI
-                                                 
-         // Opcodes - Register <-> Register         
-         `CONTROL_IN_ADD:        $display("The current instruction is ADD: %b", {I_control, I_breq, I_brlt});   //ADD
-         `CONTROL_IN_SUB:        $display("The current instruction is SUB: %b", {I_control, I_breq, I_brlt});   //SUB
-         `CONTROL_IN_SLL:        $display("The current instruction is SLL: %b", {I_control, I_breq, I_brlt});   //SLL
-         `CONTROL_IN_SLT:        $display("The current instruction is SLT: %b", {I_control, I_breq, I_brlt});   //SLT
-         `CONTROL_IN_SLTU:       $display("The current instruction is SLTU: %b", {I_control, I_breq, I_brlt});  //SLTU
-         `CONTROL_IN_XOR:        $display("The current instruction is XOR: %b", {I_control, I_breq, I_brlt});   //XOR
-         `CONTROL_IN_SRL:        $display("The current instruction is SRL: %b", {I_control, I_breq, I_brlt});   //SRL
-         `CONTROL_IN_SRA:        $display("The current instruction is SRA: %b", {I_control, I_breq, I_brlt});   //SRA
-         `CONTROL_IN_OR:         $display("The current instruction is OR: %b", {I_control, I_breq, I_brlt});    //OR  
-         `CONTROL_IN_AND:        $display("The current instruction is AND: %b", {I_control, I_breq, I_brlt});   //AND    
-         
-         default: $display("ERROR: INSTRUCTION NOT FOUND: %b", {I_control, I_breq, I_brlt}); //Defaults to ADDI - Change this
-         endcase
-     end
+//            // Opcodes - Branches                                                       
+//            `CONTROL_IN_BEQ_FALSE:  $display("The current instruction is BEQ_FALSE");       //BEQ 
+//            `CONTROL_IN_BNE_FALSE:  $display("The current instruction is BNE_FALSE");       //BNE 
+//            `CONTROL_IN_BLT_FALSE:  $display("The current instruction is BLT_FALSE");       //BLT 
+//            `CONTROL_IN_BGE_FALSE:  $display("The current instruction is BGE_FALSE");       //BGE 
+//            `CONTROL_IN_BLTU_FALSE: $display("The current instruction is BLTU_FALSE");      //BLTU
+//            `CONTROL_IN_BGEU_FALSE: $display("The current instruction is BGEU_FALSE");      //BGEU
+                                                
+//            // Opcodes - Loads                         
+//            `CONTROL_IN_LB:         $display("The current instruction is LB");              //LB  
+//            `CONTROL_IN_LH:         $display("The current instruction is LH");              //LH  
+//            `CONTROL_IN_LW:         $display("The current instruction is LW");              //LW  
+//            `CONTROL_IN_LBU:        $display("The current instruction is LBU");             //LBU
+//            `CONTROL_IN_LHU:        $display("The current instruction is LHU");             //LHU
+                                                  
+//            // Opcodes - Stores                        
+//            `CONTROL_IN_SB:         $display("The current instruction is SB");              //SB  
+//            `CONTROL_IN_SH:         $display("The current instruction is SH");              //SH  
+//            `CONTROL_IN_SW:         $display("The current instruction is SW");              //SW  
+                                                  
+//            // Opcodes - Register <-> Immediate        
+//            `CONTROL_IN_ADDI:       $display("The current instruction is ADDI");            //ADDI
+//            `CONTROL_IN_SLTI:       $display("The current instruction is SLTI");            //SLTI
+//            `CONTROL_IN_SLTIU:      $display("The current instruction is SLTIU");           //SLTIU
+//            `CONTROL_IN_XORI:       $display("The current instruction is XORI");            //XORI
+//            `CONTROL_IN_ORI:        $display("The current instruction is ORI");             //ORI
+//            `CONTROL_IN_ANDI:       $display("The current instruction is ANDI");            //ANDI
+//            `CONTROL_IN_SLLI:       $display("The current instruction is SLLI");            //SLLI
+//            `CONTROL_IN_SRLI:       $display("The current instruction is SRLI");            //SRLI
+//            `CONTROL_IN_SRAI:       $display("The current instruction is SRAI");            //SRAI
+                                                  
+//            // Opcodes - Register <-> Register         
+//            `CONTROL_IN_ADD:        $display("The current instruction is ADD");             //ADD
+//            `CONTROL_IN_SUB:        $display("The current instruction is SUB");             //SUB
+//            `CONTROL_IN_SLL:        $display("The current instruction is SLL");             //SLL
+//            `CONTROL_IN_SLT:        $display("The current instruction is SLT");             //SLT
+//            `CONTROL_IN_SLTU:       $display("The current instruction is SLT");             //SLTU
+//            `CONTROL_IN_XOR:        $display("The current instruction is XOR");             //XOR
+//            `CONTROL_IN_SRL:        $display("The current instruction is SRL");             //SRL
+//            `CONTROL_IN_SRA:        $display("The current instruction is SRA");             //SRA
+//            `CONTROL_IN_OR:         $display("The current instruction is OR");              //OR  
+//            `CONTROL_IN_AND:        $display("The current instruction is AND");             //AND    
+            
+//            // Opcodes - Register <-> Register         
+//            `CONTROL_IN_ECALL:     $display("The current instruction is ECALL");           //ECALL   
+//            `CONTROL_IN_EBREAK:    $display("The current instruction is EBREAK");          //EBREAK   
+             
+//            default: $display("ERROR: INSTRUCTION NOT FOUND"); //Defaults to ADDI - Change this
+//        endcase
+//    end
 endmodule
 
     // Initialise decoder on reset

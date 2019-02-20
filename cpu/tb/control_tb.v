@@ -3,7 +3,7 @@
 module control_tb;
 	
 	//Declare Registers and Wires
-    reg [8:0] control;
+    reg [9:0] control;
     reg breq;
     reg brlt;
     

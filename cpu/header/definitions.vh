@@ -120,22 +120,22 @@
 	//------------------------------------------------------------
 
 	// Register Definitions
-	`define x0 		4'b0000		// Zero
-	`define x1 		4'b0001		// Return Address
-	`define x2 		4'b0010		// Stack Pointer
-	`define x3 		4'b0011		// Global Pointer
-	`define x4 		4'b0100		// Thread Pointer
-	`define x5 		4'b0101		// Temporary Register 0
-	`define x6 		4'b0110		// Temporary Register 1
-	`define x7 		4'b0111		// Temporary Register 2
-	`define x8 		4'b1000		// Callee-Saved Register 0 / Frame Pointer
-	`define x9 		4'b1001		// Callee-Saved Register 1
-	`define x10 		4'b1010		// Argument Register 0
-	`define x11		4'b1011		// Argument Register 1
-	`define x12		4'b1100		// Argument Register 2
-	`define x13		4'b1101		// Argument Register 3
-	`define x14		4'b1110		// Argument Register 4
-	`define x15		4'b1111		// Argument Register 5
+	`define X0 		4'b0000		// Zero
+	`define X1 		4'b0001		// Return Address
+	`define X2 		4'b0010		// Stack Pointer
+	`define X3 		4'b0011		// Global Pointer
+	`define X4 		4'b0100		// Thread Pointer
+	`define X5 		4'b0101		// Temporary Register 0
+	`define X6 		4'b0110		// Temporary Register 1
+	`define X7 		4'b0111		// Temporary Register 2
+	`define X8 		4'b1000		// Callee-Saved Register 0 / Frame Pointer
+	`define X9 		4'b1001		// Callee-Saved Register 1
+	`define X10 		4'b1010		// Argument Register 0
+	`define X11		4'b1011		// Argument Register 1
+	`define X12		4'b1100		// Argument Register 2
+	`define X13		4'b1101		// Argument Register 3
+	`define X14		4'b1110		// Argument Register 4
+	`define X15		4'b1111		// Argument Register 5
 
 	// ABI Definitions
 	`define zero 		4'b0000		// Zero

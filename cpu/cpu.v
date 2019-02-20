@@ -75,7 +75,7 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     
     // Declare Control
     control ctrl(
-        .I_control({decoder_out[30],decoder_out[14:12],decoder_out[6:2]}),
+        .I_control({decoder_out[30],decoder_out[20],decoder_out[14:12],decoder_out[6:2]}),
         .I_breq(BrEq),
         .I_brlt(BrLT),
         
@@ -109,10 +109,8 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     
     // Declare decoder
     decode decode(
-        .I_clk(I_clk),
+//        .I_clk(I_clk),
         .I_data(inst_out),
-        .I_breq(BrEq),
-        .I_brlt(BrLT),
         .O_pcincr(pcincr_out),
         .O_data(decoder_out)
     );
