@@ -114,7 +114,7 @@ module decode(
                 else if(I_data[15:13] == 3'b001) begin
                     // C.JAL
                     $display("The current instruction is C.JAL");
-                    O_data <= {{{8{I_data[12]}},I_data[12],I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3],1'b0},`X1,`OP_JAL};
+                    O_data <= {I_data[12],{I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3]},I_data[12],{8{I_data[12]}},`X1,`OP_JAL};
                 end
                 else if(I_data[15:13] == 3'b010) begin
                     // C.LI
@@ -175,7 +175,7 @@ module decode(
                 else if(I_data[15:13] == 3'b101) begin
                     // C.J
                     $display("The current instruction is C.J");
-                    O_data <= {{{8{I_data[12]}},I_data[12],I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3],1'b0},`X0,`OP_JAL};
+                    O_data <= {I_data[12],{I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3]},I_data[12],{8{I_data[12]}},`X0,`OP_JAL};
                 end
                 else if(I_data[15:13] == 3'b110) begin
                     // C.BEQZ
@@ -194,158 +194,59 @@ module decode(
             else begin
                 // Quadrant 2
                 $display("Quadrant 2 - 16 bit instruction");
-                
-                if(I_data[15:13] == 3'b110) begin
+                if(I_data[15:13] == 3'b000) begin
+                    // C.SLLI
+                    $display("The current instruction is C.SLLI");
+                    O_data <= {7'b0000000,I_data[12],I_data[6:2],I_data[11:7],`FUNC_SLLI,I_data[11:7],`OP_SLLI};
+                end
+                else if(I_data[15:13] == 3'b010) begin
+                    // C.LWSP
+                    $display("The current instruction is C.LWSP");
+                    O_data <= {{4'b0000,I_data[3:2],I_data[12],I_data[6:4],2'b00},`X2,`FUNC_LW,{I_data[11:7]},`OP_LW};
+                end
+                else if(I_data[15:13] == 3'b100) begin
+                    if(I_data[12] == 1'b0) begin
+                        if(I_data[6:2] == `ZERO) begin
+                            // C.JR
+                            $display("The current instruction is C.JR");
+                            O_data <= {12'b000000000000,I_data[11:7],`FUNC_JALR,`X0,`OP_JALR};
+                        end
+                        else begin
+                            // C.MV
+                            $display("The current instruction is C.MV");
+                            O_data <= {7'b0000000,I_data[6:2],`X0,`FUNC_ADD,I_data[11:7],`OP_ADD};                      
+                        end
+                    end
+                    else begin
+                        if(I_data[6:2] == `ZERO) begin
+                            if(I_data[11:7] == `ZERO) begin
+                                // C.EBREAK
+                                $display("The current instruction is C.EBREAK");
+                                O_data <= {12'b000000000001,`ZERO,`FUNC_EBREAK,`ZERO,`OP_EBREAK};        
+                            end
+                            else begin
+                                // C.JALR
+                                $display("The current instruction is C.JALR");
+                                O_data <= {12'b000000000000,I_data[11:7],`FUNC_JALR,`X1,`OP_JALR};
+                            end
+                        end
+                        else begin
+                            // C.ADD
+                            $display("The current instruction is C.ADD");
+                            O_data <= {7'b0000000,I_data[6:2],I_data[11:7],`FUNC_ADD,I_data[11:7],`OP_ADD};                        
+                        end
+                    end
+                end
+                else if(I_data[15:13] == 3'b110) begin
                     // C.SWSP
                     $display("The current instruction is C.SWSP");
                     O_data <= {{4'b0000,I_data[8:7],I_data[12]},I_data[6:2],`X2,`FUNC_SW,{I_data[11:9],2'b00},`OP_SW};
                 end
                 else begin
+                    $display("Error instruction not found\ %b", I_data);
                     $stop(); 
                 end
             end     
         end
     end
-    
-//    wire [9:0] control = {I_data[30],I_data[20],I_data[14:12],I_data[6:2],2'b00};
-//    always @(*) begin
-//        casez(control) // 2'00 used here so it only prints the current instruction once
-//            // Opcodes - Upper Immediates
-//            `CONTROL_IN_LUI:        $display("The current instruction is LUI");             //LUI
-//            `CONTROL_IN_AUIPC:      $display("The current instruction is AUIPC");           //AUIPC
-                                                  
-//            // Opcodes - Jumps                         
-//            `CONTROL_IN_JAL:        $display("The current instruction is JAL");             //JAL
-//            `CONTROL_IN_JALR:       $display("The current instruction is JALR");            //JALR
-                                                  
-//            // Opcodes - Branches                      
-//            `CONTROL_IN_BEQ_TRUE:   $display("The current instruction is BEQ_TRUE");        //BEQ
-//            `CONTROL_IN_BNE_TRUE:   $display("The current instruction is BNE_TRUE");        //BNE
-//            `CONTROL_IN_BLT_TRUE:   $display("The current instruction is BLT_TRUE");        //BLT
-//            `CONTROL_IN_BGE_TRUE:   $display("The current instruction is BGE_TRUE");        //BGE
-//            `CONTROL_IN_BLTU_TRUE:  $display("The current instruction is BLTU_TRUE");       //BLTU
-//            `CONTROL_IN_BGEU_TRUE:  $display("The current instruction is BGEU_TRUE");       //BGEU
-    
-//            // Opcodes - Branches                                                       
-//            `CONTROL_IN_BEQ_FALSE:  $display("The current instruction is BEQ_FALSE");       //BEQ 
-//            `CONTROL_IN_BNE_FALSE:  $display("The current instruction is BNE_FALSE");       //BNE 
-//            `CONTROL_IN_BLT_FALSE:  $display("The current instruction is BLT_FALSE");       //BLT 
-//            `CONTROL_IN_BGE_FALSE:  $display("The current instruction is BGE_FALSE");       //BGE 
-//            `CONTROL_IN_BLTU_FALSE: $display("The current instruction is BLTU_FALSE");      //BLTU
-//            `CONTROL_IN_BGEU_FALSE: $display("The current instruction is BGEU_FALSE");      //BGEU
-                                                
-//            // Opcodes - Loads                         
-//            `CONTROL_IN_LB:         $display("The current instruction is LB");              //LB  
-//            `CONTROL_IN_LH:         $display("The current instruction is LH");              //LH  
-//            `CONTROL_IN_LW:         $display("The current instruction is LW");              //LW  
-//            `CONTROL_IN_LBU:        $display("The current instruction is LBU");             //LBU
-//            `CONTROL_IN_LHU:        $display("The current instruction is LHU");             //LHU
-                                                  
-//            // Opcodes - Stores                        
-//            `CONTROL_IN_SB:         $display("The current instruction is SB");              //SB  
-//            `CONTROL_IN_SH:         $display("The current instruction is SH");              //SH  
-//            `CONTROL_IN_SW:         $display("The current instruction is SW");              //SW  
-                                                  
-//            // Opcodes - Register <-> Immediate        
-//            `CONTROL_IN_ADDI:       $display("The current instruction is ADDI");            //ADDI
-//            `CONTROL_IN_SLTI:       $display("The current instruction is SLTI");            //SLTI
-//            `CONTROL_IN_SLTIU:      $display("The current instruction is SLTIU");           //SLTIU
-//            `CONTROL_IN_XORI:       $display("The current instruction is XORI");            //XORI
-//            `CONTROL_IN_ORI:        $display("The current instruction is ORI");             //ORI
-//            `CONTROL_IN_ANDI:       $display("The current instruction is ANDI");            //ANDI
-//            `CONTROL_IN_SLLI:       $display("The current instruction is SLLI");            //SLLI
-//            `CONTROL_IN_SRLI:       $display("The current instruction is SRLI");            //SRLI
-//            `CONTROL_IN_SRAI:       $display("The current instruction is SRAI");            //SRAI
-                                                  
-//            // Opcodes - Register <-> Register         
-//            `CONTROL_IN_ADD:        $display("The current instruction is ADD");             //ADD
-//            `CONTROL_IN_SUB:        $display("The current instruction is SUB");             //SUB
-//            `CONTROL_IN_SLL:        $display("The current instruction is SLL");             //SLL
-//            `CONTROL_IN_SLT:        $display("The current instruction is SLT");             //SLT
-//            `CONTROL_IN_SLTU:       $display("The current instruction is SLT");             //SLTU
-//            `CONTROL_IN_XOR:        $display("The current instruction is XOR");             //XOR
-//            `CONTROL_IN_SRL:        $display("The current instruction is SRL");             //SRL
-//            `CONTROL_IN_SRA:        $display("The current instruction is SRA");             //SRA
-//            `CONTROL_IN_OR:         $display("The current instruction is OR");              //OR  
-//            `CONTROL_IN_AND:        $display("The current instruction is AND");             //AND    
-            
-//            // Opcodes - Register <-> Register         
-//            `CONTROL_IN_ECALL:     $display("The current instruction is ECALL");           //ECALL   
-//            `CONTROL_IN_EBREAK:    $display("The current instruction is EBREAK");          //EBREAK   
-             
-//            default: $display("ERROR: INSTRUCTION NOT FOUND"); //Defaults to ADDI - Change this
-//        endcase
-//    end
 endmodule
-
-    // Initialise decoder on reset
-//    always @(posedge I_rst) begin
-//        O_pcincr <= 4;
-//    end
-
-
-//    always @(posedge I_clk) begin
-//        O_data <= I_data;
-//    end    
-    // Remember that input instruction is little endian, we will need to convert
-    
-//    always @(posedge I_clk) begin
-//        if (I_data[25:24] == 2'b00) begin
-//            // RVC Quadrant 0 instruction - Need to expand and convert to big endian
-//            O_data[7:0] <= I_data[31:24];
-       
-//            if(I_data[23:21] == OP_C.LW) 
-//            //C.LW
-//            //C.SW
-            
-//            // PC must be incremented by 2 next clock
-//            O_pcincr <= 2;
-//        end
-//        else if (I_data[25:24] == 2'b01) begin
-//            // RVC Quadrant 1 instruction - Need to expand and convert to big endian
-//            O_data[7:0] <= I_data[31:24];
-            
-//            //C.NOP
-//            //C.ADDI[HINT]
-//            //C.JAL
-//            //C.LI[HINT]
-//            //C.ANDI
-//            //C.SUB
-//            //C.XOR
-//            //C.OR
-//            //C.AND
-//            //C.J
-//            //C.BEQZ
-//            //C.BNEZ
-            
-//            // PC must be incremented by 2 next clock
-//            O_pcincr <= 2;
-//        end
-//        else if (I_data[25:24] == 2'b10) begin
-//            // RVC Quadrant 2 instruction - Need to expand and convert to big endian
-//            O_data[7:0] <= I_data[31:24];
-            
-//            //C.SLLI[HINT]
-//            //C.MV[HINT]
-//            //C.EBREAK
-//            //C.JALR
-//            //C.ADD[HINT]
-//            //C.SWSP
-//            //C.LSWP
-            
-//            // PC must be incremented by 2 next clock
-//            O_pcincr <= 2;
-//        end
-//        else begin        
-//            // This is a 32 bit instruction, rearrange to big endian for simplicity
-//            O_data[31:24] <= I_data[7:0];
-//            O_data[23:16] <= I_data[15:8];
-//            O_data[15:8] <= I_data[23:16];
-//            O_data[7:0] <= I_data[31:24];
-            
-//            // PC must be incremented by 4 next clock
-//            O_pcincr <= 4;
-//        end
-//    end
-
-//endmodule

@@ -121,44 +121,47 @@
     `define FUNC_OR         3'b110      //OR
     `define FUNC_AND        3'b111      //AND
 
+    `define FUNC_ECALL      3'b000      //AND
+    `define FUNC_EBREAK     3'b000      //AND
+
 	//------------------------------------------------------------
 	// Register / ABI
 	//------------------------------------------------------------
 
 	// Register Definitions
-	`define X0 		4'b0000		// Zero
-	`define X1 		4'b0001		// Return Address
-	`define X2 		4'b0010		// Stack Pointer
-	`define X3 		4'b0011		// Global Pointer
-	`define X4 		4'b0100		// Thread Pointer
-	`define X5 		4'b0101		// Temporary Register 0
-	`define X6 		4'b0110		// Temporary Register 1
-	`define X7 		4'b0111		// Temporary Register 2
-	`define X8 		4'b1000		// Callee-Saved Register 0 / Frame Pointer
-	`define X9 		4'b1001		// Callee-Saved Register 1
-	`define X10 		4'b1010		// Argument Register 0
-	`define X11		4'b1011		// Argument Register 1
-	`define X12		4'b1100		// Argument Register 2
-	`define X13		4'b1101		// Argument Register 3
-	`define X14		4'b1110		// Argument Register 4
-	`define X15		4'b1111		// Argument Register 5
+	`define X0 		5'b00000		// Zero
+	`define X1 		5'b00001		// Return Address
+	`define X2 		5'b00010		// Stack Pointer
+	`define X3 		5'b00011		// Global Pointer
+	`define X4 		5'b00100		// Thread Pointer
+	`define X5 		5'b00101		// Temporary Register 0
+	`define X6 		5'b00110		// Temporary Register 1
+	`define X7 		5'b00111		// Temporary Register 2
+	`define X8 		5'b01000		// Callee-Saved Register 0 / Frame Pointer
+	`define X9 		5'b01001		// Callee-Saved Register 1
+	`define X10 	5'b01010		// Argument Register 0
+	`define X11		5'b01011		// Argument Register 1
+	`define X12		5'b01100		// Argument Register 2
+	`define X13		5'b01101		// Argument Register 3
+	`define X14		5'b01110		// Argument Register 4
+	`define X15		5'b01111		// Argument Register 5
 
 	// ABI Definitions
-	`define zero 		4'b0000		// Zero
-	`define ra 		4'b0001		// Return Address
-	`define sp 		4'b0010		// Stack Pointer
-	`define gp 		4'b0011		// Global Pointer
-	`define tp 		4'b0100		// Thread Pointer
-	`define t0 		4'b0101		// Temporary Register 0
-	`define t1 		4'b0110		// Temporary Register 1
-	`define t2 		4'b0111		// Temporary Register 2
-	`define s0 		4'b1000		// Callee-Saved Register 0
-	`define fp 		4'b1000		// Frame Pointer
-	`define s1 		4'b1001		// Callee-Saved Register 1
-	`define a0 		4'b1010		// Argument Register 0
-	`define a1		4'b1011		// Argument Register 1
-	`define a2		4'b1100		// Argument Register 2
-	`define a3		4'b1101		// Argument Register 3
-	`define a4		4'b1110		// Argument Register 4
-	`define a5		4'b1111		// Argument Register 5
+	`define ZERO 	5'b00000		// Zero
+	`define RA 		5'b00001		// Return Address
+	`define SP 		5'b00010		// Stack Pointer
+	`define GP 		5'b00011		// Global Pointer
+	`define TP 		5'b00100		// Thread Pointer
+	`define T0 		5'b00101		// Temporary Register 0
+	`define T1 		5'b00110		// Temporary Register 1
+	`define T2 		5'b00111		// Temporary Register 2
+	`define S0 		5'b01000		// Callee-Saved Register 0
+	`define FP 		5'b01000		// Frame Pointer
+	`define S1 		5'b01001		// Callee-Saved Register 1
+	`define A0 		5'b01010		// Argument Register 0
+	`define A1		5'b01011		// Argument Register 1
+	`define A2		5'b01100		// Argument Register 2
+	`define A3		5'b01101		// Argument Register 3
+	`define A4		5'b01110		// Argument Register 4
+	`define A5		5'b01111		// Argument Register 5
 `endif

@@ -8,9 +8,13 @@ New Positive Clock Edge
 The program counter was reset
 This is a 32 bit instruction
 The current instruction is ADDI
+This is a 32 bit instruction
+The current instruction is ADDI
 
 New Positive Clock Edge
 The value 00000400 was stored in register x 2
+Quadrant 1 - 16 bit instruction
+The current instruction is C.ADDI
 Quadrant 1 - 16 bit instruction
 The current instruction is C.ADDI
 
@@ -18,9 +22,13 @@ New Positive Clock Edge
 The value 000003f0 was stored in register x 2
 Quadrant 2 - 16 bit instruction
 The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
 
 New Positive Clock Edge
 STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000003fc
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
 Quadrant 2 - 16 bit instruction
 The current instruction is C.SWSP
 
@@ -28,9 +36,13 @@ New Positive Clock Edge
 STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000003f8
 Quadrant 0 - 16 bit instruction
 The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+The current instruction is C.ADDI4SPN
 
 New Positive Clock Edge
-The value 000003f8 was stored in register x 0
+The value 00000400 was stored in register x 0
+This is a 32 bit instruction
+The current instruction is SB
 This is a 32 bit instruction
 The current instruction is SB
 
@@ -38,12 +50,176 @@ New Positive Clock Edge
 STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:fffffff0
 Quadrant 1 - 16 bit instruction
 The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
 
 New Positive Clock Edge
-The value 00000003 was stored in register x10
+The value 00000006 was stored in register x10
 Quadrant 1 - 16 bit instruction
 The current instruction is C.JAL
+IN: 0010100000011001
+IN: 00000000011000000000010100010011
+Quadrant 1 - 16 bit instruction
+The current instruction is C.JAL
+IN: 0010100000011001
+IN: 00000001011000000000000011101111
+
+New Positive Clock Edge
+The value 00000014 was stored in register x 1
+Quadrant 1 - 16 bit instruction
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+The current instruction is C.ADDI
+
+New Positive Clock Edge
+The value 000003d8 was stored in register x 2
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000014	ADDRESS:000003ec
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+The current instruction is C.SWSP
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000003e8
+Quadrant 0 - 16 bit instruction
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+The current instruction is C.ADDI4SPN
+
+New Positive Clock Edge
+The value 000003f0 was stored in register x 0
+This is a 32 bit instruction
+The current instruction is SB
+This is a 32 bit instruction
+The current instruction is SB
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000006	ADDRESS:ffffffe8
+Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
+
+New Positive Clock Edge
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+The current instruction is SB
+This is a 32 bit instruction
+The current instruction is SB
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000001	ADDRESS:fffffff0
+Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
+
+New Positive Clock Edge
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+The current instruction is SB
+This is a 32 bit instruction
+The current instruction is SB
+
+New Positive Clock Edge
+STORE | MEMORY:xxxxxxxx	DATA:00000001	ADDRESS:ffffffec
+Quadrant 1 - 16 bit instruction
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+The current instruction is C.J
+
+New Positive Clock Edge
+The value 00000042 was stored in register x 0
+This is a 32 bit instruction
+The current instruction is LB
+This is a 32 bit instruction
+The current instruction is LB
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x15
+This is a 32 bit instruction
+The current instruction is LB
+This is a 32 bit instruction
+The current instruction is LB
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x14
+This is a 32 bit instruction
+The current instruction is BEQ
+This is a 32 bit instruction
+The current instruction is BEQ
+
+New Positive Clock Edge
+This is a 32 bit instruction
+The current instruction is LB
+This is a 32 bit instruction
+The current instruction is LB
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x15
+Quadrant 2 - 16 bit instruction
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+The current instruction is C.MV
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x10
+Quadrant 2 - 16 bit instruction
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+The current instruction is C.LWSP
 
 New Positive Clock Edge
 The value 00000014 was stored in register x 1
 Quadrant 2 - 16 bit instruction
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+The current instruction is C.LWSP
+
+New Positive Clock Edge
+The value 00000000 was stored in register x 8
+Quadrant 1 - 16 bit instruction
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+The current instruction is C.ADDI
+
+New Positive Clock Edge
+The value 000003f0 was stored in register x 2
+Quadrant 2 - 16 bit instruction
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+The current instruction is C.JR
+
+New Positive Clock Edge
+The value 00000076 was stored in register x 0
+Quadrant 2 - 16 bit instruction
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+The current instruction is C.MV
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x14
+This is a 32 bit instruction
+The current instruction is LB
+This is a 32 bit instruction
+The current instruction is LB
+
+New Positive Clock Edge
+The value xxxxxxxx was stored in register x15
+Quadrant 0 - 16 bit instruction
+The current instruction is C.SW
+Quadrant 0 - 16 bit instruction
+The current instruction is C.SW
+
+New Positive Clock Edge
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:00000000
+Quadrant 2 - 16 bit instruction
+The current instruction is C.EBREAK
+Quadrant 2 - 16 bit instruction
+The current instruction is C.EBREAK
