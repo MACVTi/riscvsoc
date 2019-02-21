@@ -112,8 +112,14 @@
 	// Functions - Register <-> Register
 	`define FUNC_ADD		3'b000		//ADD
 	`define FUNC_SUB		3'b000		//SUB - Same as ADD
-	`define FUNC_SUB		3'b000		//SUB - Same as ADD
-
+	`define FUNC_SLL		3'b001	    //SLL
+    `define FUNC_SLT        3'b010      //SLT
+    `define FUNC_SLTU       3'b011      //SLTU
+    `define FUNC_XOR        3'b100      //XOR
+    `define FUNC_SRL        3'b101      //SRL
+    `define FUNC_SRA        3'b101      //SRA
+    `define FUNC_OR         3'b110      //OR
+    `define FUNC_AND        3'b111      //AND
 
 	//------------------------------------------------------------
 	// Register / ABI

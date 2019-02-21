@@ -86,7 +86,7 @@ module decode(
                 if(I_data[15:13] == 3'b000) begin
                     // C.ADDI4SPN
                     $display("The current instruction is C.ADDI4SPN");
-                    O_data <= {{2'b00,I_data[10:7],I_data[12:11],I_data[5],I_data[6],2'b00},`X2,`FUNC_ADDI,{2'b00,I_data[4:2]},`OP_ADDI};
+                    O_data <= {{{2{I_data[10]}},I_data[10:7],I_data[12:11],I_data[5],I_data[6],2'b00},`X2,`FUNC_ADDI,{2'b00,I_data[4:2]},`OP_ADDI};
                 end
                 else if(I_data[15:13] == 3'b010) begin
                     // C.LW
@@ -109,13 +109,84 @@ module decode(
                 if(I_data[15:13] == 3'b000) begin
                     // C.NOP / C.ADDI
                     $display("The current instruction is C.ADDI");
-                    O_data <= {{6'b000000,I_data[12],I_data[6:2]},I_data[11:7],`FUNC_ADDI,I_data[11:7],`OP_ADDI};
+                    O_data <= {{{6{I_data[12]}},I_data[12],I_data[6:2]},I_data[11:7],`FUNC_ADDI,I_data[11:7],`OP_ADDI};
                 end
                 else if(I_data[15:13] == 3'b001) begin
                     // C.JAL
                     $display("The current instruction is C.JAL");
-                    O_data <= {{6'b000000,I_data[12],I_data[6:2]},I_data[11:7],`FUNC_ADDI,I_data[11:7],`OP_JAL};
+                    O_data <= {{{8{I_data[12]}},I_data[12],I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3],1'b0},`X1,`OP_JAL};
                 end
+                else if(I_data[15:13] == 3'b010) begin
+                    // C.LI
+                    $display("The current instruction is C.LI");
+                    O_data <= {{{6{I_data[12]}},I_data[12],I_data[6:2]},`X0,`FUNC_ADDI,I_data[11:7],`OP_ADDI};
+                end
+                else if(I_data[15:13] == 3'b011) begin
+                    if(I_data[11:7] == `X2) begin
+                        // C.ADDI16SP
+                        $display("The current instruction is C.ADDI16SP");
+                        O_data <= {{{2{I_data[12]}},I_data[12],I_data[4:3],I_data[5],I_data[2],I_data[6],4'b0000},`X2,`FUNC_ADDI,`X2,`OP_ADDI};
+                    end
+                    else begin
+                        // C.LUI
+                        $display("The current instruction is C.LUI");
+                        O_data <= {{{2{I_data[12]}},I_data[12],I_data[6:2],12'b000000000000},I_data[11:7],`OP_LUI};
+                    end
+                end
+                else if(I_data[15:13] == 3'b100) begin
+                    if(I_data[11:10] == 2'b00) begin
+                        // C.SRLI
+                        $display("The current instruction is C.SRLI");
+                        O_data <= {7'b0000000,I_data[6:2],{2'b00,I_data[9:7]},`FUNC_SRLI,{2'b00,I_data[9:7]},`OP_SRLI};
+                    end
+                    else if(I_data[11:10] == 2'b01) begin
+                        // C.SRAI
+                        $display("The current instruction is C.SRAI");
+                        O_data <= {7'b0100000,I_data[6:2],{2'b00,I_data[9:7]},`FUNC_SRAI,{2'b00,I_data[9:7]},`OP_SRAI};
+                    end
+                    else if(I_data[11:10] == 2'b10) begin
+                        // C.ANDI
+                        $display("The current instruction is C.ANDI");
+                        O_data <= {{{6{I_data[12]}},I_data[12],I_data[6:2]},{2'b00,I_data[9:7]},`FUNC_ANDI,{2'b00,I_data[9:7]},`OP_ANDI};
+                    end
+                    else begin
+                        if(I_data[6:5] == 2'b00) begin
+                            // C.SUB
+                            $display("The current instruction is C.SUB");
+                            O_data <= {7'b0100000,{2'b00,I_data[9:7]},`FUNC_SUB,{2'b00,I_data[9:7]},`OP_SUB};
+                        end 
+                        else if(I_data[6:5] == 2'b00) begin
+                            // C.XOR
+                            $display("The current instruction is C.XOR");
+                            O_data <= {7'b0000000,{2'b00,I_data[9:7]},`FUNC_XOR,{2'b00,I_data[9:7]},`OP_XOR};
+                        end  
+                        else if(I_data[6:5] == 2'b00) begin
+                            // C.OR
+                            $display("The current instruction is C.OR");
+                            O_data <= {7'b0000000,{2'b00,I_data[9:7]},`FUNC_OR,{2'b00,I_data[9:7]},`OP_OR};
+                        end 
+                        else begin
+                            // C.AND
+                            $display("The current instruction is C.AND");
+                            O_data <= {7'b0000000,{2'b00,I_data[9:7]},`FUNC_AND,{2'b00,I_data[9:7]},`OP_AND};
+                        end  
+                    end
+                end
+                else if(I_data[15:13] == 3'b101) begin
+                    // C.J
+                    $display("The current instruction is C.J");
+                    O_data <= {{{8{I_data[12]}},I_data[12],I_data[8],I_data[10:9],I_data[6],I_data[7],I_data[2],I_data[11],I_data[5:3],1'b0},`X0,`OP_JAL};
+                end
+                else if(I_data[15:13] == 3'b110) begin
+                    // C.BEQZ
+                    $display("The current instruction is C.BEQZ");
+                    O_data <= {{{3{I_data[12]}},I_data[12],I_data[6:5],I_data[2]},`X0,{2'b00,I_data[9:7]},`FUNC_BEQ,{I_data[11:10],I_data[4:3],1'b0},`OP_BEQ};
+                end
+                else if(I_data[15:13] == 3'b111) begin
+                    // C.BNEZ
+                    $display("The current instruction is C.BNEZ");
+                    O_data <= {{{3{I_data[12]}},I_data[12],I_data[6:5],I_data[2]},`X0,{2'b00,I_data[9:7]},`FUNC_BNE,{I_data[11:10],I_data[4:3],1'b0},`OP_BNE};
+                end                                
                 else begin
                     $stop(); 
                 end

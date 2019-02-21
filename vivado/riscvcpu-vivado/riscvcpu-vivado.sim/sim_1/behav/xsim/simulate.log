@@ -15,25 +15,35 @@ Quadrant 1 - 16 bit instruction
 The current instruction is C.ADDI
 
 New Positive Clock Edge
-The value 00000430 was stored in register x 2
+The value 000003f0 was stored in register x 2
 Quadrant 2 - 16 bit instruction
 The current instruction is C.SWSP
 
 New Positive Clock Edge
-STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:0000043c
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000003fc
 Quadrant 2 - 16 bit instruction
 The current instruction is C.SWSP
 
 New Positive Clock Edge
-STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:00000438
+STORE | MEMORY:00000000	DATA:00000000	ADDRESS:000003f8
 Quadrant 0 - 16 bit instruction
 The current instruction is C.ADDI4SPN
 
 New Positive Clock Edge
-The value 00000438 was stored in register x 0
+The value 000003f8 was stored in register x 0
 This is a 32 bit instruction
 The current instruction is SB
 
 New Positive Clock Edge
 STORE | MEMORY:xxxxxxxx	DATA:00000000	ADDRESS:fffffff0
 Quadrant 1 - 16 bit instruction
+The current instruction is C.LI
+
+New Positive Clock Edge
+The value 00000003 was stored in register x10
+Quadrant 1 - 16 bit instruction
+The current instruction is C.JAL
+
+New Positive Clock Edge
+The value 00000014 was stored in register x 1
+Quadrant 2 - 16 bit instruction
