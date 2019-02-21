@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/branch_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/data_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc/cpu/data_memory.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/immediate_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediate_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc/cpu/instruction_memory.v:12]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/load_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/registers.v" into library xil_defaultlib
+WARNING: [VRFC 10-998] macro ZERO redefined [/home/jack/Documents/Git/riscvsoc/cpu/registers.v:3]
+INFO: [VRFC 10-311] analyzing module registers
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc/cpu/registers.v:23]
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc/cpu/registers.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/store_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc/cpu/tb/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb

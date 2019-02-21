@@ -93,7 +93,7 @@ module cpu_tb;
 	always begin
 		#5 clk = ~clk;
 		if(clk == 1) begin
-		  $display("\nNew Positive Clock Edge");
+		  //$display("New Positive Clock Edge");
 		end
 	end
 
