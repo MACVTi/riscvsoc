@@ -1,4 +1,4 @@
-`include "definitions.vh"
+`include "general_definitions.vh"
 
 module decode(
     //input wire I_clk,
@@ -70,9 +70,16 @@ module decode(
                 {`FUNC_EBREAK,`OP_EBREAK}:  $display("\nThe current instruction is EBREAK");
             endcase
 
-            // Pass through 32 bit instruction
+            // Increment program counter by 4 for next instruction
             O_pcincr <= 32'h00000004;
-            O_data <= I_data;
+
+            // Replace FENCE instructions with NOPs as they are not implemented in this core.
+            if(I_data[6:0] == 7'b0001111) begin
+                O_data <= {12'b000000000000,`X0,`FUNC_ADDI,`X0,`OP_ADDI};
+            end
+            else begin
+                O_data <= I_data;  
+            end
         end
         else begin
             // Increment by 2 for next instruction

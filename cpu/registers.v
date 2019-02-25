@@ -1,6 +1,6 @@
 // Written by Jack McEllin - 15170144
 // This file contains all the registers of the CPU
-`define ZERO 
+`include "general_definitions.vh"
 
 module registers(
 	input wire I_clk,

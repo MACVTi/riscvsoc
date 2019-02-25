@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A testbench for testing the program counter
 
-`include "storegen.vh"
+`include "store_generator.vh"
 
 module store_generator_tb;
 	
@@ -11,7 +11,7 @@ module store_generator_tb;
     wire [31:0] destination;
 
 	//Instantiate Modules
-    store_generator lg(.I_storesel(storesel), .I_data(source), .O_data(destination));    
+    store_generator store_gen(.I_storesel(storesel), .I_data(source), .O_data(destination));    
 
 	initial begin
 		// Initialise testbench

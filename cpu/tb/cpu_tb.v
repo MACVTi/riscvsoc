@@ -101,7 +101,7 @@ module cpu_tb;
 		// Initialise testbench
         clk = 0; reset = 1;
         
-        #10 reset = 0;
+        #30 reset = 0;
         
 		// Write test values to registers
 		// Finish simulation

@@ -28,9 +28,12 @@ module data_memory #(parameter MEMFILE="") (
 	end
 
 	always @ (posedge I_clk) begin
-			if (I_memrw == 1'b1) begin
+            if (I_memrw == 1'b1) begin
 				{memory[I_address+3],memory[I_address+2],memory[I_address+1],memory[I_address]} <= I_data;
-				$display("STORE | MEMORY:%h\tDATA:%h\tADDRESS:%h", {memory[I_address+3],memory[I_address+2],memory[I_address+1],memory[I_address]}, I_data, I_address);
+				$display("STORE | DATA:%h\tADDRESS:%h", I_data, I_address);
+			end
+			else begin
+			    $display("LOAD | DATA:%h\tADDRESS:%h", O_data, I_address);
 			end
     end  
     

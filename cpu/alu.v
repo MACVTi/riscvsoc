@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A simple 2 input ALU
 
-`include "alu.vh"
+`include "alu_definitions.vh"
 
 module alu(
     input wire [3:0] I_alusel,

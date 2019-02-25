@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A testbench for testing the program counter
 
-`include "loadgen.vh"
+`include "load_generator.vh"
 
 module load_generator_tb;
 	
@@ -11,7 +11,7 @@ module load_generator_tb;
     wire [31:0] destination;
 
 	//Instantiate Modules
-    load_generator lg(.I_loadsel(loadsel), .I_data(source), .O_data(destination));    
+    load_generator load_gen(.I_loadsel(loadsel), .I_data(source), .O_data(destination));    
 
 	initial begin
 		// Initialise testbench

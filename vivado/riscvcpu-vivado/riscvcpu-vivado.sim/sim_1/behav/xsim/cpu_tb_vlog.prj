@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../cpu/header" \
+verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../cpu/add.v" \
 "../../../../../../cpu/alu.v" \
 "../../../../../../cpu/branch_comparator.v" \

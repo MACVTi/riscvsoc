@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A A testbench for testing a simple 2 input ALU
 
-`include "alu.vh"
+`include "alu_definitions.vh"
 
 module alu_tb;
 	

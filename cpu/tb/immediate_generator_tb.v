@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A testbench for testing the program counter
 
-`include "immgen.vh"
+`include "immediate_generator.vh"
 
 module immediate_generator_tb;
 	

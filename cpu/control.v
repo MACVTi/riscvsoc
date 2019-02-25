@@ -1,4 +1,4 @@
-`include "control.vh"
+`include "control_definitions.vh"
 
 module control(
     input wire [9:0] I_control,

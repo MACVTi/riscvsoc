@@ -1,4 +1,4 @@
-`include "control.vh"
+`include "control_defintions.vh"
 
 module control_tb;
 	

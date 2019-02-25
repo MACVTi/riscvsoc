@@ -1,4 +1,4 @@
-`include "./definitions.vh"
+`include "./general_definitions.vh"
 
 module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DATA_MEM="data.mem") (
     input wire I_clk,

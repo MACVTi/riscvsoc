@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A module for generating immediate addresses
 
-`include "immgen.vh"
+`include "immediate_generator.vh"
 
 module immediate_generator(
     input wire [2:0] I_immsel,

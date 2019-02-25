@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A module for generating immediate addresses
 
-`include "loadgen.vh"
+`include "load_generator.vh"
 
 module load_generator(
     input wire [2:0] I_loadsel,

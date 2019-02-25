@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A module for generating immediate addresses
 
-`include "storegen.vh"
+`include "store_generator.vh"
 
 module store_generator(
     input wire [1:0] I_storesel,
