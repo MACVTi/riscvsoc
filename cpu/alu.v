@@ -7,10 +7,14 @@ module alu(
     input wire [3:0] I_alusel,
 	input wire signed [31:0] I_data1,
 	input wire signed [31:0] I_data2,
-	output reg signed [31:0] O_data
+	output reg signed [31:0] O_data,
+	output reg O_illegalflag
 );
 
     always @(*) begin
+        // Reset illegal instruction flag
+        O_illegalflag <= 0;
+        
         case(I_alusel)
             `ALU_ADD:    O_data <= I_data1 + I_data2;
             `ALU_SUB:    O_data <= I_data1 - I_data2;
@@ -23,7 +27,7 @@ module alu(
             `ALU_OR:     O_data <= I_data1 | I_data2;
             `ALU_AND:    O_data <= I_data1 & I_data2;
             `ALU_LUI:    O_data <= I_data2;
-            default:     O_data <= 20'hFFFFF; // Defaults to ADD
+            default:     O_illegalflag <= 1'b1; // Defaults to ADD
         endcase
     end
 

@@ -4,4 +4,27 @@ Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.instruction_memory(MEMFILE="csrr...
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.privilege
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.branch_comparator
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.immediate_generator
+Compiling module xil_defaultlib.load_generator
+Compiling module xil_defaultlib.store_generator
+Compiling module xil_defaultlib.add
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.mux_privilege
+Compiling module xil_defaultlib.cpu(INSTRUCTION_MEM="csrrw_test....
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav

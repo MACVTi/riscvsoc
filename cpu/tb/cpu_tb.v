@@ -3,6 +3,7 @@ module cpu_tb;
 	//Declare Registers and Wires
 	reg clk;
 	reg reset;
+	reg interrupt;
 	
 	//Control wires
 	wire pcsel;
@@ -18,6 +19,21 @@ module cpu_tb;
     wire [2:0] loadsel;
     wire [1:0] storesel;
 	wire [1:0] wbsel;
+	wire privsel;
+	wire msrwen;
+	wire csrwbsel;
+
+    // Privilege wires
+    wire flag_ecall;
+    wire flag_ebreak;
+    wire flag_illegalinst;
+    wire flag_exception;
+    wire [11:0] csr_addr_in;
+    wire [31:0] csr_data_out;
+    wire [31:0] mux_csr_out;
+    wire [31:0] mepc_ret_out;
+    wire [31:0] mevect_out;
+    wire [31:0] mux_privilege_out;
 
     //Data wires
     wire [31:0] pc_out;
@@ -28,8 +44,8 @@ module cpu_tb;
     wire [31:0] mux_pc_out;
     wire [31:0] mux_rs1_out;
     wire [31:0] mux_rs2_out;
-    wire [31:0] register_out_a;
-    wire [31:0] register_out_b;
+    wire [31:0] rs1_data_out;
+    wire [31:0] rs2_data_out;
     wire [31:0] immediate_out;
     wire [31:0] mem_out;
     wire [31:0] adder_out;
@@ -37,19 +53,21 @@ module cpu_tb;
     wire [31:0] storegen_out;
     wire [31:0] mux_wb_out;
     
-    wire [3:0] rs1_in;
-    wire [3:0] rs2_in;
-    wire [3:0] rd_in;
+    wire [3:0] rs1_addr_in;
+    wire [3:0] rs2_addr_in;
+    wire [3:0] rd_addr_in;
             
 	//Instantiate Modules
     cpu #(
         .RESET(32'h00000000),
-        .INSTRUCTION_MEM("factorial_test_compressed.mem"),
+        .VECTOR(32'h00000000),
+        .INSTRUCTION_MEM("csrrw_test.mem"),
         .DATA_MEM("")
     )
     cpu (
         .I_clk(clk),
         .I_rst(reset),
+        .I_interrupt(interrupt),
         
         // Control wires
         .PCSel(pcsel),
@@ -65,6 +83,21 @@ module cpu_tb;
         .LoadSel(loadsel),
         .StoreSel(storesel),
         .WBSel(wbsel),
+        .PrivSel(privsel),
+        .MsrWEn(msrwen),
+        .CSRwbSel(csrwbsel),
+        
+        // Privilege wires
+        .flag_ecall(flag_ecall),
+        .flag_ebreak(flag_ebreak),
+        .flag_illegalinst(flag_illegalinst),
+        .flag_exception(flag_exception),
+        .csr_addr_in(csr_addr_in),
+        .csr_data_out(csr_data_out),
+        .mux_csr_out(mux_csr_out),
+        .mepc_ret_out(mepc_ret_out),
+        .mevect_out(mevect_out),
+        .mux_privilege_out(mux_privilege_out),
         
         // Declare other wires
         .pc_out(pc_out),
@@ -75,8 +108,8 @@ module cpu_tb;
         .mux_pc_out(mux_pc_out),
         .mux_rs1_out(mux_rs1_out),
         .mux_rs2_out(mux_rs2_out),
-        .register_out_a(register_out_a),
-        .register_out_b(register_out_b),
+        .rs1_data_out(rs1_data_out),
+        .rs2_data_out(rs2_data_out),
         .immediate_out(immediate_out),
         .mem_out(mem_out),
         .adder_out(adder_out),
@@ -84,9 +117,9 @@ module cpu_tb;
         .storegen_out(storegen_out),
         .mux_wb_out(mux_wb_out),
         
-        .rs1_in(rs1_in),
-        .rs2_in(rs2_in),
-        .rd_in(rd_in)
+        .rs1_addr_in(rs1_addr_in),
+        .rs2_addr_in(rs2_addr_in),
+        .rd_addr_in(rd_addr_in)
         );
 
 	// Start running clock
@@ -99,13 +132,19 @@ module cpu_tb;
 
 	initial begin
 		// Initialise testbench
-        clk = 0; reset = 1;
+        clk = 1; interrupt = 0; reset = 1;
         
-        #30 reset = 0;
+        #10 reset = 0;
         
+//        #200 interrupt = 1;
+//        #10 interrupt = 0;
+ 
+//        #100 interrupt = 1;
+//        $display("Testing External Interrupt");
+//        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#10000 $finish;
+		#200 $finish;
 	end
 	
 endmodule

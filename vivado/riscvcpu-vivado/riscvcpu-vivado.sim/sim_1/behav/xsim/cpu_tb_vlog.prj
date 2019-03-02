@@ -12,7 +12,9 @@ verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../cpu/load_generator.v" \
 "../../../../../../cpu/mux2.v" \
 "../../../../../../cpu/mux3.v" \
+"../../../../../../cpu/mux_privilege.v" \
 "../../../../../../cpu/pc.v" \
+"../../../../../../cpu/privilege.v" \
 "../../../../../../cpu/registers.v" \
 "../../../../../../cpu/store_generator.v" \
 "../../../../../../cpu/tb/cpu_tb.v" \

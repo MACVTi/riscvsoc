@@ -1,8 +1,9 @@
 `include "./general_definitions.vh"
 
-module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DATA_MEM="data.mem") (
+module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM="first_test.mem", DATA_MEM="data.mem") (
     input wire I_clk,
     input wire I_rst,
+    input wire I_interrupt,
     
     // Control wires
     output wire PCSel,
@@ -15,10 +16,25 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     output wire BSel,
     output wire [3:0] ALUSel,
     output wire MemRW,
-    output wire [1:0] WBSel,
     output wire [2:0] LoadSel,
     output wire [1:0] StoreSel,
+    output wire [1:0] WBSel,
+    output wire PrivSel,
+    output wire MsrWEn,
+    output wire CSRwbSel,
     
+    // Privilege wires
+    output wire flag_ecall,
+    output wire flag_ebreak,
+    output wire flag_illegalinst,
+    output wire flag_exception,
+    output wire [11:0] csr_addr_in,
+    output wire [31:0] csr_data_out,
+    output wire [31:0] mux_csr_out,
+    output wire [31:0] mepc_ret_out,
+    output wire [31:0] mevect_out,
+    output wire [31:0] mux_privilege_out,
+
     // Declare other wires
     output wire [31:0] pc_out,
     output wire [31:0] pcincr_out,
@@ -29,19 +45,27 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     output wire [31:0] mux_pc_out,
     output wire [31:0] mux_rs1_out,
     output wire [31:0] mux_rs2_out,
-    output wire [31:0] register_out_a,
-    output wire [31:0] register_out_b,
+    output wire [31:0] rs1_data_out,
+    output wire [31:0] rs2_data_out,
     output wire [31:0] immediate_out,
     output wire [31:0] adder_out,
     output wire [31:0] loadgen_out,
     output wire [31:0] storegen_out,
     output wire [31:0] mux_wb_out,
-    
+
     // Temporary wires
-    output wire [3:0] rs1_in,
-    output wire [3:0] rs2_in,
-    output wire [3:0] rd_in 
+    output wire [3:0] rs1_addr_in,
+    output wire [3:0] rs2_addr_in,
+    output wire [3:0] rd_addr_in
     );
+    
+    // Declare privilege wires
+    assign csr_addr_in = decoder_out[31:20];
+        
+    // Declare registers - RV32E so only 16 registers
+    assign rs1_addr_in = decoder_out[18:15];
+    assign rs2_addr_in = decoder_out[23:20];
+    assign rd_addr_in = decoder_out[10:7];
     
     //--------------------------------------//
     // Memory modules
@@ -70,15 +94,50 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     );
     
     //--------------------------------------//
+    // Privilege module
+    //--------------------------------------//
+    
+    privilege #(
+         .VECTOR(VECTOR)
+    ) 
+    priv (
+        .I_clk(I_clk),
+        .I_rst(I_rst),
+        
+        .I_ecall(flag_ecall),
+        .I_ebreak(flag_ebreak),
+        .I_illegalinst(flag_illegalinst),
+        .I_extinterrupt(I_interrupt),
+        .I_mret(PrivSel),
+        
+        .I_pc(pc_out),
+        .I_msrwen(MsrWEn),
+        .I_csraddr(csr_addr_in),
+        .I_rs1addr(rs1_addr_in),
+        .I_rs1data(rs1_data_out),
+        .O_csrdata(csr_data_out),
+        
+        .O_exception(flag_exception),
+        .O_epcreturn(mepc_ret_out),
+        .O_evect(mevect_out)
+    );
+    
+    //--------------------------------------//
     // Control module
     //--------------------------------------//
     
     // Declare Control
     control ctrl(
-        .I_control({decoder_out[30],decoder_out[20],decoder_out[14:12],decoder_out[6:2]}),
+        .I_control({decoder_out[30],decoder_out[21:20],decoder_out[14:12],decoder_out[6:2]}),
         .I_breq(BrEq),
         .I_brlt(BrLT),
         
+        // Exception Flags
+        .O_ecall(flag_ecall),
+        .O_ebreak(flag_ebreak),
+        .O_illegalinst(flag_illegalinst),
+        
+        // Standard Control Wires
         .O_pcsel(PCSel),
         .O_immsel(Immsel),
         .O_regwen(RegWEn),
@@ -89,7 +148,12 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
         .O_memrw(MemRW),
         .O_loadsel(LoadSel),
         .O_storesel(StoreSel),
-        .O_wbsel(WBSel)
+        .O_wbsel(WBSel),
+        
+        // Privileged Control Wires
+        .O_privsel(PrivSel),
+        .O_msrwen(MsrWEn),
+        .O_csrwbsel(CSRwbSel)
     );
     
     //--------------------------------------//
@@ -103,7 +167,7 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     pc (
         .I_clk(I_clk),
         .I_rst(I_rst),
-        .I_address(mux_pc_out), 
+        .I_address(mux_privilege_out), 
         .O_address(pc_out)
     );
     
@@ -112,31 +176,27 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
 //        .I_clk(I_clk),
         .I_data(inst_out),
         .O_pcincr(pcincr_out),
-        .O_data(decoder_out)
+        .O_data(decoder_out),
+        .O_illegalflag(flag_illegalinst)
     );
-    
-    // Declare registers - RV32E so only 16 registers
-    assign rs1_in = decoder_out[18:15];
-    assign rs2_in = decoder_out[23:20];
-    assign rd_in = decoder_out[10:7];
     
     registers regs(
         .I_clk(I_clk),
         .I_rst(I_rst),
         .I_regwen(RegWEn),
-        .I_rs1(rs1_in), //Note that these are four bits wide, not five bits
-        .I_rs2(rs2_in), //Note that these are four bits wide, not five bits
-        .I_rd(rd_in), //Note that these are four bits wide, not five bits
-        .I_data(mux_wb_out),
-        .O_data1(register_out_a),
-        .O_data2(register_out_b)
+        .I_rs1(rs1_addr_in), //Note that these are four bits wide, not five bits
+        .I_rs2(rs2_addr_in), //Note that these are four bits wide, not five bits
+        .I_rd(rd_addr_in), //Note that these are four bits wide, not five bits
+        .I_data(mux_csr_out),
+        .O_data1(rs1_data_out),
+        .O_data2(rs2_data_out)
     );
     
     // Declare branch comparator
     branch_comparator bc(
         .I_branch_unsigned(BrUn), 
-        .I_data1(register_out_a), 
-        .I_data2(register_out_b), 
+        .I_data1(rs1_data_out), 
+        .I_data2(rs2_data_out), 
         .O_branch_equal(BrEq), 
         .O_branch_lessthan(BrLT)
     );
@@ -170,7 +230,7 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     // Declare Adder
     store_generator storegen(
         .I_storesel(StoreSel), 
-        .I_data(register_out_b), 
+        .I_data(rs2_data_out), 
         .O_data(storegen_out)
     );
      
@@ -181,7 +241,6 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
         .O_data(adder_out)
     );
 
-    // Declare 2 input muxes
     mux2 mux_pc(
         .I_sel(PCSel), 
         .I_data1(adder_out), 
@@ -191,14 +250,14 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
     
     mux2 mux_rs1(
         .I_sel(ASel), 
-        .I_data1(register_out_a), 
+        .I_data1(rs1_data_out), 
         .I_data2(pc_out), 
         .O_data(mux_rs1_out)
     );
     
     mux2 mux_rs2(
         .I_sel(BSel), 
-        .I_data1(register_out_b), 
+        .I_data1(rs2_data_out), 
         .I_data2(immediate_out),
         .O_data(mux_rs2_out)
     );
@@ -211,5 +270,22 @@ module cpu #(parameter RESET=32'h00000000, INSTRUCTION_MEM="first_test.mem", DAT
         .I_data3(adder_out), 
         .O_data(mux_wb_out)
     );
-
+    
+    // Declare mux privilege
+    mux_privilege mux_priv(
+            .I_exception(flag_exception),
+            .I_privsel(PrivSel),
+            .I_mevect(mevect_out),
+            .I_data1(mux_pc_out),
+            .I_data2(mepc_ret_out),
+            .O_data(mux_privilege_out)
+          );
+    
+    // Declare CSR writeback mux
+    mux2 mux_csr(
+            .I_sel(CSRwbSel), 
+            .I_data1(mux_wb_out), 
+            .I_data2(csr_data_out),
+            .O_data(mux_csr_out)
+    );
 endmodule

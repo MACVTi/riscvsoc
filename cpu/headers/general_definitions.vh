@@ -58,18 +58,14 @@
 	`define OP_AND			7'b0110011	//AND
 
 	// Note - Not sure if these opcodes are needed
-	`define OP_FENCE		7'b0001111	//FENCE
-	`define OP_FENCEI		7'b0001111	//FENCEI
+	//`define OP_FENCE		7'b0001111	//FENCE
+	//`define OP_FENCEI		7'b0001111	//FENCEI
 
 	`define OP_ECALL		7'b1110011	//ECALL
 	`define OP_EBREAK		7'b1110011	//EBREAK
 
 	`define OP_CSRRW		7'b1110011	//CSRRW
-	`define OP_CSRRW		7'b1110011	//CSRRS
-	`define OP_CSRRW		7'b1110011	//CSRRC
-	`define OP_CSRRW		7'b1110011	//CSRRWI
-	`define OP_CSRRW		7'b1110011	//CSRRSI
-	`define OP_CSRRW		7'b1110011	//CSRRCI
+	`define OP_MRET    		7'b1110011	//CSRRW
 
 	//------------------------------------------------------------
 	// Functions
@@ -121,8 +117,11 @@
     `define FUNC_OR         3'b110      //OR
     `define FUNC_AND        3'b111      //AND
 
-    `define FUNC_ECALL      3'b000      //AND
-    `define FUNC_EBREAK     3'b000      //AND
+    `define FUNC_ECALL      3'b000      //ECALL
+    `define FUNC_EBREAK     3'b000      //EBREAK
+    
+    `define FUNC_CSRRW      3'b001      //CSRRW
+    `define FUNC_MRET     3'b000      //MRET
 
 	//------------------------------------------------------------
 	// Register / ABI
@@ -166,21 +165,8 @@
 	`define A5		5'b01111		// Argument Register 5
 	
 	// MSR Definitions
-    `define MZERO           5'b00000        // Zero
-    `define MISA            5'b00001        // Return Address
-    `define MVENDORID       5'b00010        // Stack Pointer
-    `define GP              5'b00011        // Global Pointer
-    `define TP              5'b00100        // Thread Pointer
-    `define MSTATUS         5'b00101        // Temporary Register 0
-    `define MTVEC           5'b00110        // Temporary Register 1
-    `define MIP             5'b00111        // Temporary Register 2
-    `define MIE             5'b01000        // Callee-Saved Register 0
-    `define MEPC            5'b01000        // Frame Pointer
-    `define MCAUSE          5'b01001        // Callee-Saved Register 1
-    `define A0              5'b01010        // Argument Register 0
-    `define A1              5'b01011        // Argument Register 1
-    `define A2              5'b01100        // Argument Register 2
-    `define A3              5'b01101        // Argument Register 3
-    `define A4              5'b01110        // Argument Register 4
-    `define A5              5'b01111        // Argument Register 5
+    `define MCAUSE          2'b00        // Machine Cause Register
+    `define MSTATUS         2'b01        // Machine Status Register
+    `define MEPC            2'b10        // Machine Exception Program Counter
+    `define MEVECT          2'b11        // Machine Trap-Vector Base-Address
 `endif

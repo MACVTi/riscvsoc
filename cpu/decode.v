@@ -4,16 +4,21 @@ module decode(
     //input wire I_clk,
     input wire [31:0] I_data,
     output reg [31:0] O_pcincr,
-    output reg [31:0] O_data
+    output reg [31:0] O_data,
+    output reg O_illegalflag
     );
 
 //    assign O_pcincr = 32'h00000004;
 //    assign O_data = I_data;
     
     always @(*) begin
+        // Reset illegal instruction flag
+        O_illegalflag <= 0;
+    
         // Check for illegal instruction
         if(I_data == 32'h00000000) begin
-            $stop();
+//            $stop();
+            O_illegalflag <= 1;
         end
         
         // Check if 16 or 32 bit instruction
@@ -68,6 +73,9 @@ module decode(
         
                 {`FUNC_ECALL,`OP_ECALL}:    $display("\nThe current instruction is ECALL");
                 {`FUNC_EBREAK,`OP_EBREAK}:  $display("\nThe current instruction is EBREAK");
+                
+                {`FUNC_CSRRW,`OP_CSRRW}:    $display("\nThe current instruction is CSRRW");
+                {`FUNC_MRET,`OP_MRET}:      $display("\nThe current instruction is MRET");
             endcase
 
             // Increment program counter by 4 for next instruction
@@ -104,7 +112,9 @@ module decode(
                     O_data <= {{5'b00000,I_data[5],I_data[12]},{2'b01,I_data[4:2]},{2'b01,I_data[9:7]},`FUNC_SW,{I_data[11:10],I_data[6],2'b00},`OP_SW};
                 end                
                 else begin
-                    $stop(); 
+                    // Illegal instruction has occured.
+                    O_illegalflag <= 1;
+//                    $stop(); 
                 end
                 $display("Quadrant 0 - 16 bit instruction"); 
             end
@@ -192,7 +202,9 @@ module decode(
                     O_data <= {{{3{I_data[12]}},I_data[12],I_data[6:5],I_data[2]},`X0,{2'b01,I_data[9:7]},`FUNC_BNE,{I_data[11:10],I_data[4:3],1'b0},`OP_BNE};
                 end                                
                 else begin
-                    $stop(); 
+                    // Illegal instruction has occured.
+                    O_illegalflag <= 1;
+//                    $stop(); 
                 end
                 $display("Quadrant 1 - 16 bit instruction");
             end
@@ -248,7 +260,9 @@ module decode(
                 end
                 else begin
                     $display("\nError instruction not found\ %b", I_data);
-                    $stop(); 
+                    // Illegal instruction has occured.
+                    O_illegalflag <= 1;
+                    //$stop(); 
                 end
                 $display("Quadrant 2 - 16 bit instruction");
             end     

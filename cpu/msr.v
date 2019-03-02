@@ -12,9 +12,9 @@ module msr(
 	output wire [31:0] O_data
     );
 
-	reg [31:0] msr [15:1];
+	reg [31:0] msr [3:0];
 	
-	assign O_data = (I_rs == 0) ? 32'h00000000 :register[I_rs];
+	assign O_data = msr[I_rs];
 
     initial begin
         for (integer i=1; i < 16; i=i+1) begin
