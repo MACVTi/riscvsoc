@@ -121,7 +121,7 @@
     `define FUNC_EBREAK     3'b000      //EBREAK
     
     `define FUNC_CSRRW      3'b001      //CSRRW
-    `define FUNC_MRET     3'b000      //MRET
+    `define FUNC_MRET       3'b000      //MRET
 
 	//------------------------------------------------------------
 	// Register / ABI

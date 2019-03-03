@@ -53,11 +53,15 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     output wire [31:0] storegen_out,
     output wire [31:0] mux_wb_out,
 
-    // Temporary wires
+    // Register output wires
     output wire [3:0] rs1_addr_in,
     output wire [3:0] rs2_addr_in,
     output wire [3:0] rd_addr_in
     );
+    
+    wire [10:0] control_in;
+    // Control wires
+    assign control_in = {decoder_out[30],decoder_out[21:20],decoder_out[14:12],decoder_out[6:2]};
     
     // Declare privilege wires
     assign csr_addr_in = decoder_out[31:20];
@@ -128,7 +132,7 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     
     // Declare Control
     control ctrl(
-        .I_control({decoder_out[30],decoder_out[21:20],decoder_out[14:12],decoder_out[6:2]}),
+        .I_control(control_in),
         .I_breq(BrEq),
         .I_brlt(BrLT),
         

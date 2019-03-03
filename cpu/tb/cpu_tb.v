@@ -60,8 +60,8 @@ module cpu_tb;
 	//Instantiate Modules
     cpu #(
         .RESET(32'h00000000),
-        .VECTOR(32'h00000000),
-        .INSTRUCTION_MEM("csrrw_test.mem"),
+        .VECTOR(32'h00000010),
+        .INSTRUCTION_MEM("mret_test.mem"),
         .DATA_MEM("")
     )
     cpu (
@@ -136,15 +136,15 @@ module cpu_tb;
         
         #10 reset = 0;
         
-//        #200 interrupt = 1;
-//        #10 interrupt = 0;
+        #100 interrupt = 1;
+        #10 interrupt = 0;
  
 //        #100 interrupt = 1;
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#200 $finish;
+		#100 $finish;
 	end
 	
 endmodule

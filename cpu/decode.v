@@ -26,56 +26,57 @@ module decode(
             $display("This is a 32 bit instruction");
             
             // Display which instruction it is
-            case({I_data[14:12],I_data[6:0]})
-                {3'b???,`OP_LUI}:           $display("\nThe current instruction is LUI");
-                {3'b???,`OP_AUIPC}:         $display("\nThe current instruction is AUIPC");
+            casez({I_data[30],I_data[21:20],I_data[14:12],I_data[6:0]})
+                {6'b???,`OP_LUI}:           $display("\nThe current instruction is LUI");
+                {6'b???,`OP_AUIPC}:         $display("\nThe current instruction is AUIPC");
                 
-                {3'b???,`OP_JAL}:           $display("\nThe current instruction is JAL");
-                {3'b???,`OP_JALR}:          $display("\nThe current instruction is JALR");
+                {6'b???,`OP_JAL}:           $display("\nThe current instruction is JAL");
+                {6'b???,`OP_JALR}:          $display("\nThe current instruction is JALR");
         
-                {`FUNC_BEQ,`OP_BEQ}:        $display("\nThe current instruction is BEQ");
-                {`FUNC_BNE,`OP_BNE}:        $display("\nThe current instruction is BNE");
-                {`FUNC_BLT,`OP_BLT}:        $display("\nThe current instruction is BLT");
-                {`FUNC_BGE,`OP_BGE}:        $display("\nThe current instruction is BGE");
-                {`FUNC_BLTU,`OP_BLTU}:      $display("\nThe current instruction is BLTU");
-                {`FUNC_BLTU,`OP_BGEU}:      $display("\nThe current instruction is BGEU");
+                {3'b???,`FUNC_BEQ,`OP_BEQ}:        $display("\nThe current instruction is BEQ");
+                {3'b???,`FUNC_BNE,`OP_BNE}:        $display("\nThe current instruction is BNE");
+                {3'b???,`FUNC_BLT,`OP_BLT}:        $display("\nThe current instruction is BLT");
+                {3'b???,`FUNC_BGE,`OP_BGE}:        $display("\nThe current instruction is BGE");
+                {3'b???,`FUNC_BLTU,`OP_BLTU}:      $display("\nThe current instruction is BLTU");
+                {3'b???,`FUNC_BLTU,`OP_BGEU}:      $display("\nThe current instruction is BGEU");
         
-                {`FUNC_LB,`OP_LB}:          $display("\nThe current instruction is LB");
-                {`FUNC_LH,`OP_LH}:          $display("\nThe current instruction is LH");
-                {`FUNC_LW,`OP_LW}:          $display("\nThe current instruction is LW");
-                {`FUNC_LBU,`OP_LBU}:        $display("\nThe current instruction is LBU");
-                {`FUNC_LHU,`OP_LHU}:        $display("\nThe current instruction is LHU");
+                {3'b???,`FUNC_LB,`OP_LB}:          $display("\nThe current instruction is LB");
+                {3'b???,`FUNC_LH,`OP_LH}:          $display("\nThe current instruction is LH");
+                {3'b???,`FUNC_LW,`OP_LW}:          $display("\nThe current instruction is LW");
+                {3'b???,`FUNC_LBU,`OP_LBU}:        $display("\nThe current instruction is LBU");
+                {3'b???,`FUNC_LHU,`OP_LHU}:        $display("\nThe current instruction is LHU");
         
-                {`FUNC_SB,`OP_SB}:          $display("\nThe current instruction is SB");
-                {`FUNC_SH,`OP_SH}:          $display("\nThe current instruction is SH");
-                {`FUNC_SW,`OP_SW}:          $display("\nThe current instruction is SW");
+                {3'b???,`FUNC_SB,`OP_SB}:          $display("\nThe current instruction is SB");
+                {3'b???,`FUNC_SH,`OP_SH}:          $display("\nThe current instruction is SH");
+                {3'b???,`FUNC_SW,`OP_SW}:          $display("\nThe current instruction is SW");
         
-                {`FUNC_ADDI,`OP_ADDI}:      $display("\nThe current instruction is ADDI");
-                {`FUNC_SLTI,`OP_SLTI}:      $display("\nThe current instruction is SLTI");
-                {`FUNC_SLTIU,`OP_SLTIU}:    $display("\nThe current instruction is SLTIU");
-                {`FUNC_XORI,`OP_XORI}:      $display("\nThe current instruction is XORI");
-                {`FUNC_ORI,`OP_ORI}:        $display("\nThe current instruction is ORI");
-                {`FUNC_ANDI,`OP_ANDI}:      $display("\nThe current instruction is ANDI");
-                {`FUNC_SLLI,`OP_SLLI}:      $display("\nThe current instruction is SLLI");
-                {`FUNC_SRLI,`OP_SRLI}:      $display("\nThe current instruction is SRLI");
-                {`FUNC_SRAI,`OP_SRAI}:      $display("\nThe current instruction is SRAI");
+                {3'b???,`FUNC_ADDI,`OP_ADDI}:      $display("\nThe current instruction is ADDI");
+                {3'b???,`FUNC_SLTI,`OP_SLTI}:      $display("\nThe current instruction is SLTI");
+                {3'b???,`FUNC_SLTIU,`OP_SLTIU}:    $display("\nThe current instruction is SLTIU");
+                {3'b???,`FUNC_XORI,`OP_XORI}:      $display("\nThe current instruction is XORI");
+                {3'b???,`FUNC_ORI,`OP_ORI}:        $display("\nThe current instruction is ORI");
+                {3'b???,`FUNC_ANDI,`OP_ANDI}:      $display("\nThe current instruction is ANDI");
+                {3'b???,`FUNC_SLLI,`OP_SLLI}:      $display("\nThe current instruction is SLLI");
+                {3'b???,`FUNC_SRLI,`OP_SRLI}:      $display("\nThe current instruction is SRLI");
+                {3'b???,`FUNC_SRAI,`OP_SRAI}:      $display("\nThe current instruction is SRAI");
         
-                {`FUNC_AND,`OP_ADD}:        $display("\nThe current instruction is ADD");
-                {`FUNC_SUB,`OP_SUB}:        $display("\nThe current instruction is SUB");
-                {`FUNC_SLL,`OP_SLL}:        $display("\nThe current instruction is SLL");
-                {`FUNC_SLT,`OP_SLT}:        $display("\nThe current instruction is SLT");
-                {`FUNC_SLTU,`OP_SLTU}:      $display("\nThe current instruction is SLT");
-                {`FUNC_XOR,`OP_XOR}:        $display("\nThe current instruction is XOR");
-                {`FUNC_SRL,`OP_SRL}:        $display("\nThe current instruction is SRL");
-                {`FUNC_SRA,`OP_SRA}:        $display("\nThe current instruction is SRA");
-                {`FUNC_OR,`OP_OR}:          $display("\nThe current instruction is OR");
-                {`FUNC_AND,`OP_AND}:        $display("\nThe current instruction is AND");
+                {3'b???,`FUNC_AND,`OP_ADD}:        $display("\nThe current instruction is ADD");
+                {3'b???,`FUNC_SUB,`OP_SUB}:        $display("\nThe current instruction is SUB");
+                {3'b???,`FUNC_SLL,`OP_SLL}:        $display("\nThe current instruction is SLL");
+                {3'b???,`FUNC_SLT,`OP_SLT}:        $display("\nThe current instruction is SLT");
+                {3'b???,`FUNC_SLTU,`OP_SLTU}:      $display("\nThe current instruction is SLT");
+                {3'b???,`FUNC_XOR,`OP_XOR}:        $display("\nThe current instruction is XOR");
+                {3'b???,`FUNC_SRL,`OP_SRL}:        $display("\nThe current instruction is SRL");
+                {3'b???,`FUNC_SRA,`OP_SRA}:        $display("\nThe current instruction is SRA");
+                {3'b???,`FUNC_OR,`OP_OR}:          $display("\nThe current instruction is OR");
+                {3'b???,`FUNC_AND,`OP_AND}:        $display("\nThe current instruction is AND");
         
-                {`FUNC_ECALL,`OP_ECALL}:    $display("\nThe current instruction is ECALL");
-                {`FUNC_EBREAK,`OP_EBREAK}:  $display("\nThe current instruction is EBREAK");
+                {3'b000,`FUNC_ECALL,`OP_ECALL}:    $display("\nThe current instruction is ECALL");
+                {3'b001,`FUNC_EBREAK,`OP_EBREAK}:  $display("\nThe current instruction is EBREAK");
                 
-                {`FUNC_CSRRW,`OP_CSRRW}:    $display("\nThe current instruction is CSRRW");
-                {`FUNC_MRET,`OP_MRET}:      $display("\nThe current instruction is MRET");
+                {3'b???,`FUNC_CSRRW,`OP_CSRRW}:    $display("\nThe current instruction is CSRRW");
+                {3'b010,`FUNC_MRET,`OP_MRET}:      $display("\nThe current instruction is MRET");
+                default:                    $display("\nUNKNOWN INSTRUCTION: %b", {I_data[14:12],I_data[6:0]});
             endcase
 
             // Increment program counter by 4 for next instruction

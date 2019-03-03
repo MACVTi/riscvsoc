@@ -19,4 +19,5 @@ interrupt_setup:
     csrrw zero, 0X7C0, t1
 
 loop:
+    nop
     j loop

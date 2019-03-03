@@ -62,12 +62,15 @@ module privilege #(parameter VECTOR=32'h00000000) (
         if(exception) begin
             // Check which exception occured and store it in MCAUSE
             if(I_illegalinst) begin
+                $display("PRIV: An illegal instruction exception has occured");
                 mcause <= 5'b00010;
             end
             else if (I_ebreak) begin
+                $display("PRIV: An ebreak exception has occured");
                 mcause <= 5'b00011;
             end
             else begin // ECALL
+                $display("PRIV: An ecall exception has occured");
                 mcause <= 5'b01011;
             end
         
@@ -87,6 +90,8 @@ module privilege #(parameter VECTOR=32'h00000000) (
             
         // Check if external interrupt has occured and interrupts are enabled
         else if(I_extinterrupt && (mstatus[0] == 1)) begin
+            $display("PRIV: An external interrupt has occured");
+            
             // State that an external interrupt has occured in MCAUSE
             mcause <= 5'b11011;        
         

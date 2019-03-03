@@ -121,7 +121,7 @@ module control(
             
             // Opcodes - Interrupts
             `CONTROL_IN_CSRRW:      control_reg <= `CONTROL_OUT_CSRRW;    //CSRRW
-            `CONTROL_IN_MRET:       $stop();//control_reg <= `CONTROL_OUT_MRET;   //MRET    
+            `CONTROL_IN_MRET:       control_reg <= `CONTROL_OUT_MRET;   //MRET    
                                     
             default:  O_illegalinst <= 1;   // Set Illegal Instruction flag to 1
         endcase

@@ -8,9 +8,9 @@ Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.instruction_memory(MEMFILE="csrr...
+Compiling module xil_defaultlib.instruction_memory(MEMFILE="mret...
 Compiling module xil_defaultlib.data_memory
-Compiling module xil_defaultlib.privilege
+Compiling module xil_defaultlib.privilege(VECTOR=32'b010000)
 Compiling module xil_defaultlib.control
 Compiling module xil_defaultlib.pc
 Compiling module xil_defaultlib.decode
@@ -24,7 +24,7 @@ Compiling module xil_defaultlib.add
 Compiling module xil_defaultlib.mux2
 Compiling module xil_defaultlib.mux3
 Compiling module xil_defaultlib.mux_privilege
-Compiling module xil_defaultlib.cpu(INSTRUCTION_MEM="csrrw_test....
+Compiling module xil_defaultlib.cpu(VECTOR=32'b010000,INSTRUCTIO...
 Compiling module xil_defaultlib.cpu_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cpu_tb_behav
