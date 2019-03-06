@@ -21,7 +21,7 @@ module registers(
 
     initial begin
         for (integer i=1; i < 16; i=i+1) begin
-            register[i] <= 32'h00000000;
+            register[i] = 32'h00000000;
         end
     end
 
@@ -31,7 +31,7 @@ module registers(
 				register[i] <= 32'h00000000;
 			end
 		end
-		if (I_regwen == 1) begin
+		else if (I_regwen == 1) begin
             register[I_rd] <= I_data;
             $display("The value %h was stored in register x%d", I_data, I_rd);
         end

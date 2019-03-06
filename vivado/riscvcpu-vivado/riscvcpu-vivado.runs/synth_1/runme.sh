@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1'
+HD_PWD='/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mux2_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux2_tb.tcl
+EAStep vivado -log cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl

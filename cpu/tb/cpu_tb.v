@@ -61,7 +61,7 @@ module cpu_tb;
     cpu #(
         .RESET(32'h00000000),
         .VECTOR(32'h00000010),
-        .INSTRUCTION_MEM("mret_test.mem"),
+        .INSTRUCTION_MEM("factorial_test_compressed.mem"),
         .DATA_MEM("")
     )
     cpu (
@@ -144,7 +144,7 @@ module cpu_tb;
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#100 $finish;
+		#10000 $finish;
 	end
 	
 endmodule

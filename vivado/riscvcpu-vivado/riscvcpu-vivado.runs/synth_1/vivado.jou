@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Feb 23 16:15:24 2019
-# Process ID: 7827
-# Current directory: /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1
-# Command line: vivado -log mux2_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux2_tb.tcl
-# Log file: /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/mux2_tb.vds
-# Journal file: /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/vivado.jou
+# Start of session at: Wed Mar  6 15:21:50 2019
+# Process ID: 30479
+# Current directory: /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1
+# Command line: vivado -log cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+# Log file: /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/cpu.vds
+# Journal file: /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source mux2_tb.tcl -notrace
+source cpu.tcl -notrace

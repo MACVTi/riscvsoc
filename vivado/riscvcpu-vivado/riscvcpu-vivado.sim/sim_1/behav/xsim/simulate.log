@@ -1,0 +1,4653 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+163264339622589037563640483127588769106816823287710839019993785643429148049189234923859783542022029
+Initialising the data memory with zeros
+There was an error loading the data memory file!
+LOAD | DATA:xxxxxxxx	ADDRESS:xxxxxxxx
+The program counter was reset
+This is a 32 bit instruction
+
+The current instruction is ADDI
+LOAD | DATA:xxxxxxxx	ADDRESS:00000400
+The value 00000400 was stored in register x 2
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000000	ADDRESS:000003fc
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000000	ADDRESS:000003f8
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:xxxxxxxx	ADDRESS:00000400
+The value 00000400 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003f0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000028
+The value 00000014 was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000014	ADDRESS:000003ec
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000400	ADDRESS:000003e8
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d8
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003dc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000005c
+The value 00000042 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003e0
+The value 00000002 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003d0
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d0
+The value 00000006 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003e0
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d0
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000000c
+The value 0000000c was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:0000000c	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:0000000c	ADDRESS:000003d0
+The value 0000000c was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000012
+The value 00000012 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000012	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000012	ADDRESS:000003d0
+The value 00000012 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003d0
+The value 00000018 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003e0
+The value 00000018 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003d0
+The value 00000018 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000030
+The value 00000030 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000030	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000030	ADDRESS:000003d0
+The value 00000030 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000048
+The value 00000048 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000048	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000048	ADDRESS:000003d0
+The value 00000048 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000060
+The value 00000060 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000060	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000060	ADDRESS:000003d0
+The value 00000060 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003d0
+The value 00000078 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003e0
+The value 00000078 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003d0
+The value 00000078 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000f0
+The value 000000f0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000000f0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000000f0	ADDRESS:000003d0
+The value 000000f0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000168
+The value 00000168 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000168	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000168	ADDRESS:000003d0
+The value 00000168 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000001e0
+The value 000001e0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000001e0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000001e0	ADDRESS:000003d0
+The value 000001e0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000258
+The value 00000258 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000258	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000258	ADDRESS:000003d0
+The value 00000258 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000002d0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000007
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000007	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000007	ADDRESS:000003cc
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000002d0	ADDRESS:000003d0
+The value 000002d0 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000002d0	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000007
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000007	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000007	ADDRESS:000003dc
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000002d0	ADDRESS:000003e0
+The value 000002d0 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000014	ADDRESS:000003ec
+The value 00000014 was stored in register x 1
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000400	ADDRESS:000003e8
+The value 00000400 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000014
+The value 00000076 was stored in register x 0
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 00000000 was stored in register x15
+
+The current instruction is C.SW
+Quadrant 0 - 16 bit instruction
+STORE | DATA:000002d0	ADDRESS:00000000
+
+The current instruction is C.EBREAK
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000014	ADDRESS:00000000
+PRIV: An ebreak exception has occured
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000014	ADDRESS:00000000
+The value 00000000 was stored in register x 0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000028
+The value 00000014 was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000014	ADDRESS:000003ec
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000400	ADDRESS:000003e8
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d8
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003dc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000005c
+The value 00000042 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003e0
+The value 00000002 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003d0
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d0
+The value 00000006 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003e0
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d0
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000000c
+The value 0000000c was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:0000000c	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:0000000c	ADDRESS:000003d0
+The value 0000000c was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000012
+The value 00000012 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000012	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000012	ADDRESS:000003d0
+The value 00000012 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003d0
+The value 00000018 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003e0
+The value 00000018 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000018
+The value 00000018 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000018	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003d0
+The value 00000018 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000030
+The value 00000030 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000030	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000030	ADDRESS:000003d0
+The value 00000030 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000048
+The value 00000048 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000048	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000048	ADDRESS:000003d0
+The value 00000048 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000060
+The value 00000060 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000060	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000060	ADDRESS:000003d0
+The value 00000060 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000018	ADDRESS:000003c8
+The value 00000018 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 00000005 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003d0
+The value 00000078 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003dc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003e0
+The value 00000078 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000005	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000078
+The value 00000078 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000078	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003d0
+The value 00000078 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000f0
+The value 000000f0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000000f0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000000f0	ADDRESS:000003d0
+The value 000000f0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000168
+The value 00000168 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000168	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000168	ADDRESS:000003d0
+The value 00000168 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000001e0
+The value 000001e0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000001e0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000005
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000005	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000001e0	ADDRESS:000003d0
+The value 000001e0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000258
+The value 00000258 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000258	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000005	ADDRESS:000003cc
+The value 00000005 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000258	ADDRESS:000003d0
+The value 00000258 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000078	ADDRESS:000003c8
+The value 00000078 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000002d0	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003cc
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000007
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000007	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000007	ADDRESS:000003cc
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000002d0	ADDRESS:000003d0
+The value 000002d0 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:000002d0	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003dc
+The value 00000006 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000007
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000007	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000007	ADDRESS:000003dc
+The value 00000007 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:000002d0	ADDRESS:000003e0
+The value 000002d0 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000014	ADDRESS:000003ec
+The value 00000014 was stored in register x 1
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000400	ADDRESS:000003e8
+The value 00000400 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000014
+The value 00000076 was stored in register x 0
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000002d0
+The value 000002d0 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 00000000 was stored in register x15
+
+The current instruction is C.SW
+Quadrant 0 - 16 bit instruction
+STORE | DATA:000002d0	ADDRESS:00000000
+
+The current instruction is C.EBREAK
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000014	ADDRESS:00000000
+PRIV: An ebreak exception has occured
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000014	ADDRESS:00000000
+The value 00000000 was stored in register x 0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000028
+The value 00000014 was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000014	ADDRESS:000003ec
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:00000400	ADDRESS:000003e8
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000003f0
+The value 000003f0 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d8
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003dc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000005c
+The value 00000042 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003dc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003e0
+The value 00000001 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000001	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003d0
+The value 00000001 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003c8
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003dc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003e0
+The value 00000002 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000002	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000002
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000002	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003d0
+The value 00000002 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003cc
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000003
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000003	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003d0
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000002	ADDRESS:000003c8
+The value 00000002 was stored in register x15
+
+The current instruction is C.ADD
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003d0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003cc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003cc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003cc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 00000003 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d0
+The value 00000006 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000006
+The value 00000006 was stored in register x10
+
+The current instruction is C.LWSP
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:000003f0	ADDRESS:000003d4
+The value 000003f0 was stored in register x 8
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 2
+
+The current instruction is C.JR
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:0000004e
+The value 000000c0 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003e0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000003	ADDRESS:000003dc
+The value 00000003 was stored in register x15
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003dc
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 00000006 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000042
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003dc
+The value 00000004 was stored in register x15
+
+The current instruction is C.MV
+Quadrant 2 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000004
+The value 00000004 was stored in register x11
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003e0
+The value 00000006 was stored in register x10
+
+The current instruction is C.JAL
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000076
+The value 0000004e was stored in register x 1
+
+The current instruction is C.ADDI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000003	ADDRESS:000003c4
+The value 000003c4 was stored in register x 2
+
+The current instruction is C.SWSP
+Quadrant 2 - 16 bit instruction
+STORE | DATA:000003f0	ADDRESS:000003d4
+
+The current instruction is C.ADDI4SPN
+Quadrant 0 - 16 bit instruction
+LOAD | DATA:00000006	ADDRESS:000003d8
+The value 000003d8 was stored in register x 8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000006	ADDRESS:000003c8
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000004	ADDRESS:000003c4
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000000	ADDRESS:000003d0
+
+The current instruction is C.LI
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:00000001
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is SW
+STORE | DATA:00000001	ADDRESS:000003cc
+
+The current instruction is C.J
+Quadrant 1 - 16 bit instruction
+LOAD | DATA:00000000	ADDRESS:000000a8
+The value 00000090 was stored in register x 0
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000001	ADDRESS:000003cc
+The value 00000001 was stored in register x15
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000004	ADDRESS:000003c4
+The value 00000004 was stored in register x14
+This is a 32 bit instruction
+
+UNKNOWN INSTRUCTION: 1111100011
+LOAD | DATA:00000000	ADDRESS:00000090
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000000	ADDRESS:000003d0
+The value 00000000 was stored in register x14
+This is a 32 bit instruction
+
+The current instruction is LW
+LOAD | DATA:00000006	ADDRESS:000003c8

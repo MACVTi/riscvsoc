@@ -18,8 +18,4 @@ always @(posedge I_clk) begin
 	end
 end
 
-always @(negedge I_rst) begin
-	O_address <= RESET;	
-end
-
 endmodule

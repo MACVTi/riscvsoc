@@ -1,63 +1,118 @@
 `include "./general_definitions.vh"
 
-module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM="first_test.mem", DATA_MEM="data.mem") (
+module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM="", DATA_MEM="") (
     input wire I_clk,
     input wire I_rst,
-    input wire I_interrupt,
+    input wire I_interrupt
     
+//    // Control wires
+//    output wire PCSel,
+//    output wire [2:0] Immsel,
+//    output wire RegWEn,
+//    output wire BrUn,
+//    output wire BrEq,
+//    output wire BrLT,
+//    output wire ASel,
+//    output wire BSel,
+//    output wire [3:0] ALUSel,
+//    output wire MemRW,
+//    output wire [2:0] LoadSel,
+//    output wire [1:0] StoreSel,
+//    output wire [1:0] WBSel,
+//    output wire PrivSel,
+//    output wire MsrWEn,
+//    output wire CSRwbSel,
+    
+//    // Privilege wires
+//    output wire flag_ecall,
+//    output wire flag_ebreak,
+//    output wire flag_illegalinst,
+//    output wire flag_exception,
+//    output wire [11:0] csr_addr_in,
+//    output wire [31:0] csr_data_out,
+//    output wire [31:0] mux_csr_out,
+//    output wire [31:0] mepc_ret_out,
+//    output wire [31:0] mevect_out,
+//    output wire [31:0] mux_privilege_out,
+
+//    // Declare other wires
+//    output wire [31:0] pc_out,
+//    output wire [31:0] pcincr_out,
+//    output wire [31:0] decoder_out,
+//    output wire [31:0] mem_out,
+//    output wire [31:0] inst_out,
+//    output wire [31:0] alu_out,
+//    output wire [31:0] mux_pc_out,
+//    output wire [31:0] mux_rs1_out,
+//    output wire [31:0] mux_rs2_out,
+//    output wire [31:0] rs1_data_out,
+//    output wire [31:0] rs2_data_out,
+//    output wire [31:0] immediate_out,
+//    output wire [31:0] adder_out,
+//    output wire [31:0] loadgen_out,
+//    output wire [31:0] storegen_out,
+//    output wire [31:0] mux_wb_out,
+
+//    // Register output wires
+//    output wire [3:0] rs1_addr_in,
+//    output wire [3:0] rs2_addr_in,
+//    output wire [3:0] rd_addr_in
+    );
+    
+    // Wires for final design so they are not outputted from block.
     // Control wires
-    output wire PCSel,
-    output wire [2:0] Immsel,
-    output wire RegWEn,
-    output wire BrUn,
-    output wire BrEq,
-    output wire BrLT,
-    output wire ASel,
-    output wire BSel,
-    output wire [3:0] ALUSel,
-    output wire MemRW,
-    output wire [2:0] LoadSel,
-    output wire [1:0] StoreSel,
-    output wire [1:0] WBSel,
-    output wire PrivSel,
-    output wire MsrWEn,
-    output wire CSRwbSel,
+    wire PCSel;
+    wire [2:0] Immsel;
+    wire RegWEn;
+    wire BrUn;
+    wire BrEq;
+    wire BrLT;
+    wire ASel;
+    wire BSel;
+    wire [3:0] ALUSel;
+    wire MemRW;
+    wire [2:0] LoadSel;
+    wire [1:0] StoreSel;
+    wire [1:0] WBSel;
+    wire PrivSel;
+    wire MsrWEn;
+    wire CSRwbSel;
     
     // Privilege wires
-    output wire flag_ecall,
-    output wire flag_ebreak,
-    output wire flag_illegalinst,
-    output wire flag_exception,
-    output wire [11:0] csr_addr_in,
-    output wire [31:0] csr_data_out,
-    output wire [31:0] mux_csr_out,
-    output wire [31:0] mepc_ret_out,
-    output wire [31:0] mevect_out,
-    output wire [31:0] mux_privilege_out,
+    wire flag_ecall;
+    wire flag_ebreak;
+    wire flag_illegalinst;
+    wire flag_exception;
+    wire [11:0] csr_addr_in;
+    wire [31:0] csr_data_out;
+    wire [31:0] mux_csr_out;
+    wire [31:0] mepc_ret_out;
+    wire [31:0] mevect_out;
+    wire [31:0] mux_privilege_out;
 
     // Declare other wires
-    output wire [31:0] pc_out,
-    output wire [31:0] pcincr_out,
-    output wire [31:0] decoder_out,
-    output wire [31:0] mem_out,
-    output wire [31:0] inst_out,
-    output wire [31:0] alu_out,
-    output wire [31:0] mux_pc_out,
-    output wire [31:0] mux_rs1_out,
-    output wire [31:0] mux_rs2_out,
-    output wire [31:0] rs1_data_out,
-    output wire [31:0] rs2_data_out,
-    output wire [31:0] immediate_out,
-    output wire [31:0] adder_out,
-    output wire [31:0] loadgen_out,
-    output wire [31:0] storegen_out,
-    output wire [31:0] mux_wb_out,
+    wire [31:0] pc_out;
+    wire [31:0] pcincr_out;
+    wire [31:0] decoder_out;
+    wire [31:0] mem_out;
+    wire [31:0] inst_out;
+    wire [31:0] alu_out;
+    wire [31:0] mux_pc_out;
+    wire [31:0] mux_rs1_out;
+    wire [31:0] mux_rs2_out;
+    wire [31:0] rs1_data_out;
+    wire [31:0] rs2_data_out;
+    wire [31:0] immediate_out;
+    wire [31:0] adder_out;
+    wire [31:0] loadgen_out;
+    wire [31:0] storegen_out;
+    wire [31:0] mux_wb_out;
 
     // Register output wires
-    output wire [3:0] rs1_addr_in,
-    output wire [3:0] rs2_addr_in,
-    output wire [3:0] rd_addr_in
-    );
+    wire [3:0] rs1_addr_in;
+    wire [3:0] rs2_addr_in;
+    wire [3:0] rd_addr_in;
+    
     
     wire [10:0] control_in;
     // Control wires

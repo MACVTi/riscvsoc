@@ -11,10 +11,10 @@ module mux3(
 
     always @(*) begin
         case(I_sel)
-            2'b00: O_data <= I_data1;
-            2'b01: O_data <= I_data2;
-            2'b10: O_data <= I_data3;
-            default: O_data <= 32'h00000000;
+            2'b00: O_data = I_data1;
+            2'b01: O_data = I_data2;
+            2'b10: O_data = I_data3;
+            default: O_data = 32'h00000000;
         endcase
     end
 

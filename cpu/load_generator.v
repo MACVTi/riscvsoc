@@ -11,12 +11,12 @@ module load_generator(
     
     always @(*) begin
         case(I_loadsel)
-            `LOAD_LB: O_data <= {{24{I_data[7]}},I_data[7:0]};
-            `LOAD_LH: O_data <= {{16{I_data[15]}},I_data[15:0]};
-            `LOAD_LW: O_data <= I_data;
-            `LOAD_LBU: O_data <= {24'h000000,I_data[7:0]};
-            `LOAD_LHU: O_data <= {16'h0000,I_data[15:0]};
-            default: O_data <= I_data;  //Default to LW
+            `LOAD_LB: O_data = {{24{I_data[7]}},I_data[7:0]};
+            `LOAD_LH: O_data = {{16{I_data[15]}},I_data[15:0]};
+            `LOAD_LW: O_data = I_data;
+            `LOAD_LBU: O_data = {24'h000000,I_data[7:0]};
+            `LOAD_LHU: O_data = {16'h0000,I_data[15:0]};
+            default: O_data = I_data;  //Default to LW
         endcase
     end
     
