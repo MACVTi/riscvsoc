@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Mar  6 19:04:58 2019
+| Host         : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|     12 |            1 |
+|    16+ |           22 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             174 |           47 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              70 |           15 |
+| Yes          | No                    | No                     |              32 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1088 |          282 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+--------------------------------------+------------------+------------------+----------------+
+|             Clock Signal             |             Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------------+--------------------------------------+------------------+------------------+----------------+
+|  CLK1MHZ_IBUF_BUFG                   |                                      |                  |                4 |             12 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/alu/O_led_reg[15]              |                  |                6 |             32 |
+|  riscv/decode/register_reg[2][16][0] |                                      |                  |                7 |             38 |
+|  riscv/pc/O_led_reg[0][0]            |                                      |                  |               16 |             60 |
+|  n_0_1125_BUFG                       |                                      |                  |               20 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[15][31][0] | riscv/regs/SR[0] |               14 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[14][31][0] | riscv/regs/SR[0] |               11 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[12][31][0] | riscv/regs/SR[0] |               15 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[11][31][0] | riscv/regs/SR[0] |               16 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[10][31][0] | riscv/regs/SR[0] |               18 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/mevect_reg[31][0]       | riscv/regs/SR[0] |               14 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[13][31][0] | riscv/regs/SR[0] |               18 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/E[0]                    | riscv/regs/SR[0] |                7 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[7][31][0]  | riscv/regs/SR[0] |               18 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[1][31][0]  | riscv/regs/SR[0] |               12 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[9][31][0]  | riscv/regs/SR[0] |               26 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[6][31][0]  | riscv/regs/SR[0] |               21 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[5][31][0]  | riscv/regs/SR[0] |               15 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[2][31][0]  | riscv/regs/SR[0] |               19 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[4][31][0]  | riscv/regs/SR[0] |               17 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[3][31][0]  | riscv/regs/SR[0] |               18 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[8][31][0]  | riscv/regs/SR[0] |               23 |             64 |
+|  CLK1MHZ_IBUF_BUFG                   |                                      | riscv/regs/SR[0] |               15 |             70 |
++--------------------------------------+--------------------------------------+------------------+------------------+----------------+
+
+

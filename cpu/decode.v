@@ -1,7 +1,6 @@
 `include "general_definitions.vh"
 
 module decode(
-    //input wire I_clk,
     input wire [31:0] I_data,
     output reg [31:0] O_pcincr,
     output reg [31:0] O_data,

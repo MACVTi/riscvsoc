@@ -29,14 +29,13 @@ module privilege #(parameter VECTOR=32'h00000000) (
 	// Mux_interrupt select
 	output reg O_exception,
 	output wire [31:0] O_epcreturn,
-	output wire [31:0] O_evect,
-	
-	// Debug wires
-	output reg [2:0] mstatus,     //[31:3] are always zero
-    output reg [4:0] mcause,      // [30:4] are always zero
-    output reg [31:0] mepc,
-    output reg [31:0] mevect
+	output wire [31:0] O_evect
 );
+
+    reg [2:0] mstatus;
+    reg [4:0] mcause;
+    reg [31:0] mepc;
+    reg [31:0] mevect;
 
     // Connect all interrupt/exception sources together
     wire exception = I_ecall | I_ebreak | I_illegalinst;

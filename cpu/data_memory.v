@@ -8,6 +8,7 @@ module data_memory #(parameter MEMFILE="") (
 
     // Declare some memory that we can use for data memory
 	reg [7:0] memory [0:1023];
+	integer i;
 
     // Connect output to memory
     assign O_data = {memory[I_address+3],memory[I_address+2],memory[I_address+1],memory[I_address]};
@@ -15,7 +16,7 @@ module data_memory #(parameter MEMFILE="") (
 	initial begin
 	   // Initialise the memory with zeros before loading instruction
 	    $display("Initialising the data memory with zeros");
-	    for (integer i=0; i<1024; i=i+1) begin
+	    for (i=0; i<1024; i=i+1) begin
 	        memory[i]= 8'h00;
         end
 		if (MEMFILE > 0) begin

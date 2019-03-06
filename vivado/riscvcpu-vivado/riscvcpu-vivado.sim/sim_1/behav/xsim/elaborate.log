@@ -1,15 +1,33 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/cpu.v" Line 3. Module cpu(VECTOR=32'b010000,INSTRUCTION_MEM="led_test.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v" Line 1. Module instruction_memory(MEMFILE="led_test.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/privilege.v" Line 6. Module privilege(VECTOR=32'b010000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/control.v" Line 3. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/pc.v" Line 4. Module pc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/decode.v" Line 3. Module decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v" Line 5. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/branch_comparator.v" Line 1. Module branch_comparator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/alu.v" Line 6. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/immediate_generator.v" Line 6. Module immediate_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/load_generator.v" Line 6. Module load_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v" Line 6. Module store_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/add.v" Line 4. Module add doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" Line 4. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" Line 4. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" Line 4. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux3.v" Line 4. Module mux3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v" Line 4. Module mux_privilege doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" Line 4. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v" Line 4. Module led_wishbone doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.instruction_memory(MEMFILE="fact...
-Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction_memory(MEMFILE="led_...
 Compiling module xil_defaultlib.privilege(VECTOR=32'b010000)
 Compiling module xil_defaultlib.control
 Compiling module xil_defaultlib.pc
@@ -25,6 +43,8 @@ Compiling module xil_defaultlib.mux2
 Compiling module xil_defaultlib.mux3
 Compiling module xil_defaultlib.mux_privilege
 Compiling module xil_defaultlib.cpu(VECTOR=32'b010000,INSTRUCTIO...
-Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.led_wishbone
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot cpu_tb_behav
+Built simulation snapshot top_tb_behav

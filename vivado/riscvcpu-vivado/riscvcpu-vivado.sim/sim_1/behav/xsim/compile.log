@@ -8,9 +8,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_s
 INFO: [VRFC 10-311] analyzing module control
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/cpu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/data_memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module data_memory
-WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/data_memory.v:18]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/decode.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module decode
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/immediate_generator.v" into library xil_defaultlib
@@ -18,6 +15,8 @@ INFO: [VRFC 10-311] analyzing module immediate_generator
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instruction_memory
 WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:12]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_wishbone
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/load_generator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module load_generator
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" into library xil_defaultlib
@@ -36,5 +35,7 @@ WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of
 WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v:30]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module store_generator
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/tb/cpu_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

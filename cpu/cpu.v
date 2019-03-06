@@ -3,7 +3,12 @@
 module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM="", DATA_MEM="") (
     input wire I_clk,
     input wire I_rst,
-    input wire I_interrupt
+    input wire I_interrupt,
+    
+    output wire O_data_memRW,
+    output wire [31:0] O_data_Addr_in,
+    output wire [31:0] O_data_Data_in,
+    input wire [31:0] I_data_Data_out
     
 //    // Control wires
 //    output wire PCSel,
@@ -126,6 +131,12 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     assign rs2_addr_in = decoder_out[23:20];
     assign rd_addr_in = decoder_out[10:7];
     
+    //
+    wire flag_illegalinst_decode;
+    wire flag_illegalinst_alu;
+    wire flag_illegalinst_control;
+    assign flag_illegalinst = flag_illegalinst_decode | flag_illegalinst_alu | flag_illegalinst_control;
+    
     //--------------------------------------//
     // Memory modules
     //--------------------------------------//
@@ -140,17 +151,23 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
         .O_data(inst_out)
     );
     
-    // Declare data memory
-    data_memory #(
-        .MEMFILE(DATA_MEM)
-    )
-    data (
-        .I_clk(I_clk),
-        .I_memrw(MemRW),
-        .I_address(alu_out),
-        .I_data(storegen_out),
-        .O_data(mem_out)
-    );
+    // Declare wires to replace data memory
+    assign O_data_memRW = MemRW;
+    assign O_data_Addr_in = alu_out;
+    assign O_data_Data_in = storegen_out;
+    assign mem_out = I_data_Data_out;
+
+//    // Declare data memory
+//    data_memory #(
+//        .MEMFILE(DATA_MEM)
+//    )
+//    data (
+//        .I_clk(I_clk),
+//        .I_memrw(MemRW),
+//        .I_address(alu_out),
+//        .I_data(storegen_out),
+//        .O_data(mem_out)
+//    );
     
     //--------------------------------------//
     // Privilege module
@@ -194,7 +211,7 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
         // Exception Flags
         .O_ecall(flag_ecall),
         .O_ebreak(flag_ebreak),
-        .O_illegalinst(flag_illegalinst),
+        .O_illegalinst(flag_illegalinst_control),
         
         // Standard Control Wires
         .O_pcsel(PCSel),
@@ -232,11 +249,10 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     
     // Declare decoder
     decode decode(
-//        .I_clk(I_clk),
         .I_data(inst_out),
         .O_pcincr(pcincr_out),
         .O_data(decoder_out),
-        .O_illegalflag(flag_illegalinst)
+        .O_illegalflag(flag_illegalinst_decode)
     );
     
     registers regs(
@@ -265,7 +281,8 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
         .I_alusel(ALUSel), 
         .I_data1(mux_rs1_out), 
         .I_data2(mux_rs2_out), 
-        .O_data(alu_out)
+        .O_data(alu_out),
+        .O_illegalflag(flag_illegalinst_alu)
     );
         
     // Declare Immediate Generator
