@@ -11,7 +11,7 @@ module text_to_pixel #(parameter TEXT_DATA_WIDTH=8, TEXT_COLOUR_WIDTH=8) (
 
 	initial begin
 		$display("Loading character map");
-		$readmemh("font.mem", character_map);
+		$readmemh("vga_font.mem", character_map);
 	end
 
 	always @(posedge clk) begin

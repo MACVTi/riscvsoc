@@ -18,8 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -52,6 +50,11 @@ read_mem {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/csrrw_test/csrrw_test.mem
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/mret_test/mret_test.mem
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/led_test/led_test.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/vga_colour_palette.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/text.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/text_colour.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/vga_font.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/gcc/vga_test/vga_test.mem
 }
 read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/add.v
@@ -69,8 +72,12 @@ read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/pc.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/privilege.v
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_generator.v
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -87,7 +94,7 @@ set_property used_in_implementation false [get_files /home/jack/Documents/Git/ri
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top top -part xc7a100tcsg324-3
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 # disable binary constraint mode for synth run checkpoints

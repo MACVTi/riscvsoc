@@ -1,5 +1,5 @@
-#!/bin/bash – riscv-gcc.sh
-
+#!/bin/bash 
+# riscv-gcc.sh
 # This script will create an exectuable binary file that we can run on our FPGA from a C source file.
 
 FILE=$1

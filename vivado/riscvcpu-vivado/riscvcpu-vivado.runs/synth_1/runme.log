@@ -9,17 +9,14 @@
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28482 
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:12]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v:23]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v:30]
+INFO: Helper process launched with PID 26501 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1278.602 ; gain = 86.156 ; free physical = 3637 ; free virtual = 10769
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1269.734 ; gain = 80.781 ; free physical = 3875 ; free virtual = 11354
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/cpu.v:3]
@@ -29,7 +26,7 @@ INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/jack/Documents/Git/riscvso
 	Parameter DATA_MEM bound to: (null) - type: string 
 INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:1]
 	Parameter MEMFILE bound to: led_test.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'led_test.mem' is read successfully [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:19]
+INFO: [Synth 8-3876] $readmem data file 'led_test.mem' is read successfully [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (1#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v:1]
 INFO: [Synth 8-6157] synthesizing module 'privilege' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/privilege.v:6]
 	Parameter VECTOR bound to: 16 - type: integer 
@@ -67,11 +64,103 @@ INFO: [Synth 8-6155] done synthesizing module 'mux3' (14#1) [/home/jack/Document
 INFO: [Synth 8-6157] synthesizing module 'mux_privilege' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'mux_privilege' (15#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'cpu' (16#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ram_wishbone' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ram_wishbone' (17#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v:4]
 INFO: [Synth 8-6157] synthesizing module 'led_wishbone' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'led_wishbone' (17#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v:4]
-WARNING: [Synth 8-350] instance 'led' of module 'led_wishbone' requires 6 connections, but only 5 given [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:82]
-WARNING: [Synth 8-3848] Net I_data_Data_out in module/entity top does not have driver. [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'top' (18#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'led_wishbone' (18#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_wishbone' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v:1]
+	Parameter TEXT_DATA_MEMFILE bound to: text.mem - type: string 
+	Parameter TEXT_COLOUR_MEMFILE bound to: text_colour.mem - type: string 
+	Parameter SCREEN_WIDTH bound to: 640 - type: integer 
+	Parameter SCREEN_HEIGHT bound to: 480 - type: integer 
+	Parameter TEXT_WIDTH bound to: 80 - type: integer 
+	Parameter TEXT_HEIGHT bound to: 60 - type: integer 
+	Parameter TEXT_ADDRESS_WIDTH bound to: 13 - type: integer 
+	Parameter TEXT_DATA_DEPTH bound to: 4800 - type: integer 
+	Parameter TEXT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter TEXT_COLOUR_DEPTH bound to: 4800 - type: integer 
+	Parameter TEXT_COLOUR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'vga_colour_palette.mem' is read successfully [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v:99]
+INFO: [Synth 8-6157] synthesizing module 'vga_generator' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_generator.v:3]
+	Parameter HSYNC_START bound to: 16 - type: integer 
+	Parameter HSYNC_END bound to: 112 - type: integer 
+	Parameter HSYNC_ACTIVE bound to: 160 - type: integer 
+	Parameter VSYNC_START bound to: 491 - type: integer 
+	Parameter VSYNC_END bound to: 493 - type: integer 
+	Parameter VSYNC_ACTIVE bound to: 480 - type: integer 
+	Parameter LINE bound to: 800 - type: integer 
+	Parameter SCREEN bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_generator' (19#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'text_to_pixel' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v:1]
+	Parameter TEXT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter TEXT_COLOUR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'vga_font.mem' is read successfully [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'text_to_pixel' (20#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_wishbone' (21#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (22#1) [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:3]
+WARNING: [Synth 8-3917] design top has port CA driven by constant 0
+WARNING: [Synth 8-3917] design top has port CB driven by constant 0
+WARNING: [Synth 8-3917] design top has port CC driven by constant 0
+WARNING: [Synth 8-3917] design top has port CD driven by constant 0
+WARNING: [Synth 8-3917] design top has port CE driven by constant 0
+WARNING: [Synth 8-3917] design top has port CF driven by constant 0
+WARNING: [Synth 8-3917] design top has port CG driven by constant 0
+WARNING: [Synth 8-3917] design top has port DP driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[0] driven by constant 0
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[9]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[8]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[7]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[6]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[8]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[7]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[6]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[31]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[30]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[29]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[28]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[27]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[26]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[25]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[24]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[23]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[22]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[21]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[20]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[19]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[18]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[17]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[16]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[31]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[30]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[29]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[28]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[27]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[26]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[25]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[24]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[23]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[22]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[21]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[20]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[19]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[18]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[17]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[16]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[15]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[14]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[13]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[12]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[11]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[10]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[9]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port DAT_I[8]
 WARNING: [Synth 8-3331] design led_wishbone has unconnected port DAT_I[31]
 WARNING: [Synth 8-3331] design led_wishbone has unconnected port DAT_I[30]
 WARNING: [Synth 8-3331] design led_wishbone has unconnected port DAT_I[29]
@@ -97,7 +186,7 @@ WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[1
 WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[0]
 WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.727 ; gain = 120.281 ; free physical = 3556 ; free virtual = 10689
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.359 ; gain = 147.406 ; free physical = 3844 ; free virtual = 11324
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -106,47 +195,14 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[31] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[30] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[29] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[28] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[27] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[26] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[25] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[24] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[23] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[22] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[21] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[20] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[19] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[18] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[17] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[16] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[15] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[14] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[13] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[12] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[11] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[10] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[9] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[8] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[7] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[6] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[5] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[4] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[3] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[2] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[1] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin riscv:I_data_Data_out[0] to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:45]
-WARNING: [Synth 8-3295] tying undriven pin led:RST_I to constant 0 [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v:82]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1312.727 ; gain = 120.281 ; free physical = 3556 ; free virtual = 10687
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.359 ; gain = 147.406 ; free physical = 3850 ; free virtual = 11331
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1312.727 ; gain = 120.281 ; free physical = 3556 ; free virtual = 10687
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.359 ; gain = 147.406 ; free physical = 3850 ; free virtual = 11331
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -162,22 +218,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1694.539 ; gain = 0.000 ; free physical = 3332 ; free virtual = 10475
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1712.164 ; gain = 0.000 ; free physical = 4309 ; free virtual = 11794
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3419 ; free virtual = 10563
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4433 ; free virtual = 11919
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3419 ; free virtual = 10563
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4433 ; free virtual = 11919
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3421 ; free virtual = 10565
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4435 ; free virtual = 11921
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "mstatus" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "mcause" won't be mapped to RAM because it is too sparse
@@ -203,12 +259,13 @@ INFO: [Synth 8-5544] ROM "register_reg[3]" won't be mapped to Block RAM because 
 INFO: [Synth 8-5544] ROM "register_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/alu.v:18]
-INFO: [Synth 8-5545] ROM "stb_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "character_map" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "palette" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'register_control_reg' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/control.v:36]
 WARNING: [Synth 8-327] inferring latch for variable 'O_data_reg' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/decode.v:86]
 WARNING: [Synth 8-327] inferring latch for variable 'O_data_reg' [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/alu.v:19]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3410 ; free virtual = 10554
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4380 ; free virtual = 11854
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,40 +278,54 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 18    
-	               16 Bit    Registers := 1     
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 66    
 	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              37K Bit         RAMs := 2     
 +---Muxes : 
+	 257 Input     64 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 14    
 	   5 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 5     
-	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
 	  12 Input     32 Bit        Muxes := 1     
 	   2 Input     27 Bit        Muxes := 1     
 	  48 Input     23 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 2     
+	  17 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 62    
 	   3 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
 	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 8     
 	   8 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 31    
-	   4 Input      1 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 94    
+	   4 Input      1 Bit        Muxes := 23    
 	  48 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 8     
 	   9 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 48    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -264,8 +335,12 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module top 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
 Module instruction_memory 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -352,6 +427,17 @@ Module mux_privilege
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
+Module ram_wishbone 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 64    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 62    
+	   4 Input      2 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 48    
+	   2 Input      1 Bit        Muxes := 61    
+	   4 Input      1 Bit        Muxes := 16    
 Module led_wishbone 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -359,6 +445,39 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
+Module vga_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module text_to_pixel 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     64 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module vga_wishbone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              37K Bit         RAMs := 2     
++---Muxes : 
+	  17 Input     12 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -376,42 +495,87 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "O_illegalflag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "stb_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[6]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[5]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[4]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[3]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[2]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[1]
-WARNING: [Synth 8-3331] design immediate_generator has unconnected port I_data[0]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_clk
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[31]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[30]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[29]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[28]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[27]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[26]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[25]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[24]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[23]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[22]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[21]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[20]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[19]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[18]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[17]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[16]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[15]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[14]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[13]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[12]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[11]
-WARNING: [Synth 8-3331] design instruction_memory has unconnected port I_address[10]
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design top has port CA driven by constant 0
+WARNING: [Synth 8-3917] design top has port CB driven by constant 0
+WARNING: [Synth 8-3917] design top has port CC driven by constant 0
+WARNING: [Synth 8-3917] design top has port CD driven by constant 0
+WARNING: [Synth 8-3917] design top has port CE driven by constant 0
+WARNING: [Synth 8-3917] design top has port CF driven by constant 0
+WARNING: [Synth 8-3917] design top has port CG driven by constant 0
+WARNING: [Synth 8-3917] design top has port DP driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port AN[0] driven by constant 0
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[9]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[8]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[7]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[6]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[5]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[4]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port x[3]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[8]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[7]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[6]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[5]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[4]
+WARNING: [Synth 8-3331] design text_to_pixel has unconnected port y[3]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[31]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[30]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[29]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[28]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[27]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[26]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[25]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[24]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[23]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[22]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[21]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[20]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[19]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[18]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[17]
+WARNING: [Synth 8-3331] design vga_wishbone has unconnected port ADR_I[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'riscv/ctrl/register_control_reg[1]' (LD) to 'riscv/ctrl/register_control_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[0]' (FDR) to 'vga/colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[1]' (FDR) to 'vga/colour_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[2]' (FDR) to 'vga/colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[4]' (FDR) to 'vga/colour_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[5]' (FDR) to 'vga/colour_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[8]' (FDR) to 'vga/colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/colour_reg[9]' (FDR) to 'vga/colour_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/blue_reg[0]' (FD) to 'vga/red_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/blue_reg[1]' (FD) to 'vga/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/blue_reg[2]' (FD) to 'vga/red_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/green_reg[0]' (FD) to 'vga/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/green_reg[1]' (FD) to 'vga/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/red_reg[0]' (FD) to 'vga/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/red_reg[1]' (FD) to 'vga/red_reg[3]'
 WARNING: [Synth 8-3332] Sequential element (O_data_reg[1]) is unused and will be removed from module decode.
 WARNING: [Synth 8-3332] Sequential element (O_data_reg[0]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (count_reg[12]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[11]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[10]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[9]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[8]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[7]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[6]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[5]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[4]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[3]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[2]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[1]) is unused and will be removed from module vga_wishbone.
+WARNING: [Synth 8-3332] Sequential element (count_reg[0]) is unused and will be removed from module vga_wishbone.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3361 ; free virtual = 10505
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4439 ; free virtual = 11922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -430,9 +594,23 @@ ROM:
 |instruction_memory | p_0_out    | 1024x8        | LUT            | 
 +-------------------+------------+---------------+----------------+
 
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|vga_wishbone: | text_data_memory_reg   | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|vga_wishbone: | text_colour_memory_reg | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance vga/i_9/text_data_memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/i_9/text_data_memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/i_11/text_colour_memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/i_11/text_colour_memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -443,13 +621,28 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3114 ; free virtual = 10272
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4320 ; free virtual = 11803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3206 ; free virtual = 10342
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4310 ; free virtual = 11793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|vga_wishbone: | text_data_memory_reg   | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|vga_wishbone: | text_colour_memory_reg | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++--------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -460,11 +653,12 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (riscv/ctrl/register_control_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (riscv/ctrl/register_control_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (riscv/ctrl/register_control_reg[7]) is unused and will be removed from module top.
+INFO: [Synth 8-4480] The timing for the instance vga/text_data_memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/text_data_memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/text_colour_memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance vga/text_colour_memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3266 ; free virtual = 10401
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4306 ; free virtual = 11788
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -476,19 +670,13 @@ Report RTL Partitions:
 Start IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4305 ; free virtual = 11788
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -501,7 +689,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4305 ; free virtual = 11788
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -510,28 +698,10 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4305 ; free virtual = 11788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -544,72 +714,83 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    39|
-|3     |LUT1   |     2|
-|4     |LUT2   |    31|
-|5     |LUT3   |   242|
-|6     |LUT4   |   155|
-|7     |LUT5   |   281|
-|8     |LUT6   |   718|
-|9     |MUXF7  |   129|
-|10    |MUXF8  |    64|
-|11    |FDRE   |   600|
-|12    |FDSE   |     1|
-|13    |LD     |    51|
-|14    |LDC    |    29|
-|15    |LDP    |     1|
-|16    |IBUF   |     2|
-|17    |OBUF   |    16|
-+------+-------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    45|
+|3     |LUT1       |     4|
+|4     |LUT2       |    89|
+|5     |LUT3       |   416|
+|6     |LUT4       |   243|
+|7     |LUT5       |   599|
+|8     |LUT6       |  1493|
+|9     |MUXF7      |   416|
+|10    |MUXF8      |   194|
+|11    |RAMB36E1   |     3|
+|12    |RAMB36E1_1 |     1|
+|13    |FDRE       |  1153|
+|14    |FDSE       |    33|
+|15    |LD         |    54|
+|16    |LDC        |    29|
+|17    |LDP        |     1|
+|18    |IBUF       |     3|
+|19    |OBUF       |    46|
++------+-----------+------+
 
 Report Instance Areas: 
-+------+--------------+--------------------+------+
-|      |Instance      |Module              |Cells |
-+------+--------------+--------------------+------+
-|1     |top           |                    |  2363|
-|2     |  led         |led_wishbone        |    16|
-|3     |  riscv       |cpu                 |  2327|
-|4     |    inst      |instruction_memory  |    36|
-|5     |    add       |add                 |     9|
-|6     |    alu       |alu                 |    41|
-|7     |    ctrl      |control             |   470|
-|8     |    decode    |decode              |   118|
-|9     |    immediate |immediate_generator |     1|
-|10    |    mux_csr   |mux2                |    46|
-|11    |    mux_priv  |mux_privilege       |    64|
-|12    |    mux_rs1   |mux2_0              |    32|
-|13    |    mux_rs2   |mux2_1              |    59|
-|14    |    pc        |pc                  |   350|
-|15    |    priv      |privilege           |    84|
-|16    |    regs      |registers           |  1017|
-+------+--------------+--------------------+------+
++------+----------------+--------------------+------+
+|      |Instance        |Module              |Cells |
++------+----------------+--------------------+------+
+|1     |top             |                    |  4824|
+|2     |  riscv         |cpu                 |  2360|
+|3     |    inst        |instruction_memory  |    39|
+|4     |    priv        |privilege           |   176|
+|5     |    ctrl        |control             |    67|
+|6     |    pc          |pc                  |    32|
+|7     |    decode      |decode              |   154|
+|8     |    regs        |registers           |   943|
+|9     |    bc          |branch_comparator   |    87|
+|10    |    alu         |alu                 |   578|
+|11    |    immediate   |immediate_generator |    32|
+|12    |    loadgen     |load_generator      |    24|
+|13    |    storegen    |store_generator     |    24|
+|14    |    add         |add                 |    11|
+|15    |    mux_pc      |mux2__1             |    32|
+|16    |    mux_rs1     |mux2__2             |    32|
+|17    |    mux_rs2     |mux2__3             |    32|
+|18    |    mux3        |mux3                |    32|
+|19    |    mux_priv    |mux_privilege       |    32|
+|20    |    mux_csr     |mux2                |    32|
+|21    |  ram           |ram_wishbone        |  1923|
+|22    |  led           |led_wishbone        |    34|
+|23    |  vga           |vga_wishbone        |   377|
+|24    |    display_vga |vga_generator       |    79|
+|25    |    texttopixel |text_to_pixel       |   260|
++------+----------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3265 ; free virtual = 10400
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4305 ; free virtual = 11788
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1694.539 ; gain = 120.281 ; free physical = 3320 ; free virtual = 10455
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1694.539 ; gain = 502.094 ; free physical = 3320 ; free virtual = 10455
+Synthesis finished with 0 errors, 0 critical warnings and 133 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1712.164 ; gain = 147.406 ; free physical = 4359 ; free virtual = 11842
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 1712.164 ; gain = 523.211 ; free physical = 4359 ; free virtual = 11842
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 315 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 746 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 81 instances were transformed.
-  LD => LDCE: 51 instances
+  A total of 84 instances were transformed.
+  LD => LDCE: 54 instances
   LDC => LDCE: 29 instances
   LDP => LDPE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+114 Infos, 154 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1722.570 ; gain = 530.344 ; free physical = 3321 ; free virtual = 10457
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1741.211 ; gain = 552.477 ; free physical = 4363 ; free virtual = 11845
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1746.582 ; gain = 0.000 ; free physical = 3320 ; free virtual = 10455
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 19:04:04 2019...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1765.223 ; gain = 0.000 ; free physical = 4361 ; free virtual = 11844
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 15:14:55 2019...

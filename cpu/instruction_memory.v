@@ -6,10 +6,11 @@ module instruction_memory #(parameter MEMFILE="") (
 
     // Declare some memory that we can use for instruction memory
 	reg [7:0] memory [0:1023];
-
+    integer i;
+    
 	initial begin
 	    // Initialise the memory with zeros before loading instructions
-	    for (integer i=0; i<1024; i=i+1) begin
+	    for (i=0; i<1024; i=i+1) begin
             memory[i]= 8'h00;
         end
         

@@ -1,13 +1,12 @@
-module vga_wishbone(
+module vga_wishbone #(parameter TEXT_DATA_MEMFILE="", TEXT_COLOUR_MEMFILE="")
+    (
 	// Wishbone Bus Connections
 	input wire CLK_I,
 	input wire RST_I,
-	input wire [14:0] ADR_I,
-	input wire [7:0] DAT_I,
+	input wire [31:0] ADR_I,
+	input wire [31:0] DAT_I,
 	input wire STB_I,
 	input wire WE_I,
-	output reg ACK_0,
-	output reg [7:0] DAT_O,
 
 	// VGA Connections
 	input wire mode,
@@ -55,11 +54,9 @@ module vga_wishbone(
 	localparam TEXT_DATA_WIDTH = 8;
 	localparam TEXT_COLOUR_DEPTH = TEXT_WIDTH * TEXT_HEIGHT;
 	localparam TEXT_COLOUR_WIDTH = 8;
-	localparam TEXT_DATA_MEMFILE = "text.mem";
-	localparam TEXT_COLOUR_MEMFILE = "text_colour.mem";
 
-	reg [TEXT_ADDRESS_WIDTH-1:0] text_data_address;
-	reg [TEXT_ADDRESS_WIDTH-1:0] text_colour_address;
+//	reg [TEXT_ADDRESS_WIDTH-1:0] text_data_address;
+//	reg [TEXT_ADDRESS_WIDTH-1:0] text_colour_address;
 	reg [TEXT_DATA_WIDTH-1:0] text_data_out;
 	reg [TEXT_COLOUR_WIDTH-1:0] text_colour_out;
 	wire [3:0] pixel_out;
@@ -68,16 +65,15 @@ module vga_wishbone(
 	reg [TEXT_DATA_WIDTH-1:0] text_data_memory [0:TEXT_DATA_DEPTH-1];
 	reg [TEXT_COLOUR_WIDTH-1:0] text_colour_memory [0:TEXT_COLOUR_DEPTH-1];
 
+    integer i;
 	initial begin
-		if (TEXT_DATA_MEMFILE > 0) begin
-			$display("Loading initial text data memory file: " + TEXT_DATA_MEMFILE);
-			$readmemh(TEXT_DATA_MEMFILE, text_data_memory);
-		end
-
-		if (TEXT_COLOUR_MEMFILE > 0) begin
-			$display("Loading initial text colour memory file: " + TEXT_COLOUR_MEMFILE);
-			$readmemh(TEXT_COLOUR_MEMFILE, text_colour_memory);
-		end
+	    for (i=0; i < TEXT_DATA_DEPTH; i=i+1) begin
+            text_data_memory[i]= 8'h00;
+        end
+        
+        for (i=0; i < TEXT_COLOUR_DEPTH; i=i+1) begin
+            text_colour_memory[i]= 8'h40;
+        end
 	end
 
 	// Instantiate Text to Pixel to convert text information into pixel
@@ -99,19 +95,16 @@ module vga_wishbone(
 	reg [11:0] colour;
 
 	initial begin
-		$display("Loading palette");
-		$readmemh("colour_palette.mem", palette);
+		$display("Loading VGA colour palette");
+		$readmemh("vga_colour_palette.mem", palette);
 	end
 
 
 	// Draw out image to the screen
 	always @ (posedge CLK_I) begin
 		// Draw current pixel
-		text_data_address <= ((y>>3) * TEXT_WIDTH) + (x>>3);
-		text_colour_address <= ((y>>3) * TEXT_WIDTH) + (x>>3);
-
-		text_data_out <= text_data_memory[text_data_address];
-		text_colour_out <= text_colour_memory[text_colour_address];
+		text_data_out <= text_data_memory[((y>>3) * TEXT_WIDTH) + (x>>3)];
+		text_colour_out <= text_colour_memory[((y>>3) * TEXT_WIDTH) + (x>>3)];
 
 		if (active) begin
 			colour <= palette[pixel_out];
@@ -124,15 +117,15 @@ module vga_wishbone(
 		green <= colour[7:4];
 		blue <= colour[3:0];
 
-		// Write data to sram if both strobe and write enable are high
+		// Write data to sram if both chip select and write enable are high
 		if (STB_I) begin
 			if (WE_I) begin
-				casez(ADR_I)
-					15'b01?????????????: begin
+				casez(ADR_I[15:0])
+					15'b0??????????????: begin
 						text_data_memory[ADR_I[12:0]] <= DAT_I;
 					end	
 
-					15'b10?????????????: begin
+					15'b1??????????????: begin
 						text_colour_memory[ADR_I[12:0]] <= DAT_I;
 					end	
 

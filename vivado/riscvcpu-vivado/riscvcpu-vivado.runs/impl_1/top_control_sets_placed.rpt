@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Wed Mar  6 19:04:58 2019
+| Date         : Thu Mar  7 15:17:31 2019
 | Host         : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    23 |
-| Unused register locations in slices containing registers |    12 |
+| Number of unique control sets                            |    91 |
+| Unused register locations in slices containing registers |    30 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|     12 |            1 |
-|    16+ |           22 |
+|     10 |            1 |
+|    16+ |           90 |
 +--------+--------------+
 
 
@@ -45,44 +45,112 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             174 |           47 |
+| No           | No                    | No                     |             166 |           50 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              70 |           15 |
-| Yes          | No                    | No                     |              32 |            6 |
+| No           | Yes                   | No                     |             204 |           50 |
+| Yes          | No                    | No                     |              36 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1088 |          282 |
+| Yes          | Yes                   | No                     |            2148 |          513 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------+--------------------------------------+------------------+------------------+----------------+
-|             Clock Signal             |             Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------------------------------+--------------------------------------+------------------+------------------+----------------+
-|  CLK1MHZ_IBUF_BUFG                   |                                      |                  |                4 |             12 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/alu/O_led_reg[15]              |                  |                6 |             32 |
-|  riscv/decode/register_reg[2][16][0] |                                      |                  |                7 |             38 |
-|  riscv/pc/O_led_reg[0][0]            |                                      |                  |               16 |             60 |
-|  n_0_1125_BUFG                       |                                      |                  |               20 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[15][31][0] | riscv/regs/SR[0] |               14 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[14][31][0] | riscv/regs/SR[0] |               11 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[12][31][0] | riscv/regs/SR[0] |               15 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[11][31][0] | riscv/regs/SR[0] |               16 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[10][31][0] | riscv/regs/SR[0] |               18 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/mevect_reg[31][0]       | riscv/regs/SR[0] |               14 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[13][31][0] | riscv/regs/SR[0] |               18 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/E[0]                    | riscv/regs/SR[0] |                7 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[7][31][0]  | riscv/regs/SR[0] |               18 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[1][31][0]  | riscv/regs/SR[0] |               12 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[9][31][0]  | riscv/regs/SR[0] |               26 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[6][31][0]  | riscv/regs/SR[0] |               21 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[5][31][0]  | riscv/regs/SR[0] |               15 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[2][31][0]  | riscv/regs/SR[0] |               19 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[4][31][0]  | riscv/regs/SR[0] |               17 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[3][31][0]  | riscv/regs/SR[0] |               18 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   | riscv/decode/register_reg[8][31][0]  | riscv/regs/SR[0] |               23 |             64 |
-|  CLK1MHZ_IBUF_BUFG                   |                                      | riscv/regs/SR[0] |               15 |             70 |
-+--------------------------------------+--------------------------------------+------------------+------------------+----------------+
++----------------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|                 Clock Signal                 |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  CLK1MHZ_IBUF_BUFG                           |                                     | vga/display_vga/active              |                2 |             10 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[25][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[32][7]_i_1_n_1           | reset                               |                1 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[31][7]_i_1_n_1           | reset                               |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[30][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[2][7]_i_1_n_1            | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[29][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[28][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[27][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[26][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[33][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[24][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[23][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[22][7]_i_1_n_1           | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[21][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[20][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[1][7]_i_1_n_1            | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[19][7]_i_1_n_1           | reset                               |                4 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[17][7]_i_1_n_1           | reset                               |                4 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[34][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[35][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[36][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[37][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[38][7]_i_1_n_1           | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[39][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[3][7]_i_1_n_1            | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[40][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[41][7]_i_1_n_1           | reset                               |                1 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[42][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[43][7]_i_1_n_1           | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[44][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[45][7]_i_1_n_1           | reset                               |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[46][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[47][7]_i_1_n_1           | reset                               |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[53][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[9][7]_i_1_n_1            | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[8][7]_i_1_n_1            | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[7][7]_i_1_n_1            | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[6][7]_i_1_n_1            | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[63][7]_i_1_n_1           |                                     |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[62][7]_i_1_n_1           | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[61][7]_i_1_n_1           | reset                               |                7 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[60][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[5][7]_i_1_n_1            | reset                               |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[59][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[58][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[57][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[56][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[55][7]_i_1_n_1           | reset                               |                6 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[54][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[52][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[51][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[50][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[4][7]_i_1_n_1            | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[49][7]_i_1_n_1           | reset                               |                3 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[48][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory                          | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[10][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[11][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[12][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[13][7]_i_1_n_1           | reset                               |                8 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[14][7]_i_1_n_1           | reset                               |                5 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[15][7]_i_1_n_1           | reset                               |                4 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[16][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | ram/memory[18][7]_i_1_n_1           | reset                               |                2 |             16 |
+|  CLK1MHZ_IBUF_BUFG                           | vga/display_vga/v_count[9]_i_1_n_1  |                                     |                4 |             20 |
+|  CLK1MHZ_IBUF_BUFG                           | vga/pixel_strobe                    | vga/display_vga/h_count             |                3 |             20 |
+|  CLK1MHZ_IBUF_BUFG                           | led/O_led[15]_i_2_n_1               | led/O_led[15]_i_1_n_1               |                3 |             32 |
+|  riscv/ctrl/register_control_reg[22]_i_2_n_1 |                                     |                                     |                8 |             44 |
+|  CLK1MHZ_IBUF_BUFG                           |                                     |                                     |               12 |             58 |
+|  riscv/decode/O_data_reg[31]_i_2_n_1         |                                     | riscv/decode/O_data_reg[31]_i_3_n_1 |               15 |             60 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[11][31]_i_1_n_1 | reset                               |               10 |             64 |
+|  riscv/alu/n_0_103_BUFG                      |                                     |                                     |               30 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           |                                     | stb_led                             |               16 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[3][31]_i_1_n_1  | reset                               |               16 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[5][31]_i_1_n_1  | reset                               |               19 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[4][31]_i_1_n_1  | reset                               |                7 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register                 | reset                               |               10 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[10][31]_i_1_n_1 | reset                               |               16 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[12][31]_i_1_n_1 | reset                               |               12 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[13][31]_i_1_n_1 | reset                               |               10 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[14][31]_i_1_n_1 | reset                               |               12 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[1][31]_i_1_n_1  | reset                               |               14 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[2][31]_i_1_n_1  | reset                               |               11 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[6][31]_i_1_n_1  | reset                               |               21 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[7][31]_i_1_n_1  | reset                               |               17 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[8][31]_i_1_n_1  | reset                               |               20 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/regs/register[9][31]_i_1_n_1  | reset                               |               17 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/priv/mevect                   | reset                               |               17 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           | riscv/priv/mepc[0]_i_1_n_1          | reset                               |               15 |             64 |
+|  CLK1MHZ_IBUF_BUFG                           |                                     | reset                               |               17 |             70 |
++----------------------------------------------+-------------------------------------+-------------------------------------+------------------+----------------+
 
 

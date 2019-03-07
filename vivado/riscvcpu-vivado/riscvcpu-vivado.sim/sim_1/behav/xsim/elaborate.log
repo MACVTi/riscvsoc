@@ -24,7 +24,9 @@ WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2
 WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux3.v" Line 4. Module mux3 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v" Line 4. Module mux_privilege doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v" Line 4. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v" Line 4. Module ram_wishbone doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v" Line 4. Module led_wishbone doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v" Line 1. Module text_to_pixel doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.instruction_memory(MEMFILE="led_...
@@ -43,7 +45,11 @@ Compiling module xil_defaultlib.mux2
 Compiling module xil_defaultlib.mux3
 Compiling module xil_defaultlib.mux_privilege
 Compiling module xil_defaultlib.cpu(VECTOR=32'b010000,INSTRUCTIO...
+Compiling module xil_defaultlib.ram_wishbone
 Compiling module xil_defaultlib.led_wishbone
+Compiling module xil_defaultlib.vga_generator
+Compiling module xil_defaultlib.text_to_pixel
+Compiling module xil_defaultlib.vga_wishbone(TEXT_DATA_MEMFILE="...
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl

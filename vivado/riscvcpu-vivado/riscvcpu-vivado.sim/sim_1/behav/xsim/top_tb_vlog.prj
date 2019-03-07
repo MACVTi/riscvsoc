@@ -15,9 +15,13 @@ verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../cpu/mux_privilege.v" \
 "../../../../../../cpu/pc.v" \
 "../../../../../../cpu/privilege.v" \
+"../../../../../../ram/ram_wishbone.v" \
 "../../../../../../cpu/registers.v" \
 "../../../../../../cpu/store_generator.v" \
+"../../../../../../vga/text_2_pixel.v" \
 "../../../../../../board/top.v" \
+"../../../../../../vga/vga_generator.v" \
+"../../../../../../vga/vga_wishbone.v" \
 "../../../../../../board/tb/top_tb.v" \
 
 # compile glbl module

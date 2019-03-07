@@ -1,41 +1,42 @@
 // Written by Jack McEllin - 15170144
-// A flexible wishbone bus compatible ram module
+// A wishbone bus compatible ram module
 
-module ram_wishbone #(parameter ADDRESS_WIDTH=8, DATA_WIDTH=8, DEPTH=256, MEMFILE="") (
+module ram_wishbone (
 	input wire CLK_I,
+	input wire RST_I,
 	input wire STB_I,
 	input wire WE_I,
-	input wire [ADDRESS_WIDTH-1:0] ADR_I,
-	input wire [DATA_WIDTH-1:0] DAT_I,
-	output wire [DATA_WIDTH-1:0] DAT_O,
-	output reg ACK_O
+	input wire [31:0] ADR_I,
+	input wire [31:0] DAT_I,
+	output wire [31:0] DAT_O
 	);
-
-	reg [DATA_WIDTH-1:0] memory [0:DEPTH-1];
-
-	initial begin
-		// Initialise the memory with zeros
-        for (integer i=0; i<DEPTH; i=i+1) begin
-            memory[i]= {DATA_WIDTH{1'b0}};
+	
+	  // Declare some memory that we can use for data memory
+    reg [7:0] memory [0:63];
+    integer i;
+   
+    // Connect output to memory
+    assign DAT_O = {memory[ADR_I+3],memory[ADR_I+2],memory[ADR_I+1],memory[ADR_I]};
+   
+    initial begin
+        // Initialise the memory with zeros before loading instruction
+        $display("Initialising the data memory with zeros");
+        for (i=0; i<63; i=i+1) begin
+            memory[i]= 8'h00;
         end
-        
-		if (MEMFILE > 0) begin
-			$display("Loading initial memory file: " + MEMFILE);
-			$readmemh(MEMFILE, memory);
-		end
-	end
+    end
 
 	always @ (posedge CLK_I) begin
-		if (STB_I) begin
-			if (WE_I) begin
-                memory[ADR_I] <= DAT_I;
-			    $display("STORE | \tDATA:%h\tADDRESS:%h", DAT_I, ADR_I);
-			end
-			else begin
-			    DAT_O <= memory[ADR_I];
-			    $display("LOAD | DATA:%h\tADDRESS:%h", DAT_O, ADR_I);
-			end
-		end
-		ACK_O <= STB_I;
-	end
+	    if(RST_I) begin
+	        for (i=0; i<63; i=i+1) begin
+                memory[i]<= 8'h00;
+            end
+	    end
+        else if(STB_I) begin
+            if (WE_I == 1'b1) begin
+                {memory[ADR_I+3],memory[ADR_I+2],memory[ADR_I+1],memory[ADR_I]} <= DAT_I;
+                $display("STORE | DATA:%h\tADDRESS:%h", DAT_I, ADR_I);
+            end
+        end
+    end  
 endmodule

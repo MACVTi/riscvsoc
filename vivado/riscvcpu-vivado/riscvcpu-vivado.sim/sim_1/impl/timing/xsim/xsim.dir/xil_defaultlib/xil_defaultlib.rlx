@@ -1,0 +1,6 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v,1551916995,verilog,,,,top_tb,,,../../../../../../../cpu/headers,,,,,
+/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/impl/timing/xsim/top_tb_time_impl.v,1551919968,verilog,,/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v,,add;alu;branch_comparator;control;cpu;decode;glbl;immediate_generator;instruction_memory;led_wishbone;load_generator;mux2;mux2__1;mux2__2;mux2__3;mux3;mux_privilege;pc;privilege;ram_wishbone;registers;store_generator;text_to_pixel;top;vga_generator;vga_wishbone,,,../../../../../../../cpu/headers,,,,,

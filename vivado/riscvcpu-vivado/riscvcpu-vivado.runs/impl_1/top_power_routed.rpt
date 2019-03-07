@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Wed Mar  6 19:05:24 2019
+| Date             : Thu Mar  7 15:17:59 2019
 | Host             : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.084        |
+| Total On-Chip Power (W)  | 0.097        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.000        |
-| Device Static (W)        | 0.084        |
+| Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 99.6         |
 | Junction Temperature (C) | 25.4         |
@@ -53,17 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     2357 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1236 |     63400 |            1.95 |
-|   CARRY4       |    <0.001 |       39 |     15850 |            0.25 |
-|   Register     |    <0.001 |      682 |    126800 |            0.54 |
-|   F7/F8 Muxes  |    <0.001 |      193 |     63400 |            0.30 |
+| Slice Logic    |    <0.001 |     4800 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     2513 |     63400 |            3.96 |
+|   CARRY4       |    <0.001 |       45 |     15850 |            0.28 |
+|   Register     |    <0.001 |     1277 |    126800 |            1.01 |
+|   F7/F8 Muxes  |    <0.001 |      610 |     63400 |            0.96 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |    <0.001 |     1815 |       --- |             --- |
-| I/O            |    <0.001 |       18 |       210 |            8.57 |
-| Static Power   |     0.084 |          |           |                 |
-| Total          |     0.084 |          |           |                 |
+|   Others       |     0.000 |       21 |       --- |             --- |
+| Signals        |    <0.001 |     3207 |       --- |             --- |
+| Block RAM      |    <0.001 |        4 |       135 |            2.96 |
+| I/O            |    <0.001 |       49 |       210 |           23.33 |
+| Static Power   |     0.097 |          |           |                 |
+| Total          |     0.097 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.015 |       0.000 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -129,7 +130,7 @@ Table of Contents
 +-------------+---------+-----------------+
 | Clock       | Domain  | Constraint (ns) |
 +-------------+---------+-----------------+
-| sys_clk_pin | CLK1MHZ |          1000.0 |
+| sys_clk_pin | CLK1MHZ |        100000.0 |
 +-------------+---------+-----------------+
 
 
@@ -139,25 +140,34 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| top           |    <0.001 |
-|   led         |    <0.001 |
-|   riscv       |    <0.001 |
-|     add       |    <0.001 |
-|     alu       |    <0.001 |
-|     ctrl      |    <0.001 |
-|     decode    |    <0.001 |
-|     immediate |    <0.001 |
-|     inst      |    <0.001 |
-|     mux_csr   |    <0.001 |
-|     mux_priv  |    <0.001 |
-|     mux_rs1   |    <0.001 |
-|     mux_rs2   |    <0.001 |
-|     pc        |    <0.001 |
-|     priv      |    <0.001 |
-|     regs      |    <0.001 |
-+---------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| top             |    <0.001 |
+|   led           |    <0.001 |
+|   ram           |    <0.001 |
+|   riscv         |    <0.001 |
+|     add         |    <0.001 |
+|     alu         |    <0.001 |
+|     bc          |    <0.001 |
+|     ctrl        |    <0.001 |
+|     decode      |    <0.001 |
+|     immediate   |    <0.001 |
+|     inst        |    <0.001 |
+|     loadgen     |    <0.001 |
+|     mux3        |    <0.001 |
+|     mux_csr     |    <0.001 |
+|     mux_pc      |    <0.001 |
+|     mux_priv    |    <0.001 |
+|     mux_rs1     |    <0.001 |
+|     mux_rs2     |    <0.001 |
+|     pc          |    <0.001 |
+|     priv        |    <0.001 |
+|     regs        |    <0.001 |
+|     storegen    |    <0.001 |
+|   vga           |    <0.001 |
+|     display_vga |    <0.001 |
+|     texttopixel |    <0.001 |
++-----------------+-----------+
 
 

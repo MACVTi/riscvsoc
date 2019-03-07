@@ -1,0 +1,3 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+$finish called at time : 2 us : File "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v" Line 70

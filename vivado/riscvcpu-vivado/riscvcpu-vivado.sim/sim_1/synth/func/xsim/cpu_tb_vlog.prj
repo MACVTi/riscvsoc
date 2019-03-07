@@ -1,6 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../../cpu/headers" \
-"cpu_tb_func_synth.v" \
-
-# Do not sort compile order
-nosort

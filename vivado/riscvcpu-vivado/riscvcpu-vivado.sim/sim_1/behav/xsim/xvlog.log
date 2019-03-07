@@ -29,13 +29,21 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_s
 INFO: [VRFC 10-311] analyzing module pc
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/privilege.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module privilege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_wishbone
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module registers
 WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v:23]
 WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v:30]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module store_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text_to_pixel
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_wishbone
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb

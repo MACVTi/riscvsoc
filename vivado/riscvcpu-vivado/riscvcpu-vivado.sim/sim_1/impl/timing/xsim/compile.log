@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.sim/sim_1/impl/timing/xsim/top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module branch_comparator
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-311] analyzing module immediate_generator
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-311] analyzing module led_wishbone
+INFO: [VRFC 10-311] analyzing module load_generator
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux2__1
+INFO: [VRFC 10-311] analyzing module mux2__2
+INFO: [VRFC 10-311] analyzing module mux2__3
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-311] analyzing module mux_privilege
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-311] analyzing module privilege
+INFO: [VRFC 10-311] analyzing module ram_wishbone
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-311] analyzing module store_generator
+INFO: [VRFC 10-311] analyzing module text_to_pixel
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module vga_generator
+INFO: [VRFC 10-311] analyzing module vga_wishbone
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/tb/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

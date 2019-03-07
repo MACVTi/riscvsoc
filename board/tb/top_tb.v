@@ -61,7 +61,7 @@ module top_tb;
 		// Initialise testbench
         CLK1MHZ = 1; CPU_RESETN = 0;
         
-        #100000 CPU_RESETN = 1;
+        #1000000 CPU_RESETN = 1;
 //        #100 interrupt = 1;
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
