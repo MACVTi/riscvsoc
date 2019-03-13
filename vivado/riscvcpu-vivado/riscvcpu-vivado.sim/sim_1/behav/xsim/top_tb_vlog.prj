@@ -3,6 +3,7 @@ verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../cpu/add.v" \
 "../../../../../../cpu/alu.v" \
 "../../../../../../cpu/branch_comparator.v" \
+"../../../../../../board/clock_divider.v" \
 "../../../../../../cpu/control.v" \
 "../../../../../../cpu/cpu.v" \
 "../../../../../../cpu/decode.v" \
@@ -18,10 +19,7 @@ verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../ram/ram_wishbone.v" \
 "../../../../../../cpu/registers.v" \
 "../../../../../../cpu/store_generator.v" \
-"../../../../../../vga/text_2_pixel.v" \
 "../../../../../../board/top.v" \
-"../../../../../../vga/vga_generator.v" \
-"../../../../../../vga/vga_wishbone.v" \
 "../../../../../../board/tb/top_tb.v" \
 
 # compile glbl module

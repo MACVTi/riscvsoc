@@ -1,62 +1,13 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot top_tb_func_impl xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot seg_wishbone_tb_func_impl xil_defaultlib.seg_wishbone_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module unisims_ver.BUFG
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.OBUF
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module unisims_ver.FDRE_default
-Compiling module xil_defaultlib.led_wishbone
-Compiling module unisims_ver.x_lut3_mux8
-Compiling module unisims_ver.LUT3
-Compiling module unisims_ver.LUT5
-Compiling module unisims_ver.LUT6
-Compiling module unisims_ver.MUXF8
-Compiling module unisims_ver.MUXF7
-Compiling module unisims_ver.LUT4
-Compiling module xil_defaultlib.ram_wishbone
-Compiling module unisims_ver.CARRY4
-Compiling module xil_defaultlib.add
-Compiling module unisims_ver.latchsre_ldce
-Compiling module unisims_ver.LDCE
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.branch_comparator
-Compiling module xil_defaultlib.control
-Compiling module unisims_ver.latchsre_ldpe
-Compiling module unisims_ver.LDPE
-Compiling module xil_defaultlib.decode
-Compiling module xil_defaultlib.immediate_generator
-Compiling module xil_defaultlib.instruction_memory
-Compiling module xil_defaultlib.load_generator
-Compiling module xil_defaultlib.mux3
-Compiling module xil_defaultlib.mux2
-Compiling module xil_defaultlib.mux2__1
-Compiling module xil_defaultlib.mux_privilege
-Compiling module xil_defaultlib.mux2__2
-Compiling module xil_defaultlib.mux2__3
-Compiling module xil_defaultlib.pc
-Compiling module unisims_ver.FDSE_default
-Compiling module xil_defaultlib.privilege
-Compiling module xil_defaultlib.registers
-Compiling module xil_defaultlib.store_generator
-Compiling module xil_defaultlib.cpu
-Compiling module unisims_ver.x_lut1_mux2
-Compiling module unisims_ver.LUT1
-Compiling module xil_defaultlib.vga_generator
-Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=4,READ_WID...
-Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module unisims_ver.RAMB36E1(INIT_00=256'b0100010001...
-Compiling module xil_defaultlib.text_to_pixel
-Compiling module xil_defaultlib.vga_wishbone
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.seg_wishbone
+Compiling module xil_defaultlib.seg_wishbone_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot top_tb_func_impl
+Built simulation snapshot seg_wishbone_tb_func_impl

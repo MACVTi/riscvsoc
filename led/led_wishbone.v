@@ -6,8 +6,8 @@ module led_wishbone (
 	input wire RST_I,
 	input wire STB_I,
 	input wire WE_I,
-	input wire [31:0] DAT_I,
-	output reg [15:0] O_led
+	input wire [15:0] DAT_I,
+	(* DONT_TOUCH = "true" *) output reg [15:0] O_led
 	);
 
     integer i;
@@ -19,11 +19,11 @@ module led_wishbone (
 
 	always @ (posedge CLK_I) begin
         if (RST_I) begin
-            O_led <= 16'h0000;
+            O_led = 16'h0000;
         end
-		if (STB_I) begin
+		else if (STB_I) begin
 			if (WE_I) begin
-                O_led <= DAT_I[15:0];
+                O_led = DAT_I;
 			end
 		end
 	end

@@ -6,9 +6,6 @@ module decode(
     output reg [31:0] O_data,
     output reg O_illegalflag
     );
-
-//    assign O_pcincr = 32'h00000004;
-//    assign O_data = I_data;
     
     always @(*) begin
         // Reset illegal instruction flag
@@ -16,7 +13,6 @@ module decode(
     
         // Check for illegal instruction
         if(I_data == 32'h00000000) begin
-//            $stop();
             O_illegalflag = 1;
         end
         
@@ -24,7 +20,7 @@ module decode(
         if(I_data[1:0] == 2'b11) begin
             $display("This is a 32 bit instruction");
             
-            // Display which instruction it is
+            // Display which instruction it is - THIS NEEDS TO BE REDONE
             casez({I_data[30],I_data[21:20],I_data[14:12],I_data[6:0]})
                 {6'b???,`OP_LUI}:                  $display("\nThe current instruction is LUI");
                 {6'b???,`OP_AUIPC}:                $display("\nThe current instruction is AUIPC");

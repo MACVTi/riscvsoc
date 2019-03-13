@@ -1,0 +1,66 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 654f904318c5484e8c4cd3bde082c2a9 --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot top_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "top_tb_time_synth.sdf", for root module "top_tb/top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "top_tb_time_synth.sdf", for root module "top_tb/top".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.led_wishbone
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.MUXF8
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDSE(INIT=1'b0)
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.ram_wishbone
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.add
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.branch_comparator
+Compiling module xil_defaultlib.control
+Compiling module simprims_ver.latchsre_ldpe
+Compiling module simprims_ver.LDPE
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.immediate_generator
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.load_generator
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2__1
+Compiling module xil_defaultlib.mux_privilege
+Compiling module xil_defaultlib.mux2__2
+Compiling module xil_defaultlib.mux2__3
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.privilege
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.store_generator
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.vga_generator
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB36E1(READ_WIDTH_A=4,READ_WID...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB36E1(INIT_00=256'b0100010001...
+Compiling module xil_defaultlib.text_to_pixel
+Compiling module xil_defaultlib.vga_wishbone
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_time_synth

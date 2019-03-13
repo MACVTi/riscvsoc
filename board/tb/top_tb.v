@@ -1,7 +1,7 @@
 module top_tb;
 	
 	//Declare Registers and Wires
-	reg CLK1MHZ;
+	reg CLK100MHZ;
 	reg CPU_RESETN;
 
     // LED Connections
@@ -25,8 +25,11 @@ module top_tb;
 //     wire [3:0] VGA_G;
 //     wire [3:0] VGA_B;
 
-    top top(
-        .CLK1MHZ(CLK1MHZ),
+    top #(
+        .DIV(100000)
+    )
+    top(
+        .CLK100MHZ(CLK100MHZ),
         .CPU_RESETN(CPU_RESETN),
         
         // LED Connections
@@ -51,23 +54,23 @@ module top_tb;
 
 	// Start running clock
 	always begin
-		#500 CLK1MHZ = ~CLK1MHZ;
-		if(CLK1MHZ == 1) begin
+		#5 CLK100MHZ = ~CLK100MHZ;
+		if(CLK100MHZ == 1) begin
 		  //$display("New Positive Clock Edge");
 		end
 	end
 
 	initial begin
 		// Initialise testbench
-        CLK1MHZ = 1; CPU_RESETN = 0;
+        CLK100MHZ = 1; CPU_RESETN = 0;
         
-        #1000000 CPU_RESETN = 1;
+        #1000 CPU_RESETN = 1;
 //        #100 interrupt = 1;
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#1000000 $finish;
+		#100000 $finish;
 	end
 	
 endmodule

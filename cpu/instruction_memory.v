@@ -1,5 +1,4 @@
 module instruction_memory #(parameter MEMFILE="") (
-	input wire I_clk,
 	input wire [31:0] I_address,
 	output wire [31:0] O_data
 	);

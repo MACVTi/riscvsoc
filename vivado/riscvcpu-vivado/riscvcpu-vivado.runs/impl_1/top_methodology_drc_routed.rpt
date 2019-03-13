@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Thu Mar  7 15:17:58 2019
+| Date         : Wed Mar 13 16:02:27 2019
 | Host         : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
-| Device       : xc7a100tcsg324-3
-| Speed File   : -3
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
 | Design State : Routed
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -20,15 +20,15 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_top
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 117
+             Violations found: 86
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
-| TIMING-18 | Warning  | Missing input or output delay | 32         |
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
 | TIMING-20 | Warning  | Non-clocked latch             | 84         |
 +-----------+----------+-------------------------------+------------+
 
@@ -42,161 +42,6 @@ Related violations: <none>
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on CPU_RESETN relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#2 Warning
-Missing input or output delay  
-An input delay is missing on SW relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#3 Warning
-Missing input or output delay  
-An output delay is missing on LED[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#4 Warning
-Missing input or output delay  
-An output delay is missing on LED[10] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#5 Warning
-Missing input or output delay  
-An output delay is missing on LED[11] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#6 Warning
-Missing input or output delay  
-An output delay is missing on LED[12] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#7 Warning
-Missing input or output delay  
-An output delay is missing on LED[13] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#8 Warning
-Missing input or output delay  
-An output delay is missing on LED[14] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#9 Warning
-Missing input or output delay  
-An output delay is missing on LED[15] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#10 Warning
-Missing input or output delay  
-An output delay is missing on LED[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#11 Warning
-Missing input or output delay  
-An output delay is missing on LED[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#12 Warning
-Missing input or output delay  
-An output delay is missing on LED[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#13 Warning
-Missing input or output delay  
-An output delay is missing on LED[4] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#14 Warning
-Missing input or output delay  
-An output delay is missing on LED[5] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#15 Warning
-Missing input or output delay  
-An output delay is missing on LED[6] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#16 Warning
-Missing input or output delay  
-An output delay is missing on LED[7] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#17 Warning
-Missing input or output delay  
-An output delay is missing on LED[8] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#18 Warning
-Missing input or output delay  
-An output delay is missing on LED[9] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#19 Warning
-Missing input or output delay  
-An output delay is missing on VGA_B[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#20 Warning
-Missing input or output delay  
-An output delay is missing on VGA_B[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#21 Warning
-Missing input or output delay  
-An output delay is missing on VGA_B[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#22 Warning
-Missing input or output delay  
-An output delay is missing on VGA_B[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#23 Warning
-Missing input or output delay  
-An output delay is missing on VGA_G[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#24 Warning
-Missing input or output delay  
-An output delay is missing on VGA_G[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#25 Warning
-Missing input or output delay  
-An output delay is missing on VGA_G[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#26 Warning
-Missing input or output delay  
-An output delay is missing on VGA_G[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#27 Warning
-Missing input or output delay  
-An output delay is missing on VGA_HS relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#28 Warning
-Missing input or output delay  
-An output delay is missing on VGA_R[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#29 Warning
-Missing input or output delay  
-An output delay is missing on VGA_R[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#30 Warning
-Missing input or output delay  
-An output delay is missing on VGA_R[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#31 Warning
-Missing input or output delay  
-An output delay is missing on VGA_R[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#32 Warning
-Missing input or output delay  
-An output delay is missing on VGA_VS relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-20#1 Warning

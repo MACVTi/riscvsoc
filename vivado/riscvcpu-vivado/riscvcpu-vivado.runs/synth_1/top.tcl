@@ -17,8 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-create_project -in_memory -part xc7a100tcsg324-3
+create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -27,6 +26,7 @@ set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/v
 set_property parent.project_path /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_output_repo /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {
@@ -55,6 +55,8 @@ read_mem {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/text_colour.mem
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/vga_font.mem
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/gcc/vga_test/vga_test.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/led_test/led_ram_test.mem
+  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/gcc/led_test/led_pattern.mem
 }
 read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/add.v
@@ -65,7 +67,6 @@ read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/decode.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/immediate_generator.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/led/led_wishbone.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/load_generator.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux3.v
@@ -75,9 +76,6 @@ read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/text_2_pixel.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_generator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/vga_wishbone.v
   /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -94,7 +92,7 @@ set_property used_in_implementation false [get_files /home/jack/Documents/Git/ri
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
+synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy none
 
 
 # disable binary constraint mode for synth run checkpoints

@@ -116,8 +116,8 @@ module control(
             `CONTROL_IN_AND:        register_control = `CONTROL_OUT_AND;    //AND    
             
             // Opcodes - Enviroment Calls
-            `CONTROL_IN_ECALL:      O_ecall = 1;
-            `CONTROL_IN_EBREAK:     O_ebreak = 1;
+            `CONTROL_IN_ECALL:      $stop();//O_ecall = 1;
+            `CONTROL_IN_EBREAK:     $stop();//O_ebreak = 1;
             
             // Opcodes - Interrupts
             `CONTROL_IN_CSRRW:      register_control = `CONTROL_OUT_CSRRW;    //CSRRW

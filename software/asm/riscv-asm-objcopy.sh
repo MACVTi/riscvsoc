@@ -1,4 +1,5 @@
 #!/bin/bash
+# riscv-asm.sh
 
 # This script will compile a assembler file into RV32I binary with the start location at 0
 

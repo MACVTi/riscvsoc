@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../../cpu/headers" \
-"top_tb_func_impl.v" \
-"../../../../../../../board/tb/top_tb.v" \
-
-# Do not sort compile order
-nosort

@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
+"../../../../../../cpu/add.v" \
+"../../../../../../cpu/alu.v" \
+"../../../../../../cpu/branch_comparator.v" \
+"../../../../../../board/clock_divider.v" \
+"../../../../../../cpu/control.v" \
+"../../../../../../cpu/cpu.v" \
+"../../../../../../cpu/decode.v" \
+"../../../../../../cpu/immediate_generator.v" \
+"../../../../../../cpu/instruction_memory.v" \
+"../../../../../../led/led_wishbone.v" \
+"../../../../../../cpu/load_generator.v" \
+"../../../../../../cpu/mux2.v" \
+"../../../../../../cpu/mux3.v" \
+"../../../../../../cpu/mux_privilege.v" \
+"../../../../../../cpu/pc.v" \
+"../../../../../../cpu/privilege.v" \
+"../../../../../../ram/ram_wishbone.v" \
+"../../../../../../cpu/registers.v" \
+"../../../../../../cpu/store_generator.v" \
+"../../../../../../board/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

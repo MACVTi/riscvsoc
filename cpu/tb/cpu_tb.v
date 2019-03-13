@@ -1,14 +1,14 @@
 module cpu_tb;
 	
 	//Declare Registers and Wires
-	reg clk;
-	reg reset;
-	reg interrupt;
+	reg CLK_I;
+	reg RST_I;
+	reg INT_I;
 	
-	wire O_data_memRW;
-    wire [31:0] O_data_Addr_in;
-    wire [31:0] O_data_Data_in;
-    wire [31:0] I_data_Data_out;
+	wire WE_O;
+    wire [31:0] ADR_O;
+    wire [31:0] DAT_O;
+    wire [31:0] DAT_I;
 //	//Control wires
 //	wire pcsel;
 //	wire [2:0] immsel;
@@ -65,19 +65,19 @@ module cpu_tb;
     cpu #(
         .RESET(32'h00000000),
         .VECTOR(32'h00000010),
-        .INSTRUCTION_MEM("led_test.mem"),
+        .INSTRUCTION_MEM("factorial_test_compressed.mem"),
         .DATA_MEM("")
     )
     cpu (
-        .I_clk(clk),
-        .I_rst(reset),
-        .I_interrupt(interrupt),
+        .CLK_I(CLK_I),
+        .RST_I(RST_I),
+        .INT_I(INT_I),
         
         // Data Memory Connections
-        .O_data_memRW(O_data_memRW),
-        .O_data_Addr_in(O_data_Addr_in),
-        .O_data_Data_in(O_data_Data_in),
-        .I_data_Data_out(I_data_Data_out)
+        .WE_O(WE_O),
+        .ADR_O(ADR_O),
+        .DAT_O(DAT_O),
+        .DAT_I(DAT_I)
         
 //        // Control wires
 //        .PCSel(pcsel),
@@ -132,27 +132,37 @@ module cpu_tb;
 //        .rd_addr_in(rd_addr_in)
         );
 
-    data_memory data (
-        .I_clk(clk),
-        .I_memrw(O_data_memRW),
-        .I_address(O_data_Addr_in),
-        .I_data(O_data_Data_in),
-        .O_data(I_data_Data_out)
+    ram_wishbone ram (
+        .CLK_I(CLK_I),
+        .RST_I(RST_I),
+        .STB_I(1'b1),
+        .WE_I(WE_O),
+        .ADR_I(ADR_O),
+        .DAT_I(DAT_O),
+        .DAT_O(DAT_I)
     );
+
+//    data_memory data (
+//        .I_clk(clk),
+//        .I_memrw(O_data_memRW),
+//        .I_address(O_data_Addr_in),
+//        .I_data(O_data_Data_in),
+//        .O_data(I_data_Data_out)
+//    );
 
 	// Start running clock
 	always begin
-		#5 clk = ~clk;
-		if(clk == 1) begin
+		#500 CLK_I = ~CLK_I;
+		if(CLK_I == 1) begin
 		  //$display("New Positive Clock Edge");
 		end
 	end
 
 	initial begin
 		// Initialise testbench
-        clk = 1; interrupt = 0; reset = 1;
+        CLK_I = 1; INT_I = 0; RST_I = 1;
         
-        #10 reset = 0;
+        #1000 RST_I = 0;
         
 //        #100 interrupt = 1;
 //        #10 interrupt = 0;
@@ -162,7 +172,7 @@ module cpu_tb;
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#100 $finish;
+		#1000000 $finish;
 	end
 	
 endmodule
