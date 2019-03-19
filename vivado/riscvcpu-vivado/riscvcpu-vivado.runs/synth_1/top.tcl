@@ -17,66 +17,71 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/wt [current_project]
-set_property parent.project_path /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.xpr [current_project]
+set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/wt [current_project]
+set_property parent.project_path /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_output_repo /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/alu_definitions.vh
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/control_definitions.vh
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/general_definitions.vh
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/immediate_generator.vh
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/load_generator.vh
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/headers/store_generator.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/alu_definitions.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/control_definitions.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/general_definitions.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/immediate_generator.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/load_generator.vh
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/store_generator.vh
 }
 read_mem {
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/first_test/instruction_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/shift_test/shift_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/load_store_test/load_store_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/lui_test/lui_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/auipc_test/auipc_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/branch_test/branch_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/jump_test/jump_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/factorial_test/factorial_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/factorial_test/factorial_test_compressed.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/csrrw_test/csrrw_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/mret_test/mret_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/led_test/led_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/vga_colour_palette.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/text.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/text_colour.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vga/mem/vga_font.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/gcc/vga_test/vga_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/asm/led_test/led_ram_test.mem
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/software/gcc/led_test/led_pattern.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/first_test/instruction_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/shift_test/shift_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/load_store_test/load_store_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/lui_test/lui_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/auipc_test/auipc_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/branch_test/branch_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/jump_test/jump_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/csrrw_test/csrrw_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/mret_test/mret_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/led_test/led_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/vga_colour_palette.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/text.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/text_colour.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/vga_font.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/vga_test/vga_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/led_test/led_ram_test.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/led_test/led_pattern.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/c_asm_test/program.mem
 }
 read_verilog -library xil_defaultlib {
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/add.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/alu.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/branch_comparator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/control.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/cpu.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/decode.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/immediate_generator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/instruction_memory.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/load_generator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux2.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux3.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/mux_privilege.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/pc.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/privilege.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/ram/ram_wishbone.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/registers.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/cpu/store_generator.v
-  /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/top.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/add.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/alu.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/branch_comparator.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/clock_divider.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/control.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/cpu.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/decode.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/immediate_generator.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/instruction_memory.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/led/led_wishbone.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/load_generator.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux2.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux3.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux_privilege.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/pc.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/privilege.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/ram/ram_wishbone.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/registers.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/store_generator.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_2_pixel.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_wishbone.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -86,8 +91,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/Nexys-4-DDR-Master.xdc]
+read_xdc /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

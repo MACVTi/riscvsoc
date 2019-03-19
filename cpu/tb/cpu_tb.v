@@ -40,7 +40,7 @@ module cpu_tb;
 //    wire [31:0] mux_privilege_out;
 
 //    //Data wires
-//    wire [31:0] pc_out;
+    wire [31:0] pc_out;
 //    wire [31:0] pcincr_out;
 //    wire [31:0] decoder_out;
 //    wire [31:0] inst_out;
@@ -65,7 +65,7 @@ module cpu_tb;
     cpu #(
         .RESET(32'h00000000),
         .VECTOR(32'h00000010),
-        .INSTRUCTION_MEM("factorial_test_compressed.mem"),
+        .INSTRUCTION_MEM("mret_test.mem"),
         .DATA_MEM("")
     )
     cpu (
@@ -77,7 +77,7 @@ module cpu_tb;
         .WE_O(WE_O),
         .ADR_O(ADR_O),
         .DAT_O(DAT_O),
-        .DAT_I(DAT_I)
+        .DAT_I(DAT_I),
         
 //        // Control wires
 //        .PCSel(pcsel),
@@ -110,7 +110,7 @@ module cpu_tb;
 //        .mux_privilege_out(mux_privilege_out),
         
 //        // Declare other wires
-//        .pc_out(pc_out),
+        .pc_out(pc_out)
 //        .pcincr_out(pcincr_out),
 //        .decoder_out(decoder_out),
 //        .inst_out(inst_out),
@@ -164,15 +164,15 @@ module cpu_tb;
         
         #1000 RST_I = 0;
         
-//        #100 interrupt = 1;
-//        #10 interrupt = 0;
+        #6000 INT_I = 1;
+        #1000 INT_I = 0;
  
 //        #100 interrupt = 1;
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#1000000 $finish;
+		#10000 $finish;
 	end
 	
 endmodule

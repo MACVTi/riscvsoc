@@ -4,6 +4,8 @@ module top_tb;
 	reg CLK100MHZ;
 	reg CPU_RESETN;
 
+    reg interrupt;
+
     // LED Connections
     wire [15:0] LED;
         
@@ -26,11 +28,12 @@ module top_tb;
 //     wire [3:0] VGA_B;
 
     top #(
-        .DIV(100000)
+        .DIV(4)
     )
     top(
         .CLK100MHZ(CLK100MHZ),
         .CPU_RESETN(CPU_RESETN),
+        .BTNC(interrupt),
         
         // LED Connections
         .LED(LED)
@@ -62,15 +65,24 @@ module top_tb;
 
 	initial begin
 		// Initialise testbench
-        CLK100MHZ = 1; CPU_RESETN = 0;
+        CLK100MHZ = 1; CPU_RESETN = 0; interrupt = 0;
         
-        #1000 CPU_RESETN = 1;
-//        #100 interrupt = 1;
+        #40 CPU_RESETN = 1;
+        
+        for(integer i = 0; i <= 1000; i = i + 1) begin
+            #2000 interrupt = 1;
+            #40 interrupt = 0;
+            #40 interrupt = 1;
+            #40 interrupt = 0;
+            #40 interrupt = 1;
+            #40 interrupt = 0;
+            #10000;
+        end 
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#100000 $finish;
+		#2000 $finish;
 	end
 	
 endmodule

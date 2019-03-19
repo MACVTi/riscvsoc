@@ -7,7 +7,7 @@ module vga_generator(
     input wire mode,
     output wire hsync,
     output wire vsync,
-//    output wire blanking,
+    output wire blanking,
     output wire active,
 //    output wire screenend,
 //    output wire animate,

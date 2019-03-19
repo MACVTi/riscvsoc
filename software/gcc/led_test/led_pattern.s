@@ -8,12 +8,11 @@
 	.globl	main
 	.type	main, @function
 main:
-	addi	sp,sp,-16
-	sw	s0,12(sp)
-	addi	s0,sp,16
+	addi	sp,sp,-12
+	sw	s0,8(sp)
+	addi	s0,sp,12
 	li	a5,-65536
 	sw	a5,-12(s0)
-	sw	zero,-16(s0)
 	li	a5,1
 	sw	a5,-8(s0)
 .L2:

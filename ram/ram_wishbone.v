@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A wishbone bus compatible ram module
 
-module ram_wishbone #(parameter SIZE=1024) (
+module ram_wishbone #(parameter SIZE=128) (
 	input wire CLK_I,
 	input wire RST_I,
 	input wire STB_I,
@@ -32,7 +32,7 @@ module ram_wishbone #(parameter SIZE=1024) (
         else if(STB_I == 1'b1) begin
             if (WE_I == 1'b1) begin
                 {memory[ADR_I+3],memory[ADR_I+2],memory[ADR_I+1],memory[ADR_I]} <= DAT_I;
-                
+                $display("The value %h was stored in memory", DAT_I);
             end
         end
     end  

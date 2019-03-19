@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/impl_1'
+HD_PWD='/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

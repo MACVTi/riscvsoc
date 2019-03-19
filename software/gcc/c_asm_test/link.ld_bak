@@ -1,0 +1,29 @@
+ENTRY(__entry);
+
+SECTIONS
+{
+    . = 0x0;
+    .text :
+    {
+        *(.text.prologue);
+        *(.text);
+    }
+    .data :
+    {
+    }
+    .bss :
+    {
+    }
+    . = 0xAAAA0000;
+    .VGAdata :
+    {
+    }
+    . = 0xAAAA12C4;
+    .VGAcolour :
+    {
+    }
+    . = 0xFFFF0000;
+    .led :
+    {
+    }
+}

@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -69,12 +70,12 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/wt [current_project]
-  set_property parent.project_path /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.xpr [current_project]
+  set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/wt [current_project]
+  set_property parent.project_path /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.xpr [current_project]
   set_property ip_output_repo /home/jack/Documents/Git/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/top.dcp
-  read_xdc /home/jack/Documents/Git/riscvsoc_sim/riscvsoc/board/Nexys-4-DDR-Master.xdc
+  add_files -quiet /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.runs/synth_1/top.dcp
+  read_xdc /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/Nexys-4-DDR-Master.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -147,6 +148,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force top.mmi }
+  write_bitstream -force top.bit 
+  catch {write_debug_probes -quiet -force top}
+  catch {file copy -force top.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
