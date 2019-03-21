@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Mon Mar 18 08:46:00 2019
+| Date         : Wed Mar 20 08:42:34 2019
 | Host         : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 3508 |     0 |     63400 |  5.53 |
-|   LUT as Logic          | 3508 |     0 |     63400 |  5.53 |
+| Slice LUTs*             | 3580 |     0 |     63400 |  5.65 |
+|   LUT as Logic          | 3580 |     0 |     63400 |  5.65 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         | 1770 |     0 |    126800 |  1.40 |
 |   Register as Flip Flop | 1686 |     0 |    126800 |  1.33 |
 |   Register as Latch     |   84 |     0 |    126800 |  0.07 |
-| F7 Muxes                |  774 |     0 |     31700 |  2.44 |
+| F7 Muxes                |  721 |     0 |     31700 |  2.27 |
 | F8 Muxes                |  322 |     0 |     15850 |  2.03 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   33 |     0 |       210 | 15.71 |
+| Bonded IOB                  |   32 |     0 |       210 | 15.24 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -147,20 +147,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 2307 |                 LUT |
+| LUT6     | 2429 |                 LUT |
 | FDRE     | 1685 |        Flop & Latch |
-| MUXF7    |  774 |               MuxFx |
-| LUT5     |  646 |                 LUT |
-| LUT3     |  565 |                 LUT |
+| MUXF7    |  721 |               MuxFx |
+| LUT3     |  614 |                 LUT |
+| LUT5     |  602 |                 LUT |
 | MUXF8    |  322 |               MuxFx |
-| LUT4     |  268 |                 LUT |
-| LUT2     |  119 |                 LUT |
+| LUT4     |  261 |                 LUT |
+| LUT2     |   84 |                 LUT |
 | LDCE     |   83 |        Flop & Latch |
 | CARRY4   |   53 |          CarryLogic |
 | OBUF     |   30 |                  IO |
 | LUT1     |    8 |                 LUT |
 | RAMB36E1 |    4 |        Block Memory |
-| IBUF     |    3 |                  IO |
+| IBUF     |    2 |                  IO |
 | BUFG     |    2 |               Clock |
 | LDPE     |    1 |        Flop & Latch |
 | FDSE     |    1 |        Flop & Latch |

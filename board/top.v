@@ -70,7 +70,7 @@ module top #(parameter DIV = 27'd100000)(
     riscv (
         .CLK_I(SYS_CLK),
         .RST_I(reset),
-        .INT_I(BTNC),
+        .INT_I(1'b0),
         
         // Data memory connection wires
         .WE_O(cpu_WE),
@@ -79,12 +79,11 @@ module top #(parameter DIV = 27'd100000)(
         .DAT_I(cpu_Data_Out)
     );
     
-    
     // Instantiate RAM module
     ram_wishbone ram (
         .CLK_I(SYS_CLK),
         .RST_I(reset),
-        .STB_I(1'b1),
+        .STB_I(stb_ram),
         .WE_I(cpu_WE),
         .ADR_I(cpu_Addr_In),
         .DAT_I(cpu_Data_In),

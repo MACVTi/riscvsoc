@@ -75,7 +75,7 @@ module vga_wishbone #(parameter TEXT_DATA_MEMFILE="", TEXT_COLOUR_MEMFILE="")
         end
         
         for (i=0; i < TEXT_COLOUR_DEPTH; i=i+1) begin
-            text_colour_memory[i]= 8'h0F;
+            text_colour_memory[i]= 8'hF0;
         end
 	end
 

@@ -34,7 +34,6 @@ module top_tb;
         .CLK100MHZ(CLK100MHZ),
         .CPU_RESETN(CPU_RESETN),
         .BTNC(interrupt),
-        
         // LED Connections
         .LED(LED)
         
@@ -65,24 +64,23 @@ module top_tb;
 
 	initial begin
 		// Initialise testbench
-        CLK100MHZ = 1; CPU_RESETN = 0; interrupt = 0;
-        
+        CLK100MHZ = 1; CPU_RESETN = 0; 
         #40 CPU_RESETN = 1;
         
-        for(integer i = 0; i <= 1000; i = i + 1) begin
-            #2000 interrupt = 1;
-            #40 interrupt = 0;
-            #40 interrupt = 1;
-            #40 interrupt = 0;
-            #40 interrupt = 1;
-            #40 interrupt = 0;
-            #10000;
-        end 
+//        for(integer i = 0; i <= 1000; i = i + 1) begin
+//            #2000 interrupt = 1;
+//            #40 interrupt = 0;
+//            #40 interrupt = 1;
+//            #40 interrupt = 0;
+//            #40 interrupt = 1;
+//            #40 interrupt = 0;
+//            #10000;
+//        end 
 //        $display("Testing External Interrupt");
 //        #10 interrupt = 0;
 		// Write test values to registers
 		// Finish simulation
-		#2000 $finish;
+		#10000 $finish;
 	end
 	
 endmodule

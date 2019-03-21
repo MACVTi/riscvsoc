@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -57,6 +58,7 @@ read_mem {
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/led_test/led_ram_test.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/led_test/led_pattern.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/c_asm_test/program.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/ram/ram.mem
 }
 read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/add.v

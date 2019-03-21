@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Mon Mar 18 08:47:21 2019
+| Date             : Wed Mar 20 08:43:57 2019
 | Host             : HERO-VI running 64-bit Ubuntu 18.04.2 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.124        |
+| Total On-Chip Power (W)  | 0.130        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.027        |
+| Dynamic (W)              | 0.032        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.012 |     6864 |       --- |             --- |
-|   LUT as Logic |     0.012 |     3509 |     63400 |            5.53 |
-|   F7/F8 Muxes  |    <0.001 |     1096 |     63400 |            1.73 |
+| Slice Logic    |     0.015 |     6896 |       --- |             --- |
+|   LUT as Logic |     0.015 |     3582 |     63400 |            5.65 |
 |   CARRY4       |    <0.001 |       53 |     15850 |            0.33 |
+|   F7/F8 Muxes  |    <0.001 |     1043 |     63400 |            1.65 |
 |   Register     |    <0.001 |     1777 |    126800 |            1.40 |
 |   BUFG         |    <0.001 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |       21 |       --- |             --- |
-| Signals        |     0.010 |     4206 |       --- |             --- |
+| Signals        |     0.013 |     4353 |       --- |             --- |
 | Block RAM      |    <0.001 |        4 |       135 |            2.96 |
-| I/O            |     0.004 |       33 |       210 |           15.71 |
+| I/O            |     0.004 |       32 |       210 |           15.24 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.124 |          |           |                 |
+| Total          |     0.130 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.038 |       0.023 |      0.015 |
+| Vccint    |       1.000 |     0.044 |       0.029 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,18 +143,18 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| top             |     0.027 |
+| top             |     0.032 |
 |   divider       |    <0.001 |
 |   led           |    <0.001 |
 |   ram           |    <0.001 |
-|   riscv         |     0.015 |
+|   riscv         |     0.020 |
 |     add         |    <0.001 |
 |     alu         |    <0.001 |
 |     bc          |    <0.001 |
 |     ctrl        |    <0.001 |
-|     decode      |     0.003 |
+|     decode      |     0.004 |
 |     immediate   |    <0.001 |
-|     inst        |     0.008 |
+|     inst        |     0.012 |
 |     loadgen     |    <0.001 |
 |     mux3        |    <0.001 |
 |     mux_csr     |    <0.001 |
@@ -162,11 +162,11 @@ Table of Contents
 |     mux_priv    |    <0.001 |
 |     mux_rs1     |    <0.001 |
 |     mux_rs2     |    <0.001 |
-|     pc          |     0.001 |
+|     pc          |     0.002 |
 |     priv        |    <0.001 |
 |     regs        |    <0.001 |
 |     storegen    |    <0.001 |
-|   vga           |     0.008 |
+|   vga           |     0.007 |
 |     display_vga |    <0.001 |
 |     texttopixel |     0.005 |
 +-----------------+-----------+

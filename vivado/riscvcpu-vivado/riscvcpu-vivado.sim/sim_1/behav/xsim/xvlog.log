@@ -1,0 +1,50 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/branch_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/immediate_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediate_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/led/led_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_wishbone
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/load_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/mux_privilege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_privilege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/privilege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module privilege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/ram/ram_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_wishbone
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/store_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_2_pixel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text_to_pixel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_generator
+INFO: [VRFC 10-2458] undeclared symbol screenend, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:49]
+INFO: [VRFC 10-2458] undeclared symbol animate, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_wishbone
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/tb/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

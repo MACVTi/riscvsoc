@@ -5,9 +5,6 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     input wire RST_I,
     input wire INT_I,
     
-    output wire [31:0] pc_out,
-
-    
     output wire WE_O,
     output wire [31:0] ADR_O,
     output wire [31:0] DAT_O,
@@ -46,7 +43,7 @@ module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM=
     wire [31:0] mux_privilege_out;
 
     // Declare other wires
-//    wire [31:0] pc_out;
+    wire [31:0] pc_out;
     wire [31:0] pcincr_out;
     wire [31:0] decoder_out;
     wire [31:0] mem_out;
