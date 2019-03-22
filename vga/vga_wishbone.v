@@ -32,6 +32,12 @@ module vga_wishbone #(parameter TEXT_DATA_MEMFILE="", TEXT_COLOUR_MEMFILE="")
 	// Wire to know when the screen is being drawn to
 	wire active;
 	wire blanking;
+		
+    // Interrupt part is here
+    reg interrupt_latched;
+    reg interrupt_enable;  
+          
+    assign INT_O = interrupt_latched;
 
 	// Instantiate VGA module to generate 640x480 signal
 	vga_generator display_vga(
@@ -77,20 +83,23 @@ module vga_wishbone #(parameter TEXT_DATA_MEMFILE="", TEXT_COLOUR_MEMFILE="")
         for (i=0; i < TEXT_COLOUR_DEPTH; i=i+1) begin
             text_colour_memory[i]= 8'hF0;
         end
+        
+        interrupt_enable = 0;
+        interrupt_latched = 0;
 	end
 
 	// Instantiate Text to Pixel to convert text information into pixel
-	text_to_pixel #(
+	text_pixel #(
 		.TEXT_DATA_WIDTH(TEXT_DATA_WIDTH),
 		.TEXT_COLOUR_WIDTH(TEXT_COLOUR_WIDTH)
 	)
-	texttopixel (
-	.clk(CLK_I),
-	.x(x),
-	.y(y),
-	.text_data(text_data_out),
-	.text_colour(text_colour_out),
-	.pixel(pixel_out)
+	text_pixel (
+        .clk(CLK_I),
+        .x(x),
+        .y(y),
+        .text_data(text_data_out),
+        .text_colour(text_colour_out),
+        .pixel(pixel_out)
 	);
 
 	// Load in our palette
@@ -102,16 +111,20 @@ module vga_wishbone #(parameter TEXT_DATA_MEMFILE="", TEXT_COLOUR_MEMFILE="")
 		$readmemh("vga_colour_palette.mem", palette);
 	end
 
-    // Interrupt part is here
-    reg interrupt_latched;
-    reg interrupt_enable;    
-    assign INT_O = interrupt_latched;
-
 	// Draw out image to the screen
-	always @ (posedge CLK_I) begin
+	always @(posedge CLK_I) begin
+	   $display("Blanking: %b", blanking);
+	   $display("Active: %b", active);
+	   
+	   if (RST_I) begin
+	       interrupt_enable <= 0;
+           interrupt_latched <= 0;
+	   end
+	   
 	    // See if blanking has occured so we can trigger interrupt
-	    if(blanking && interrupt_enable) begin
-	        interrupt_latched <= 1;
+	    if((blanking == 1'b1) && (interrupt_enable == 1'b1)) begin
+	       interrupt_enable <= 0;
+	       interrupt_latched <= 1;
         end
 	
 		// Draw current pixel

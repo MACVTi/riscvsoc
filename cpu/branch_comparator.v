@@ -1,3 +1,6 @@
+// The branch comparator module for the CPU
+// Written by Jack McEllin - 15170144
+
 module branch_comparator(
         input wire I_branch_unsigned,
         input wire [31:0] I_data1,

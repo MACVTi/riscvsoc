@@ -4,6 +4,12 @@ module seg_top(
 	input wire CLK100MHZ,
 	input wire CPU_RESETN,
 	
+	// Switch Connections
+	input wire [15:0] SW,
+	
+	// Button Connection
+	input wire BTNC,
+	
 	// LED Connections
 //	output wire [15:0] LED,
 	
@@ -16,7 +22,7 @@ module seg_top(
 	output wire CF,
 	output wire CG,
 	output wire DP,
-    output wire [7:0] AN
+	output wire [7:0] AN
 	
 	// VGA Connections
 //	output wire VGA_HS,
@@ -36,9 +42,12 @@ module seg_top(
         .CLK_I(CLK100MHZ),
         .RST_I(reset),
         
+        .DAT_I(SW),
+        .STB_I(1'b1),
+        .WE_I(BTNC),
+        
         // Nexys 4 DDR connection wires
         .O_cathode({CA,CB,CC,CD,CE,CF,CG}),    //DP is not connected
         .O_anode(AN)
     );
-
 endmodule

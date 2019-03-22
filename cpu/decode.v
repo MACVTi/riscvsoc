@@ -1,3 +1,6 @@
+// The decode module for the CPU
+// Written by Jack McEllin - 15170144
+
 `include "general_definitions.vh"
 
 module decode(

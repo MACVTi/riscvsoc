@@ -40,7 +40,10 @@ module vga_generator(
 	assign y = (v_count >= VSYNC_ACTIVE) ? (VSYNC_ACTIVE - 1): (v_count) >> mode;
 
 	// Keep Blanking High Within the Blanking Period
-	assign blanking = ((h_count < HSYNC_ACTIVE) | (v_count > VSYNC_ACTIVE - 1));
+    //	assign blanking = ((h_count < HSYNC_ACTIVE) | (v_count > VSYNC_ACTIVE - 1));
+    
+    // Set Blank High for one tick at start of blanking period
+    assign blanking = ((h_count == 0) & (v_count == VSYNC_ACTIVE + 1));
 
 	// Keep Active High Within the Active Period
 	assign active = ~((h_count < HSYNC_ACTIVE) | (v_count > VSYNC_ACTIVE - 1));
@@ -51,8 +54,16 @@ module vga_generator(
 	// Set Animate High for One Tick at the End of the Final Pixel Line
 	assign animate = ((v_count == VSYNC_ACTIVE - 1) & (h_count == LINE));
 
+    initial begin
+    	h_count = 0;
+        v_count = 0;
+    end
+
 	//Draw Pixels
 	always @ (posedge clk) begin
+	   $display("hcount = %d", h_count);
+	   $display("vcount = %d", v_count);
+	   
 		if (reset) begin
 			h_count <= 0;
 			v_count <= 0;

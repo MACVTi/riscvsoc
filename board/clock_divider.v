@@ -1,3 +1,6 @@
+// A clock divider module
+// Written by Jack McEllin - 15170144
+
 module clock_divider #(parameter DIVISOR = 27'd50000000) (
     input wire I_clk,
     output wire O_clk

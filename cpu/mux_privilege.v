@@ -1,5 +1,5 @@
+// The privilege multiplexor module for the CPU
 // Written by Jack McEllin - 15170144
-// A two-input multiplexor
 
 module mux_privilege(
         input wire I_exception,        //interrupt select

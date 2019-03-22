@@ -1,24 +1,25 @@
+// Top module for bench demo
+// Written by Jack McEllin - 15170144
+
 `timescale 1ns / 1ps
 
 module top #(parameter DIV = 27'd100000)(
 	input wire CLK100MHZ,
 	input wire CPU_RESETN,
-	input wire BTNC,
-//    input wire SW,
 	
 	// LED Connections
 	output wire [15:0] LED,
 	
 	// Seven Segment Display Connections
-//	output wire CA,
-//	output wire CB,
-//	output wire CC,
-//	output wire CD,
-//	output wire CE,
-//	output wire CF,
-//	output wire CG,
-//	output wire DP,
-//    output wire [7:0] AN
+    output wire CA,
+    output wire CB,
+    output wire CC,
+    output wire CD,
+    output wire CE,
+    output wire CF,
+    output wire CG,
+    output wire DP,
+    output wire [7:0] AN,
 	
 	// VGA Connections
 	output wire VGA_HS,
@@ -31,10 +32,7 @@ module top #(parameter DIV = 27'd100000)(
 	// Connect Reset to Button
 	wire reset = ~CPU_RESETN;
 	wire SYS_CLK;
-	
-//	assign {CA,CB,CC,CD,CE,CF,CG,DP} = 8'h00;
-//	assign AN = 8'hFF;
-	
+		
 	// Wires to connect to CPU
 	wire cpu_WE;
     wire [31:0] cpu_Addr_In;
@@ -49,6 +47,7 @@ module top #(parameter DIV = 27'd100000)(
     
     //Device Select Wires
     reg stb_led;
+    reg stb_seg;
     reg stb_vga;
     reg stb_ram;
     
@@ -70,7 +69,7 @@ module top #(parameter DIV = 27'd100000)(
     riscv (
         .CLK_I(SYS_CLK),
         .RST_I(reset),
-        .INT_I(1'b0),
+        .INT_I(vga_interrupt),
         
         // Data memory connection wires
         .WE_O(cpu_WE),
@@ -101,6 +100,20 @@ module top #(parameter DIV = 27'd100000)(
         .O_led(LED)
     );
     
+    // Instantiate the LED module
+    seg_wishbone seg (
+        .CLK_I(SYS_CLK),
+        .RST_I(reset),
+        .STB_I(stb_seg),
+        .WE_I(cpu_WE),
+        .DAT_I(cpu_Data_In),
+        
+        .O_cathode({CA,CB,CC,CD,CE,CF,CG}),
+        .O_anode(AN)
+    );
+    
+    assign DP = 1'b1;
+    
     // Instantiate the VGA module
     vga_wishbone #(
         .TEXT_DATA_MEMFILE("text.mem"),
@@ -127,6 +140,7 @@ module top #(parameter DIV = 27'd100000)(
     always @(*) begin
         // Select neither device and set CPU data out to 0
         stb_led = 0;
+        stb_seg = 0;
         stb_vga = 0;
         stb_ram = 0;
         cpu_Data_Out = 32'h00000000;
@@ -136,6 +150,11 @@ module top #(parameter DIV = 27'd100000)(
             32'hFFFF0000: begin //0xFFFF0000: LED
                 stb_led = 1;
                 $display("LED Selected: %h", cpu_Addr_In);
+            end
+            
+            32'hFFFF0000: begin //0xEEEE0000: SEG
+                stb_seg = 1;
+                $display("SEG Selected: %h", cpu_Addr_In);
             end
             
             32'hAAAA????: begin //0xAAAA0000 - 0xAAAAFFFF

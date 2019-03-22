@@ -18,8 +18,9 @@ verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
 "../../../../../../cpu/privilege.v" \
 "../../../../../../ram/ram_wishbone.v" \
 "../../../../../../cpu/registers.v" \
+"../../../../../../seg/seg_wishbone.v" \
 "../../../../../../cpu/store_generator.v" \
-"../../../../../../vga/text_2_pixel.v" \
+"../../../../../../vga/text_pixel.v" \
 "../../../../../../board/top.v" \
 "../../../../../../vga/vga_generator.v" \
 "../../../../../../vga/vga_wishbone.v" \

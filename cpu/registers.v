@@ -1,5 +1,6 @@
+// The register module for the CPU
 // Written by Jack McEllin - 15170144
-// This file contains all the registers of the CPU
+
 `include "general_definitions.vh"
 
 module registers(
@@ -27,6 +28,8 @@ module registers(
     end
 
 	always @(posedge I_clk) begin
+	    $display("Stack Pointer = %h", register[2]);
+	    
 		if (I_rst == 1) begin
 			for (i=1; i < 16; i=i+1) begin
 				register[i] <= 32'h00000000;

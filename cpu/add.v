@@ -1,5 +1,5 @@
+// A 32 bit adder module
 // Written by Jack McEllin - 15170144
-// A two-input 32 bit adder
 
 module add(
     input [31:0] I_data1,

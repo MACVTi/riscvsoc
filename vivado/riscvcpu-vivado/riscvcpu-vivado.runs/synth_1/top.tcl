@@ -40,25 +40,12 @@ read_verilog {
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/headers/store_generator.vh
 }
 read_mem {
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/first_test/instruction_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/shift_test/shift_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/load_store_test/load_store_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/lui_test/lui_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/auipc_test/auipc_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/branch_test/branch_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/jump_test/jump_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/csrrw_test/csrrw_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/mret_test/mret_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/led_test/led_test.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/vga_colour_palette.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/text.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/text_colour.mem
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/mem/vga_font.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/vga_test/vga_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/asm/led_test/led_ram_test.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/led_test/led_pattern.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/gcc/c_asm_test/program.mem
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/ram/ram.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/csource/board_test/program.mem
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/software/csource/board_test/program_compressed.mem
 }
 read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/add.v
@@ -79,8 +66,9 @@ read_verilog -library xil_defaultlib {
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/privilege.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/ram/ram_wishbone.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/registers.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/seg/seg_wishbone.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/store_generator.v
-  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_2_pixel.v
+  /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_pixel.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_wishbone.v
   /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/top.v
@@ -93,8 +81,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/Nexys-4-DDR-Master.xdc]
+read_xdc /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/constraints/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files /home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/constraints/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

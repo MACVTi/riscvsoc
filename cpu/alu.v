@@ -1,5 +1,5 @@
+// The ALU module for the CPU
 // Written by Jack McEllin - 15170144
-// A simple 2 input ALU
 
 `include "alu_definitions.vh"
 

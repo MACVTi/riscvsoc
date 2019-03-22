@@ -1,3 +1,6 @@
+// The test data memory module for the CPU
+// Written by Jack McEllin - 15170144
+
 module data_memory #(parameter MEMFILE="") (
 	input wire I_clk,
 	input wire I_memrw,

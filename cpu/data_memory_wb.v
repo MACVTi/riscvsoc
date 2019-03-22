@@ -1,3 +1,6 @@
+// The test Wishbone Bus data memory module for the CPU
+// Written by Jack McEllin - 15170144
+
 module data_memory_wb #(parameter MEMFILE="") (
 	input wire I_clk,
 	input wire I_memrw,

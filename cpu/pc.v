@@ -1,5 +1,5 @@
+// The program counter module for the CPU
 // Written by Jack McEllin - 15170144
-// A program counter
 
 module pc #(parameter RESET=32'h00000000) (
 		input wire I_clk,

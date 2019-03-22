@@ -1,3 +1,6 @@
+// The CPU module for the CPU
+// Written by Jack McEllin - 15170144
+
 `include "./general_definitions.vh"
 
 module cpu #(parameter RESET=32'h00000000, VECTOR=32'h00000000, INSTRUCTION_MEM="", DATA_MEM="") (

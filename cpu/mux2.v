@@ -1,5 +1,5 @@
+// A two input multiplexor for the CPU
 // Written by Jack McEllin - 15170144
-// A two-input multiplexor
 
 module mux2(
 		input wire I_sel,

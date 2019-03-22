@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
@@ -70,7 +69,7 @@ set rc [catch {
   open_checkpoint top_routed.dcp
   set_property webtalk.parent_dir /home/jack/Documents/Git/riscvsoc_final/riscvsoc/vivado/riscvcpu-vivado/riscvcpu-vivado.cache/wt [current_project]
   catch { write_mem_info -force top.mmi }
-  write_bitstream -force top.bit 
+  write_bitstream -force top.bit -bin_file
   catch {write_debug_probes -quiet -force top}
   catch {file copy -force top.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb

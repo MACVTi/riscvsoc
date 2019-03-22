@@ -1,5 +1,5 @@
+// The immediate generator module for the CPU
 // Written by Jack McEllin - 15170144
-// A module for generating immediate addresses
 
 `include "immediate_generator.vh"
 

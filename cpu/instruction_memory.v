@@ -1,3 +1,6 @@
+// The instruction memory module for the CPU
+// Written by Jack McEllin - 15170144
+
 module instruction_memory #(parameter MEMFILE="") (
 	input wire [31:0] I_address,
 	output wire [31:0] O_data

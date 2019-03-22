@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../cpu/headers" \
+"../../../../../../vga/text_pixel.v" \
+"../../../../../../vga/vga_generator.v" \
+"../../../../../../vga/vga_wishbone.v" \
+"../../../../../../vga/tb/vga_wishbone_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

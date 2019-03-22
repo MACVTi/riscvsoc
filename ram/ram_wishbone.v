@@ -1,7 +1,7 @@
 // Written by Jack McEllin - 15170144
 // A wishbone bus compatible ram module
 
-module ram_wishbone #(parameter SIZE=128) (
+module ram_wishbone #(parameter SIZE=256) (
 	input wire CLK_I,
 	input wire RST_I,
 	input wire STB_I,

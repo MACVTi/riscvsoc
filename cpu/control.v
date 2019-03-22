@@ -1,3 +1,6 @@
+// The control module for the CPU
+// Written by Jack McEllin - 15170144
+
 `include "control_definitions.vh"
 
 module control(

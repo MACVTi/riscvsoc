@@ -1,5 +1,5 @@
+// A three input multiplexor module for the CPU
 // Written by Jack McEllin - 15170144
-// A three-input multiplexor
 
 module mux3(
 		input wire [1:0] I_sel,

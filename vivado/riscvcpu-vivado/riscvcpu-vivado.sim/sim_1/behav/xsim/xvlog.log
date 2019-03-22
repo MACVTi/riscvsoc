@@ -34,16 +34,19 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_f
 INFO: [VRFC 10-311] analyzing module ram_wishbone
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/registers.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/seg/seg_wishbone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_wishbone
+WARNING: [VRFC 10-756] identifier current_number is used before its declaration [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/seg/seg_wishbone.v:15]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/cpu/store_generator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module store_generator
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_2_pixel.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module text_to_pixel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/text_pixel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text_pixel
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vga_generator
-INFO: [VRFC 10-2458] undeclared symbol screenend, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:49]
-INFO: [VRFC 10-2458] undeclared symbol animate, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:52]
+INFO: [VRFC 10-2458] undeclared symbol screenend, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:52]
+INFO: [VRFC 10-2458] undeclared symbol animate, assumed default net type wire [/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_generator.v:55]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/vga/vga_wishbone.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vga_wishbone
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/Documents/Git/riscvsoc_final/riscvsoc/board/tb/top_tb.v" into library xil_defaultlib
