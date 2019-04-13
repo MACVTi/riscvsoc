@@ -1,3 +1,0 @@
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-$finish called at time : 20002 ns : File "/home/jack/Documents/Git/riscvsoc_sim/riscvsoc/seg/seg_wishbone_tb.v" Line 44
